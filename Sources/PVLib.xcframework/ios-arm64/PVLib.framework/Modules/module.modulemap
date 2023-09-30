@@ -1,0 +1,11 @@
+framework module PVLib {
+  umbrella header "PVLib.h"
+
+  export *
+  module * { export * }
+}
+
+module PVLib.Swift {
+  header "PVLib-Swift.h"
+  requires objc
+}
