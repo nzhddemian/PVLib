@@ -38061,13 +38061,13 @@
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/Export\/PBEditor.swift",
       "kind": "StringLiteral",
       "offset": 4254,
-      "length": 20,
-      "value": "\"error composition1\""
+      "length": 25,
+      "value": "\"error composition error\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/Export\/PBEditor.swift",
       "kind": "Array",
-      "offset": 4675,
+      "offset": 4680,
       "length": 2,
       "value": "[]"
     },
