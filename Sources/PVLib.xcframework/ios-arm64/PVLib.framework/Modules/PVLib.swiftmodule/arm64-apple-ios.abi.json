@@ -26959,6 +26959,40 @@
             ]
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(shouldRotate:rootView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HVController",
+                "printedName": "PVLib.HVController",
+                "usr": "s:5PVLib12HVControllerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnyView",
+                "printedName": "SwiftUI.AnyView",
+                "usr": "s:7SwiftUI7AnyViewV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5PVLib12HVControllerC12shouldRotate8rootViewACSb_7SwiftUI03AnyF0Vtcfc",
+            "mangledName": "$s5PVLib12HVControllerC12shouldRotate8rootViewACSb_7SwiftUI03AnyF0Vtcfc",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Var",
             "name": "shouldAutorotate",
             "printedName": "shouldAutorotate",
@@ -32549,6 +32583,60 @@
             "declKind": "Func",
             "usr": "s:5PVLib14PVVCoordinatorC10shareImageyySo7UIImageCFZ",
             "mangledName": "$s5PVLib14PVVCoordinatorC10shareImageyySo7UIImageCFZ",
+            "moduleName": "PVLib",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(from:type:duration:_:shouldRotate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CATransitionSubtype",
+                "printedName": "QuartzCore.CATransitionSubtype",
+                "usr": "c:@T@CATransitionSubtype"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CATransitionType",
+                "printedName": "QuartzCore.CATransitionType",
+                "usr": "c:@T@CATransitionType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnyView",
+                "printedName": "SwiftUI.AnyView",
+                "usr": "s:7SwiftUI7AnyViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5PVLib14PVVCoordinatorC5start4from4type8duration_12shouldRotateySo19CATransitionSubtypea_So0I4Typea14CoreFoundation7CGFloatV7SwiftUI7AnyViewVSbtFZ",
+            "mangledName": "$s5PVLib14PVVCoordinatorC5start4from4type8duration_12shouldRotateySo19CATransitionSubtypea_So0I4Typea12CoreGraphics7CGFloatV7SwiftUI7AnyViewVSbtFZ",
             "moduleName": "PVLib",
             "static": true,
             "declAttributes": [
@@ -48677,7 +48765,7 @@
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/Helpers\/HVController.swift",
       "kind": "StringLiteral",
-      "offset": 416,
+      "offset": 424,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
@@ -48698,21 +48786,21 @@
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/Helpers\/HVController.swift",
       "kind": "StringLiteral",
-      "offset": 2210,
+      "offset": 2218,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/Helpers\/HVController.swift",
       "kind": "StringLiteral",
-      "offset": 1329,
+      "offset": 1337,
       "length": 27,
       "value": "\"PVLib.OrientationLockedController\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/Helpers\/HVController.swift",
       "kind": "StringLiteral",
-      "offset": 1329,
+      "offset": 1337,
       "length": 27,
       "value": "\"PVLib.OrientationLockedController\""
     },
@@ -50749,105 +50837,147 @@
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "FloatLiteral",
-      "offset": 1910,
+      "offset": 1897,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1952,
+      "offset": 1939,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 2122,
+      "offset": 2109,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "StringLiteral",
-      "offset": 2517,
+      "offset": 2504,
       "length": 68,
       "value": "\"navigation CATransaction begin:\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "StringLiteral",
-      "offset": 2584,
+      "offset": 2571,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 2672,
+      "offset": 2659,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2796,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2858,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
-      "kind": "StringLiteral",
-      "offset": 2883,
-      "length": 71,
-      "value": "\"navigation Completion Block :\""
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
-      "kind": "StringLiteral",
-      "offset": 2953,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "FloatLiteral",
-      "offset": 3298,
+      "offset": 3291,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 3445,
+      "offset": 3333,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3503,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
+      "kind": "StringLiteral",
+      "offset": 3898,
+      "length": 68,
+      "value": "\"navigation CATransaction begin:\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
+      "kind": "StringLiteral",
+      "offset": 3965,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 3832,
+      "offset": 4053,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "IntegerLiteral",
-      "offset": 3967,
+      "offset": 4177,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "IntegerLiteral",
-      "offset": 4029,
+      "offset": 4239,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
+      "kind": "StringLiteral",
+      "offset": 4264,
+      "length": 71,
+      "value": "\"navigation Completion Block :\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
+      "kind": "StringLiteral",
+      "offset": 4334,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
+      "kind": "FloatLiteral",
+      "offset": 4679,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4826,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5213,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5348,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5410,
       "length": 1,
       "value": "0"
     },

@@ -801,6 +801,7 @@ public protocol PVFaceSceneDelegate : AnyObject {
 }
 @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class HVController : SwiftUI.UIHostingController<SwiftUI.AnyView> {
   @_Concurrency.MainActor(unsafe) public var shouldRotate: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public init(shouldRotate: Swift.Bool, rootView: SwiftUI.AnyView)
   @_Concurrency.MainActor(unsafe) @objc override dynamic open var shouldAutorotate: Swift.Bool {
     @objc get
   }
@@ -927,6 +928,7 @@ public class PVVCoordinator {
   public static func stopSession()
   public static var inBackground: Swift.Bool
   public static func shareImage(_ img: UIKit.UIImage)
+  public static func start(from: QuartzCore.CATransitionSubtype, type: QuartzCore.CATransitionType, duration: CoreFoundation.CGFloat = 0.25, _ view: SwiftUI.AnyView, shouldRotate: Swift.Bool = false)
   public static func moveToSUIView(from: QuartzCore.CATransitionSubtype, type: QuartzCore.CATransitionType, duration: CoreFoundation.CGFloat = 0.25, _ view: SwiftUI.AnyView, shouldRotate: Swift.Bool = false)
   public static func moveToUIKitView(from: QuartzCore.CATransitionSubtype, type: QuartzCore.CATransitionType, duration: CoreFoundation.CGFloat = 0.25, _ viewController: UIKit.UIViewController)
   required public init(navigationController: UIKit.UINavigationController)
