@@ -324,12 +324,14 @@ SWIFT_CLASS("_TtC5PVLib7APlayer")
 
 
 
-@class UIColor;
 @class NSCoder;
+@class UIColor;
 
 IB_DESIGNABLE
 SWIFT_CLASS("_TtC5PVLib8NodeView")
 @interface NodeView : UIView
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 /// The color of the main border of the viewUIColor(red: 0.0, green: 1.0, blue: 0.7, alpha: 1.0)
 @property (nonatomic, strong) IBInspectable UIColor * _Nonnull mainColor;
 @property (nonatomic, strong) IBInspectable UIColor * _Nonnull backColor;
@@ -339,15 +341,14 @@ SWIFT_CLASS("_TtC5PVLib8NodeView")
 @property (nonatomic, strong) IBInspectable UIColor * _Nonnull positionBarColor;
 /// The color used to mask unselected parts of the video
 @property (nonatomic, strong) IBInspectable UIColor * _Nonnull maskColor;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
 
 SWIFT_CLASS("_TtC5PVLib9AudioNode")
 @interface AudioNode : NodeView
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 

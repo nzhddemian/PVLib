@@ -34,6 +34,856 @@
         "printedName": "APlayer",
         "children": [
           {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib7APlayerC3url10Foundation3URLVSgvp",
+            "mangledName": "$s5PVLib7APlayerC3url10Foundation3URLVSgvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC3url10Foundation3URLVSgvg",
+                "mangledName": "$s5PVLib7APlayerC3url10Foundation3URLVSgvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC3url10Foundation3URLVSgvs",
+                "mangledName": "$s5PVLib7APlayerC3url10Foundation3URLVSgvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC3url10Foundation3URLVSgvM",
+                "mangledName": "$s5PVLib7APlayerC3url10Foundation3URLVSgvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timer",
+            "printedName": "timer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Foundation.Timer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Timer",
+                    "printedName": "Foundation.Timer",
+                    "usr": "c:objc(cs)NSTimer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib7APlayerC5timerSo7NSTimerCSgvp",
+            "mangledName": "$s5PVLib7APlayerC5timerSo7NSTimerCSgvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "Foundation.Timer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Timer",
+                        "printedName": "Foundation.Timer",
+                        "usr": "c:objc(cs)NSTimer"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC5timerSo7NSTimerCSgvg",
+                "mangledName": "$s5PVLib7APlayerC5timerSo7NSTimerCSgvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "Foundation.Timer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Timer",
+                        "printedName": "Foundation.Timer",
+                        "usr": "c:objc(cs)NSTimer"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC5timerSo7NSTimerCSgvs",
+                "mangledName": "$s5PVLib7APlayerC5timerSo7NSTimerCSgvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC5timerSo7NSTimerCSgvM",
+                "mangledName": "$s5PVLib7APlayerC5timerSo7NSTimerCSgvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "player",
+            "printedName": "player",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AVAudioPlayer",
+                "printedName": "AVFAudio.AVAudioPlayer",
+                "usr": "c:objc(cs)AVAudioPlayer"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib7APlayerC6playerSo13AVAudioPlayerCvp",
+            "mangledName": "$s5PVLib7APlayerC6playerSo13AVAudioPlayerCvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVAudioPlayer",
+                    "printedName": "AVFAudio.AVAudioPlayer",
+                    "usr": "c:objc(cs)AVAudioPlayer"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC6playerSo13AVAudioPlayerCvg",
+                "mangledName": "$s5PVLib7APlayerC6playerSo13AVAudioPlayerCvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVAudioPlayer",
+                    "printedName": "AVFAudio.AVAudioPlayer",
+                    "usr": "c:objc(cs)AVAudioPlayer"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC6playerSo13AVAudioPlayerCvs",
+                "mangledName": "$s5PVLib7APlayerC6playerSo13AVAudioPlayerCvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC6playerSo13AVAudioPlayerCvM",
+                "mangledName": "$s5PVLib7APlayerC6playerSo13AVAudioPlayerCvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "itemTime",
+            "printedName": "itemTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "CoreMedia.CMTime?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CMTime",
+                    "printedName": "CoreMedia.CMTime",
+                    "usr": "c:@SA@CMTime"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib7APlayerC8itemTimeSo6CMTimeaSgvp",
+            "mangledName": "$s5PVLib7APlayerC8itemTimeSo6CMTimeaSgvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "CoreMedia.CMTime?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CMTime",
+                        "printedName": "CoreMedia.CMTime",
+                        "usr": "c:@SA@CMTime"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC8itemTimeSo6CMTimeaSgvg",
+                "mangledName": "$s5PVLib7APlayerC8itemTimeSo6CMTimeaSgvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "CoreMedia.CMTime?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CMTime",
+                        "printedName": "CoreMedia.CMTime",
+                        "usr": "c:@SA@CMTime"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC8itemTimeSo6CMTimeaSgvs",
+                "mangledName": "$s5PVLib7APlayerC8itemTimeSo6CMTimeaSgvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC8itemTimeSo6CMTimeaSgvM",
+                "mangledName": "$s5PVLib7APlayerC8itemTimeSo6CMTimeaSgvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "startTime",
+            "printedName": "startTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CMTime",
+                "printedName": "CoreMedia.CMTime",
+                "usr": "c:@SA@CMTime"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib7APlayerC9startTimeSo6CMTimeavp",
+            "mangledName": "$s5PVLib7APlayerC9startTimeSo6CMTimeavp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CMTime",
+                    "printedName": "CoreMedia.CMTime",
+                    "usr": "c:@SA@CMTime"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC9startTimeSo6CMTimeavg",
+                "mangledName": "$s5PVLib7APlayerC9startTimeSo6CMTimeavg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CMTime",
+                    "printedName": "CoreMedia.CMTime",
+                    "usr": "c:@SA@CMTime"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC9startTimeSo6CMTimeavs",
+                "mangledName": "$s5PVLib7APlayerC9startTimeSo6CMTimeavs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC9startTimeSo6CMTimeavM",
+                "mangledName": "$s5PVLib7APlayerC9startTimeSo6CMTimeavM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "loopInt",
+            "printedName": "loopInt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib7APlayerC7loopIntSivp",
+            "mangledName": "$s5PVLib7APlayerC7loopIntSivp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC7loopIntSivg",
+                "mangledName": "$s5PVLib7APlayerC7loopIntSivg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC7loopIntSivs",
+                "mangledName": "$s5PVLib7APlayerC7loopIntSivs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC7loopIntSivM",
+                "mangledName": "$s5PVLib7APlayerC7loopIntSivM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "trackEnd",
+            "printedName": "trackEnd",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib7APlayerC8trackEndSdSgvp",
+            "mangledName": "$s5PVLib7APlayerC8trackEndSdSgvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC8trackEndSdSgvg",
+                "mangledName": "$s5PVLib7APlayerC8trackEndSdSgvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC8trackEndSdSgvs",
+                "mangledName": "$s5PVLib7APlayerC8trackEndSdSgvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC8trackEndSdSgvM",
+                "mangledName": "$s5PVLib7APlayerC8trackEndSdSgvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "trackStart",
+            "printedName": "trackStart",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib7APlayerC10trackStartSdvp",
+            "mangledName": "$s5PVLib7APlayerC10trackStartSdvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC10trackStartSdvg",
+                "mangledName": "$s5PVLib7APlayerC10trackStartSdvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC10trackStartSdvs",
+                "mangledName": "$s5PVLib7APlayerC10trackStartSdvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC10trackStartSdvM",
+                "mangledName": "$s5PVLib7APlayerC10trackStartSdvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "asset",
+            "printedName": "asset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVFoundation.AVAsset?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVAsset",
+                    "printedName": "AVFoundation.AVAsset",
+                    "usr": "c:objc(cs)AVAsset"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib7APlayerC5assetSo7AVAssetCSgvp",
+            "mangledName": "$s5PVLib7APlayerC5assetSo7AVAssetCSgvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AVFoundation.AVAsset?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVAsset",
+                        "printedName": "AVFoundation.AVAsset",
+                        "usr": "c:objc(cs)AVAsset"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib7APlayerC5assetSo7AVAssetCSgvg",
+                "mangledName": "$s5PVLib7APlayerC5assetSo7AVAssetCSgvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(url:)",
@@ -2227,28 +3077,22 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(frame:)",
+            "printedName": "init()",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "AudioNode",
                 "printedName": "PVLib.AudioNode",
                 "usr": "c:@M@PVLib@objc(cs)AudioNode"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGRect",
-                "printedName": "CoreFoundation.CGRect",
-                "usr": "c:@S@CGRect"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@PVLib@objc(cs)AudioNode(im)initWithFrame:",
-            "mangledName": "$s5PVLib9AudioNodeC5frameACSo6CGRectV_tcfc",
+            "usr": "c:@M@PVLib@objc(cs)AudioNode(im)init",
+            "mangledName": "$s5PVLib9AudioNodeCACycfc",
             "moduleName": "PVLib",
             "overriding": true,
             "implicit": true,
-            "objc_name": "initWithFrame:",
+            "objc_name": "init",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -13277,6 +14121,32 @@
             ]
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NodeView",
+                "printedName": "PVLib.NodeView",
+                "usr": "c:@M@PVLib@objc(cs)NodeView"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PVLib@objc(cs)NodeView(im)init",
+            "mangledName": "$s5PVLib8NodeViewCACycfc",
+            "moduleName": "PVLib",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Var",
             "name": "id",
             "printedName": "id",
@@ -14766,47 +15636,6 @@
               "Override"
             ],
             "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(coder:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "PVLib.NodeView?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NodeView",
-                    "printedName": "PVLib.NodeView",
-                    "usr": "c:@M@PVLib@objc(cs)NodeView"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSCoder",
-                "printedName": "Foundation.NSCoder",
-                "usr": "c:objc(cs)NSCoder"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@PVLib@objc(cs)NodeView(im)initWithCoder:",
-            "mangledName": "$s5PVLib8NodeViewC5coderACSgSo7NSCoderC_tcfc",
-            "moduleName": "PVLib",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithCoder:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Required"
-            ],
-            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -14821,7 +15650,7 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)UIView",
-        "inheritsConvenienceInitializers": true,
+        "hasMissingDesignatedInitializers": true,
         "superclassNames": [
           "UIKit.UIView",
           "UIKit.UIResponder",
@@ -19474,6 +20303,28 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5PVLib9EditModelC5resetyyFZ",
+            "mangledName": "$s5PVLib9EditModelC5resetyyFZ",
+            "moduleName": "PVLib",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -37425,91 +38276,91 @@
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 466,
+      "offset": 487,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "FloatLiteral",
-      "offset": 555,
+      "offset": 583,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "StringLiteral",
-      "offset": 647,
+      "offset": 680,
       "length": 19,
       "value": "\"INIT Audio Player\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 1280,
+      "offset": 1313,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1467,
+      "offset": 1500,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1810,
+      "offset": 1843,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "StringLiteral",
-      "offset": 1960,
+      "offset": 1993,
       "length": 29,
       "value": "\"finished playing \""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "StringLiteral",
-      "offset": 1988,
+      "offset": 2021,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2127,
+      "offset": 2160,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2129,
+      "offset": 2162,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 2144,
+      "offset": 2177,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 2742,
+      "offset": 2775,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "StringLiteral",
-      "offset": 3145,
+      "offset": 3178,
       "length": 21,
       "value": "\"DEINIT Audio Player\""
     },
@@ -40911,772 +41762,786 @@
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "StringLiteral",
-      "offset": 698,
+      "offset": 766,
+      "length": 39,
+      "value": "\"init(coder:) has not been implemented\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
+      "kind": "StringLiteral",
+      "offset": 869,
       "length": 18,
       "value": "\"DEINIT NoDE VIEW\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 750,
+      "offset": 921,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 1004,
+      "offset": 1175,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 1016,
+      "offset": 1187,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 1027,
+      "offset": 1198,
       "length": 3,
       "value": "0.7"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 1039,
+      "offset": 1210,
       "length": 3,
       "value": "0.7"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 1173,
+      "offset": 1344,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 1185,
+      "offset": 1356,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 1196,
+      "offset": 1367,
       "length": 3,
       "value": "0.7"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 1208,
+      "offset": 1379,
       "length": 3,
       "value": "0.7"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2126,
+      "offset": 2297,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2167,
+      "offset": 2338,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 2416,
+      "offset": 2587,
       "length": 3,
       "value": "0.7"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 2470,
+      "offset": 2641,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 2567,
+      "offset": 2738,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 2621,
+      "offset": 2792,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3090,
+      "offset": 3261,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3142,
+      "offset": 3313,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3345,
+      "offset": 3516,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3684,
+      "offset": 3855,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3716,
+      "offset": 3887,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3787,
+      "offset": 3958,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4415,
+      "offset": 4586,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4517,
+      "offset": 4688,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4591,
+      "offset": 4762,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4671,
+      "offset": 4842,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 4761,
+      "offset": 4932,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 4803,
+      "offset": 4974,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4868,
+      "offset": 5039,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4918,
+      "offset": 5089,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5055,
+      "offset": 5226,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5131,
+      "offset": 5302,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5212,
+      "offset": 5383,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5291,
+      "offset": 5462,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5372,
+      "offset": 5543,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5487,
+      "offset": 5658,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5567,
+      "offset": 5738,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5764,
+      "offset": 5935,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5805,
+      "offset": 5976,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6259,
+      "offset": 6430,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 6308,
+      "offset": 6479,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6379,
+      "offset": 6550,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6502,
+      "offset": 6673,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6594,
+      "offset": 6765,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6685,
+      "offset": 6856,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6773,
+      "offset": 6944,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6846,
+      "offset": 7017,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 6985,
+      "offset": 7156,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7001,
+      "offset": 7172,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7069,
+      "offset": 7240,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7083,
+      "offset": 7254,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7186,
+      "offset": 7357,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7289,
+      "offset": 7460,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7346,
+      "offset": 7517,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 7396,
+      "offset": 7567,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7468,
+      "offset": 7639,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7593,
+      "offset": 7764,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7686,
+      "offset": 7857,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7780,
+      "offset": 7951,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7869,
+      "offset": 8040,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7943,
+      "offset": 8114,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 8085,
+      "offset": 8256,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8101,
+      "offset": 8272,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8170,
+      "offset": 8341,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8184,
+      "offset": 8355,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8289,
+      "offset": 8460,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8394,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8490,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
-      "kind": "FloatLiteral",
       "offset": 8565,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8661,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
+      "kind": "FloatLiteral",
+      "offset": 8736,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 8599,
+      "offset": 8770,
       "length": 3,
       "value": "0.7"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8668,
+      "offset": 8839,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8816,
+      "offset": 8987,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8900,
+      "offset": 9071,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8978,
+      "offset": 9149,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9077,
+      "offset": 9248,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9132,
+      "offset": 9303,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 9211,
+      "offset": 9382,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "FloatLiteral",
-      "offset": 9246,
+      "offset": 9417,
       "length": 3,
       "value": "0.7"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9316,
+      "offset": 9487,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9469,
+      "offset": 9640,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9554,
+      "offset": 9725,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9633,
+      "offset": 9804,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9733,
+      "offset": 9904,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9815,
+      "offset": 9986,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9821,
+      "offset": 9992,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9831,
+      "offset": 10002,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10032,
+      "offset": 10203,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10098,
+      "offset": 10269,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10151,
+      "offset": 10322,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10270,
+      "offset": 10441,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10335,
+      "offset": 10506,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10349,
+      "offset": 10520,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10432,
+      "offset": 10603,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10547,
+      "offset": 10718,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10589,
+      "offset": 10760,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12155,
+      "offset": 12326,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12206,
+      "offset": 12377,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12885,
+      "offset": 13056,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12956,
+      "offset": 13127,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 13008,
+      "offset": 13179,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13166,
+      "offset": 13337,
       "length": 7,
       "value": "1000000"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13727,
+      "offset": 13898,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14639,
+      "offset": 14810,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14678,
+      "offset": 14849,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14910,
+      "offset": 15081,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 15004,
+      "offset": 15175,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 15043,
+      "offset": 15214,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 15380,
+      "offset": 15551,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 15418,
+      "offset": 15589,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17463,
+      "offset": 17634,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/NodeView.swift",
+      "kind": "StringLiteral",
+      "offset": 592,
+      "length": 8,
+      "value": "\"PVLib.NodeView\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/EditViews\/GestureView\/DragRotateScaleView.swift",
@@ -42248,539 +43113,574 @@
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "Array",
-      "offset": 2249,
+      "offset": 2241,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "Array",
-      "offset": 2283,
+      "offset": 2263,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "Array",
-      "offset": 2376,
+      "offset": 2308,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "Array",
-      "offset": 2410,
+      "offset": 2318,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
-      "kind": "StringLiteral",
+      "kind": "BooleanLiteral",
+      "offset": 2402,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
+      "kind": "Array",
       "offset": 2486,
       "length": 2,
-      "value": "\"\""
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
+      "kind": "Array",
+      "offset": 2520,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
+      "kind": "Array",
+      "offset": 2613,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
+      "kind": "Array",
+      "offset": 2647,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 2592,
+      "offset": 2723,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 2612,
+      "offset": 2829,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
+      "kind": "StringLiteral",
+      "offset": 2849,
       "length": 58,
       "value": "\"https:\/\/raw.githubusercontent.com\/peevee107\/pv_lib\/main\/\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 2981,
+      "offset": 3218,
       "length": 10,
       "value": "\"PVEditor\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "BooleanLiteral",
-      "offset": 3152,
+      "offset": 3389,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 3394,
+      "offset": 3631,
       "length": 6,
       "value": "\"gifs\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "BooleanLiteral",
-      "offset": 3561,
+      "offset": 3798,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 3727,
+      "offset": 3964,
       "length": 7,
       "value": "\"icons\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "BooleanLiteral",
-      "offset": 3905,
+      "offset": 4142,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 4112,
+      "offset": 4349,
       "length": 5,
       "value": "\"vfx\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "BooleanLiteral",
-      "offset": 4276,
+      "offset": 4513,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 4440,
+      "offset": 4677,
       "length": 7,
       "value": "\"icons\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "BooleanLiteral",
-      "offset": 4616,
+      "offset": 4853,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 4815,
+      "offset": 5052,
       "length": 6,
       "value": "\"luts\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "BooleanLiteral",
-      "offset": 4982,
+      "offset": 5219,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 5148,
+      "offset": 5385,
       "length": 7,
       "value": "\"icons\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "BooleanLiteral",
-      "offset": 5326,
+      "offset": 5563,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 5732,
+      "offset": 5969,
       "length": 6,
       "value": "\"luts\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 5900,
+      "offset": 6137,
       "length": 7,
       "value": "\"\/luts\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 6289,
+      "offset": 6526,
       "length": 37,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 6301,
+      "offset": 6538,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 6311,
+      "offset": 6548,
       "length": 1,
       "value": "\"\/thumbnail.jpg\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 6389,
+      "offset": 6626,
       "length": 22,
       "value": "\"return thumbnail.jpg\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 6539,
+      "offset": 6776,
       "length": 6,
       "value": "\"gifs\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 6591,
+      "offset": 6828,
       "length": 6,
       "value": "\"none\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 6645,
+      "offset": 6882,
       "length": 13,
       "value": "\"skin_smooth\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 6706,
+      "offset": 6943,
       "length": 8,
       "value": "\"makeup\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 6761,
+      "offset": 6998,
       "length": 6,
       "value": "\"eyes\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 6814,
+      "offset": 7051,
       "length": 6,
       "value": "\"oval\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 6867,
+      "offset": 7104,
       "length": 6,
       "value": "\"lips\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 6892,
+      "offset": 7129,
       "length": 5,
       "value": "\"vfx\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 6943,
+      "offset": 7180,
       "length": 6,
       "value": "\"none\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 6997,
+      "offset": 7234,
       "length": 13,
       "value": "\"skin_smooth\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 7058,
+      "offset": 7295,
       "length": 8,
       "value": "\"makeup\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 7113,
+      "offset": 7350,
       "length": 6,
       "value": "\"eyes\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 7166,
+      "offset": 7403,
       "length": 6,
       "value": "\"oval\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 7219,
+      "offset": 7456,
       "length": 6,
       "value": "\"lips\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "IntegerLiteral",
-      "offset": 7679,
+      "offset": 7916,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 7781,
+      "offset": 8018,
       "length": 70,
       "value": "\"https:\/\/raw.githubusercontent.com\/peevee107\/pv_lib\/main\/pv_list.json\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 8031,
+      "offset": 8268,
       "length": 33,
       "value": "\"EDITOR INITIALIZED SUCCESSFULLY\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "IntegerLiteral",
-      "offset": 8258,
+      "offset": 8495,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 8409,
+      "offset": 8646,
       "length": 58,
       "value": "\"https:\/\/raw.githubusercontent.com\/peevee107\/pv_lib\/main\/\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 8470,
+      "offset": 8707,
       "length": 23,
       "value": "\"\/gifs\/\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 8492,
+      "offset": 8729,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "Array",
-      "offset": 8710,
+      "offset": 8947,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 9220,
+      "offset": 9457,
       "length": 21,
       "value": "\"image doesn't exist\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "Array",
-      "offset": 9262,
+      "offset": 9499,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "Array",
-      "offset": 9406,
+      "offset": 9643,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "IntegerLiteral",
-      "offset": 9440,
+      "offset": 9677,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "IntegerLiteral",
-      "offset": 9451,
+      "offset": 9688,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "IntegerLiteral",
-      "offset": 9471,
+      "offset": 9708,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "IntegerLiteral",
-      "offset": 9562,
+      "offset": 9799,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "IntegerLiteral",
-      "offset": 10068,
+      "offset": 10305,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 10159,
+      "offset": 10396,
       "length": 58,
       "value": "\"https:\/\/raw.githubusercontent.com\/peevee107\/pv_lib\/main\/\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 10220,
+      "offset": 10457,
       "length": 29,
       "value": "\"\/gifs\/icons\/\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 10248,
+      "offset": 10485,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 10312,
+      "offset": 10549,
       "length": 7,
       "value": "\"icons\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 10736,
+      "offset": 10973,
       "length": 32,
       "value": "\"Download finished: \""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 10767,
+      "offset": 11004,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 10918,
+      "offset": 11155,
       "length": 25,
       "value": "\"transfer completion OK!\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "BooleanLiteral",
-      "offset": 11063,
+      "offset": 11300,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 11171,
+      "offset": 11408,
       "length": 11,
       "value": "\"swift.pdf\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 11569,
+      "offset": 11806,
       "length": 21,
       "value": "\"pdfFileURL present!\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 12640,
+      "offset": 12877,
       "length": 32,
       "value": "\"PATH DESTENATION \""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 12671,
+      "offset": 12908,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 13019,
+      "offset": 13256,
       "length": 21,
       "value": "\"pdfFileURL present!\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 13142,
+      "offset": 13379,
       "length": 22,
       "value": "\"file error: \""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 13163,
+      "offset": 13400,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 13949,
+      "offset": 14186,
       "length": 32,
       "value": "\"PATH DESTENATION \""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 13980,
+      "offset": 14217,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 14384,
+      "offset": 14621,
       "length": 21,
       "value": "\"pdfFileURL present!\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 14507,
+      "offset": 14744,
       "length": 22,
       "value": "\"file error: \""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",
       "kind": "StringLiteral",
-      "offset": 14528,
+      "offset": 14765,
       "length": 2,
       "value": "\"\""
     },
@@ -46521,27 +47421,6 @@
       "offset": 1693,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/VideoEditorModel\/AssetModel.swift",
-      "kind": "Array",
-      "offset": 1728,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/VideoEditorModel\/AssetModel.swift",
-      "kind": "Array",
-      "offset": 1784,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/VideoEditorModel\/AssetModel.swift",
-      "kind": "Array",
-      "offset": 1794,
-      "length": 2,
-      "value": "[]"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/GifLoader.swift",

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PVLib-Swift.h</key>
 		<data>
-		MFTMeyq2Oh6pxaxAxHmbZItzSrI=
+		/VbZMOH0UtzZoTtCHeoH8r4Za/w=
 		</data>
 		<key>Headers/PVLib.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		tE+RMa2XBir2W2HBdj14qkoKhig=
+		1Dkwev5ISFbZuJJA2bjeEkGAvuI=
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		HRBBdFwp04elDn3zRbHvhyklzIE=
+		u8GclB3QAUChdgdH7B1A0sLxH10=
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		HRBBdFwp04elDn3zRbHvhyklzIE=
+		u8GclB3QAUChdgdH7B1A0sLxH10=
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Fn5XI6k8NkYC4OIPvSK0DaO6pps=
+		XvcEZ5jFCLKsRKTVcOO2exPHIAU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tlLG9zMbQpB4MZK3X/tTUKWFJ9Sw1v5jpiN7t2/uYic=
+			iiTp0LQrSdsvmCuVBrkrtwHMpZlcW3c1AbobE9qKdR4=
 			</data>
 		</dict>
 		<key>Headers/PVLib.h</key>
@@ -61,14 +61,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SdoPYRV/l4IERO12kNNXRY+JVI9lbwW3vprjRj4cyqg=
+			qBMmQNhDjfFXsLScReEmzwkQzgxG9rtxNOTRXjlf7og=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WX5SYWG7eUuXekcnDMYgOktl5ijNkCu58eI7Id1MtB8=
+			81aewWzxIeyACn0TyIoGU2Llz/ZBU/PZbovpeCgMTgk=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -82,14 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WX5SYWG7eUuXekcnDMYgOktl5ijNkCu58eI7Id1MtB8=
+			81aewWzxIeyACn0TyIoGU2Llz/ZBU/PZbovpeCgMTgk=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s+TNh6b2sLoK+jp3RLwN5Keohas1jqielGH9CdZuSEw=
+			cpXKZ2xz2qKq+2zKz01LmQtY3yz06M7DsNEHbqRMt4k=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -24,6 +24,15 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import simd
 @objc public class APlayer : ObjectiveC.NSObject, AVFAudio.AVAudioPlayerDelegate {
+  public var url: Foundation.URL?
+  public var timer: Foundation.Timer!
+  public var player: AVFAudio.AVAudioPlayer
+  public var itemTime: CoreMedia.CMTime!
+  public var startTime: CoreMedia.CMTime
+  public var loopInt: Swift.Int
+  public var trackEnd: Swift.Double!
+  public var trackStart: Swift.Double
+  final public let asset: AVFoundation.AVAsset?
   public init(url: Foundation.URL)
   @objc public func audioPlayerDidFinishPlaying(_ player: AVFAudio.AVAudioPlayer, successfully flag: Swift.Bool)
   public func update(comp: @escaping () -> ())
@@ -367,8 +376,9 @@ public struct BackgroundClearView : SwiftUI.UIViewRepresentable {
   public static var previewFile: Foundation.URL
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class NodeView : UIKit.UIView {
+@objc @_hasMissingDesignatedInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class NodeView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public var moving: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
   @objc deinit
   @_Concurrency.MainActor(unsafe) public var id: Swift.Int
   @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var mainColor: UIKit.UIColor {
@@ -414,8 +424,6 @@ public struct BackgroundClearView : SwiftUI.UIViewRepresentable {
   @_Concurrency.MainActor(unsafe) public var endTime: CoreMedia.CMTime? {
     get
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class DragRotateScaleView : UIKit.UIView {
   @objc deinit
@@ -518,6 +526,7 @@ public class EditModel {
   public static var gifTextures: PVLib.GifTextures
   public static var trimmerRange: CoreMedia.CMTimeRange
   public static var trimm: Swift.Bool
+  public static func reset()
   @objc deinit
 }
 public struct GifTextures {
