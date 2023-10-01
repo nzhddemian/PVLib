@@ -23,6 +23,12 @@ import _PhotosUI_SwiftUI
 import _StringProcessing
 import _SwiftConcurrencyShims
 import simd
+@objc public class APlayer : ObjectiveC.NSObject, AVFAudio.AVAudioPlayerDelegate {
+  public init(url: Foundation.URL)
+  @objc public func audioPlayerDidFinishPlaying(_ player: AVFAudio.AVAudioPlayer, successfully flag: Swift.Bool)
+  public func update(comp: @escaping () -> ())
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class Segment {
   @objc deinit
 }
@@ -70,6 +76,12 @@ public class VAssetReader : PVLib.VAssetRaderDelegate {
   public static func renderMusicSound(inUrl: Foundation.URL, toUrl: inout Foundation.URL, callBack: @escaping () -> Swift.Void)
   public static func trimmSound(inUrl: Foundation.URL?, outUrl: Foundation.URL, timeRange: CoreMedia.CMTimeRange?, callBack: @escaping () -> Swift.Void)
   @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class AudioNode : PVLib.NodeView {
+  @_Concurrency.MainActor(unsafe) public var scale: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var timeLinePos: CoreMedia.CMTime
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) public func setupSound(audioURL: Foundation.URL)
 }
 public enum ARMask : Swift.String, Swift.CaseIterable {
   case none, matrix, hypno, hole, eyes, glitch, stickers, tattoo, pixels, mustage
@@ -272,6 +284,11 @@ public enum CamPos {
   final public func stopCaptureSession()
   @objc final public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
   @objc final public func captureOutput(_ captureOutput: AVFoundation.AVCaptureOutput, didDrop sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+}
+public struct DeviceRotationViewModifier : SwiftUI.ViewModifier {
+  @_Concurrency.MainActor(unsafe) public func body(content: PVLib.DeviceRotationViewModifier.Content) -> some SwiftUI.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s5PVLib26DeviceRotationViewModifierV4body7contentQr7SwiftUI01_dE8_ContentVyACG_tF", 0) __
 }
 extension SwiftUI.View {
   public func onRotate(perform action: @escaping (UIKit.UIDeviceOrientation) -> Swift.Void) -> some SwiftUI.View

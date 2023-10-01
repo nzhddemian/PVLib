@@ -305,6 +305,16 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class AVAudioPlayer;
+
+SWIFT_CLASS("_TtC5PVLib7APlayer")
+@interface APlayer : NSObject <AVAudioPlayerDelegate>
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer * _Nonnull)player successfully:(BOOL)flag;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 
 
 @interface AVAudioPlayer (SWIFT_EXTENSION(PVLib)) <AVAudioPlayerDelegate>
@@ -314,24 +324,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
-
-SWIFT_CLASS("_TtC5PVLib11AudioWriter")
-@interface AudioWriter : NSObject <AVAudioRecorderDelegate>
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSCoder;
-@class UITouch;
-@class UIEvent;
-
-SWIFT_CLASS("_TtC5PVLib19DragRotateScaleView")
-@interface DragRotateScaleView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
-@end
-
 @class UIColor;
+@class NSCoder;
 
 IB_DESIGNABLE
 SWIFT_CLASS("_TtC5PVLib8NodeView")
@@ -348,6 +342,30 @@ SWIFT_CLASS("_TtC5PVLib8NodeView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+SWIFT_CLASS("_TtC5PVLib9AudioNode")
+@interface AudioNode : NodeView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC5PVLib11AudioWriter")
+@interface AudioWriter : NSObject <AVAudioRecorderDelegate>
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITouch;
+@class UIEvent;
+
+SWIFT_CLASS("_TtC5PVLib19DragRotateScaleView")
+@interface DragRotateScaleView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+@end
+
 
 
 @protocol SCNSceneRenderer;
