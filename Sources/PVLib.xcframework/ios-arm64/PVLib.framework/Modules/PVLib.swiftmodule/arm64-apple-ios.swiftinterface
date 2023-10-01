@@ -80,15 +80,38 @@ public class VAssetReader : PVLib.VAssetRaderDelegate {
   public func readBuffer() -> CoreVideo.CVPixelBuffer?
   @objc deinit
 }
+public struct AudioTrack {
+  public var url: Foundation.URL
+  public var timeRange: CoreMedia.CMTimeRange?
+}
+public struct SoundPlay {
+  public var atTime: CoreMedia.CMTime
+  public var track: PVLib.Sound
+}
+@_hasMissingDesignatedInitializers public class MusicSound {
+  public static var loopsNumber: Swift.Int
+  public static var camUrl: Foundation.URL!
+  public static var editUrl: [Foundation.URL]
+  public static var timeRange: CoreMedia.CMTimeRange!
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class Audio {
+  public static var track: PVLib.AudioTrack?
+  public static var trimmedTracks: [PVLib.AudioTrack]
+  public static var durationTrim: CoreMedia.CMTime!
+  public static var camTrackUrl: Foundation.URL?
+  public static var camTrackID: Swift.String?
+  public static var editTrackUrl: Foundation.URL?
+  public static var camTrackRange: CoreMedia.CMTimeRange?
   public static func fromVideo(inUrl: Foundation.URL, outUrl: Foundation.URL, callBack: @escaping () -> Swift.Void)
   public static func renderMusicSound(inUrl: Foundation.URL, toUrl: inout Foundation.URL, callBack: @escaping () -> Swift.Void)
   public static func trimmSound(inUrl: Foundation.URL?, outUrl: Foundation.URL, timeRange: CoreMedia.CMTimeRange?, callBack: @escaping () -> Swift.Void)
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class AudioNode : PVLib.NodeView {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class AudioNode : PVLib.NodeView {
   @_Concurrency.MainActor(unsafe) public var scale: CoreFoundation.CGFloat
   @_Concurrency.MainActor(unsafe) public var timeLinePos: CoreMedia.CMTime
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
   @objc deinit
   @_Concurrency.MainActor(unsafe) public func setupSound(audioURL: Foundation.URL)
 }

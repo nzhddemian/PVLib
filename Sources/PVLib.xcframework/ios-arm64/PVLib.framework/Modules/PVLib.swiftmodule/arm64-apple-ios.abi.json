@@ -2662,9 +2662,1757 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "AudioTrack",
+        "printedName": "AudioTrack",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib10AudioTrackV3url10Foundation3URLVvp",
+            "mangledName": "$s5PVLib10AudioTrackV3url10Foundation3URLVvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib10AudioTrackV3url10Foundation3URLVvg",
+                "mangledName": "$s5PVLib10AudioTrackV3url10Foundation3URLVvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib10AudioTrackV3url10Foundation3URLVvs",
+                "mangledName": "$s5PVLib10AudioTrackV3url10Foundation3URLVvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib10AudioTrackV3url10Foundation3URLVvM",
+                "mangledName": "$s5PVLib10AudioTrackV3url10Foundation3URLVvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeRange",
+            "printedName": "timeRange",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreMedia.CMTimeRange?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CMTimeRange",
+                    "printedName": "CoreMedia.CMTimeRange",
+                    "usr": "c:@SA@CMTimeRange"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib10AudioTrackV9timeRangeSo06CMTimeE0aSgvp",
+            "mangledName": "$s5PVLib10AudioTrackV9timeRangeSo06CMTimeE0aSgvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreMedia.CMTimeRange?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CMTimeRange",
+                        "printedName": "CoreMedia.CMTimeRange",
+                        "usr": "c:@SA@CMTimeRange"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib10AudioTrackV9timeRangeSo06CMTimeE0aSgvg",
+                "mangledName": "$s5PVLib10AudioTrackV9timeRangeSo06CMTimeE0aSgvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreMedia.CMTimeRange?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CMTimeRange",
+                        "printedName": "CoreMedia.CMTimeRange",
+                        "usr": "c:@SA@CMTimeRange"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib10AudioTrackV9timeRangeSo06CMTimeE0aSgvs",
+                "mangledName": "$s5PVLib10AudioTrackV9timeRangeSo06CMTimeE0aSgvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib10AudioTrackV9timeRangeSo06CMTimeE0aSgvM",
+                "mangledName": "$s5PVLib10AudioTrackV9timeRangeSo06CMTimeE0aSgvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:5PVLib10AudioTrackV",
+        "mangledName": "$s5PVLib10AudioTrackV",
+        "moduleName": "PVLib",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SoundPlay",
+        "printedName": "SoundPlay",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "atTime",
+            "printedName": "atTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CMTime",
+                "printedName": "CoreMedia.CMTime",
+                "usr": "c:@SA@CMTime"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib9SoundPlayV6atTimeSo6CMTimeavp",
+            "mangledName": "$s5PVLib9SoundPlayV6atTimeSo6CMTimeavp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CMTime",
+                    "printedName": "CoreMedia.CMTime",
+                    "usr": "c:@SA@CMTime"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib9SoundPlayV6atTimeSo6CMTimeavg",
+                "mangledName": "$s5PVLib9SoundPlayV6atTimeSo6CMTimeavg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CMTime",
+                    "printedName": "CoreMedia.CMTime",
+                    "usr": "c:@SA@CMTime"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib9SoundPlayV6atTimeSo6CMTimeavs",
+                "mangledName": "$s5PVLib9SoundPlayV6atTimeSo6CMTimeavs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib9SoundPlayV6atTimeSo6CMTimeavM",
+                "mangledName": "$s5PVLib9SoundPlayV6atTimeSo6CMTimeavM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "track",
+            "printedName": "track",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Sound",
+                "printedName": "PVLib.Sound",
+                "usr": "s:5PVLib5SoundC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib9SoundPlayV5trackAA0B0Cvp",
+            "mangledName": "$s5PVLib9SoundPlayV5trackAA0B0Cvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Sound",
+                    "printedName": "PVLib.Sound",
+                    "usr": "s:5PVLib5SoundC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib9SoundPlayV5trackAA0B0Cvg",
+                "mangledName": "$s5PVLib9SoundPlayV5trackAA0B0Cvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Sound",
+                    "printedName": "PVLib.Sound",
+                    "usr": "s:5PVLib5SoundC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib9SoundPlayV5trackAA0B0Cvs",
+                "mangledName": "$s5PVLib9SoundPlayV5trackAA0B0Cvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib9SoundPlayV5trackAA0B0CvM",
+                "mangledName": "$s5PVLib9SoundPlayV5trackAA0B0CvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:5PVLib9SoundPlayV",
+        "mangledName": "$s5PVLib9SoundPlayV",
+        "moduleName": "PVLib",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MusicSound",
+        "printedName": "MusicSound",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "loopsNumber",
+            "printedName": "loopsNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib10MusicSoundC11loopsNumberSivpZ",
+            "mangledName": "$s5PVLib10MusicSoundC11loopsNumberSivpZ",
+            "moduleName": "PVLib",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib10MusicSoundC11loopsNumberSivgZ",
+                "mangledName": "$s5PVLib10MusicSoundC11loopsNumberSivgZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib10MusicSoundC11loopsNumberSivsZ",
+                "mangledName": "$s5PVLib10MusicSoundC11loopsNumberSivsZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib10MusicSoundC11loopsNumberSivMZ",
+                "mangledName": "$s5PVLib10MusicSoundC11loopsNumberSivMZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "camUrl",
+            "printedName": "camUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib10MusicSoundC6camUrl10Foundation3URLVSgvpZ",
+            "mangledName": "$s5PVLib10MusicSoundC6camUrl10Foundation3URLVSgvpZ",
+            "moduleName": "PVLib",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib10MusicSoundC6camUrl10Foundation3URLVSgvgZ",
+                "mangledName": "$s5PVLib10MusicSoundC6camUrl10Foundation3URLVSgvgZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib10MusicSoundC6camUrl10Foundation3URLVSgvsZ",
+                "mangledName": "$s5PVLib10MusicSoundC6camUrl10Foundation3URLVSgvsZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib10MusicSoundC6camUrl10Foundation3URLVSgvMZ",
+                "mangledName": "$s5PVLib10MusicSoundC6camUrl10Foundation3URLVSgvMZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "editUrl",
+            "printedName": "editUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.URL]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib10MusicSoundC7editUrlSay10Foundation3URLVGvpZ",
+            "mangledName": "$s5PVLib10MusicSoundC7editUrlSay10Foundation3URLVGvpZ",
+            "moduleName": "PVLib",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.URL]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib10MusicSoundC7editUrlSay10Foundation3URLVGvgZ",
+                "mangledName": "$s5PVLib10MusicSoundC7editUrlSay10Foundation3URLVGvgZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.URL]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib10MusicSoundC7editUrlSay10Foundation3URLVGvsZ",
+                "mangledName": "$s5PVLib10MusicSoundC7editUrlSay10Foundation3URLVGvsZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib10MusicSoundC7editUrlSay10Foundation3URLVGvMZ",
+                "mangledName": "$s5PVLib10MusicSoundC7editUrlSay10Foundation3URLVGvMZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeRange",
+            "printedName": "timeRange",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "CoreMedia.CMTimeRange?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CMTimeRange",
+                    "printedName": "CoreMedia.CMTimeRange",
+                    "usr": "c:@SA@CMTimeRange"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib10MusicSoundC9timeRangeSo06CMTimeE0aSgvpZ",
+            "mangledName": "$s5PVLib10MusicSoundC9timeRangeSo06CMTimeE0aSgvpZ",
+            "moduleName": "PVLib",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "CoreMedia.CMTimeRange?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CMTimeRange",
+                        "printedName": "CoreMedia.CMTimeRange",
+                        "usr": "c:@SA@CMTimeRange"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib10MusicSoundC9timeRangeSo06CMTimeE0aSgvgZ",
+                "mangledName": "$s5PVLib10MusicSoundC9timeRangeSo06CMTimeE0aSgvgZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "CoreMedia.CMTimeRange?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CMTimeRange",
+                        "printedName": "CoreMedia.CMTimeRange",
+                        "usr": "c:@SA@CMTimeRange"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib10MusicSoundC9timeRangeSo06CMTimeE0aSgvsZ",
+                "mangledName": "$s5PVLib10MusicSoundC9timeRangeSo06CMTimeE0aSgvsZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib10MusicSoundC9timeRangeSo06CMTimeE0aSgvMZ",
+                "mangledName": "$s5PVLib10MusicSoundC9timeRangeSo06CMTimeE0aSgvMZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5PVLib10MusicSoundC",
+        "mangledName": "$s5PVLib10MusicSoundC",
+        "moduleName": "PVLib",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "TypeDecl",
         "name": "Audio",
         "printedName": "Audio",
         "children": [
+          {
+            "kind": "Var",
+            "name": "track",
+            "printedName": "track",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PVLib.AudioTrack?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AudioTrack",
+                    "printedName": "PVLib.AudioTrack",
+                    "usr": "s:5PVLib10AudioTrackV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib5AudioC5trackAA0B5TrackVSgvpZ",
+            "mangledName": "$s5PVLib5AudioC5trackAA0B5TrackVSgvpZ",
+            "moduleName": "PVLib",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PVLib.AudioTrack?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AudioTrack",
+                        "printedName": "PVLib.AudioTrack",
+                        "usr": "s:5PVLib10AudioTrackV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC5trackAA0B5TrackVSgvgZ",
+                "mangledName": "$s5PVLib5AudioC5trackAA0B5TrackVSgvgZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PVLib.AudioTrack?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AudioTrack",
+                        "printedName": "PVLib.AudioTrack",
+                        "usr": "s:5PVLib10AudioTrackV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC5trackAA0B5TrackVSgvsZ",
+                "mangledName": "$s5PVLib5AudioC5trackAA0B5TrackVSgvsZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC5trackAA0B5TrackVSgvMZ",
+                "mangledName": "$s5PVLib5AudioC5trackAA0B5TrackVSgvMZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "trimmedTracks",
+            "printedName": "trimmedTracks",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[PVLib.AudioTrack]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AudioTrack",
+                    "printedName": "PVLib.AudioTrack",
+                    "usr": "s:5PVLib10AudioTrackV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib5AudioC13trimmedTracksSayAA0B5TrackVGvpZ",
+            "mangledName": "$s5PVLib5AudioC13trimmedTracksSayAA0B5TrackVGvpZ",
+            "moduleName": "PVLib",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PVLib.AudioTrack]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AudioTrack",
+                        "printedName": "PVLib.AudioTrack",
+                        "usr": "s:5PVLib10AudioTrackV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC13trimmedTracksSayAA0B5TrackVGvgZ",
+                "mangledName": "$s5PVLib5AudioC13trimmedTracksSayAA0B5TrackVGvgZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PVLib.AudioTrack]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AudioTrack",
+                        "printedName": "PVLib.AudioTrack",
+                        "usr": "s:5PVLib10AudioTrackV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC13trimmedTracksSayAA0B5TrackVGvsZ",
+                "mangledName": "$s5PVLib5AudioC13trimmedTracksSayAA0B5TrackVGvsZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC13trimmedTracksSayAA0B5TrackVGvMZ",
+                "mangledName": "$s5PVLib5AudioC13trimmedTracksSayAA0B5TrackVGvMZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "durationTrim",
+            "printedName": "durationTrim",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "CoreMedia.CMTime?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CMTime",
+                    "printedName": "CoreMedia.CMTime",
+                    "usr": "c:@SA@CMTime"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib5AudioC12durationTrimSo6CMTimeaSgvpZ",
+            "mangledName": "$s5PVLib5AudioC12durationTrimSo6CMTimeaSgvpZ",
+            "moduleName": "PVLib",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "CoreMedia.CMTime?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CMTime",
+                        "printedName": "CoreMedia.CMTime",
+                        "usr": "c:@SA@CMTime"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC12durationTrimSo6CMTimeaSgvgZ",
+                "mangledName": "$s5PVLib5AudioC12durationTrimSo6CMTimeaSgvgZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "CoreMedia.CMTime?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CMTime",
+                        "printedName": "CoreMedia.CMTime",
+                        "usr": "c:@SA@CMTime"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC12durationTrimSo6CMTimeaSgvsZ",
+                "mangledName": "$s5PVLib5AudioC12durationTrimSo6CMTimeaSgvsZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC12durationTrimSo6CMTimeaSgvMZ",
+                "mangledName": "$s5PVLib5AudioC12durationTrimSo6CMTimeaSgvMZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "camTrackUrl",
+            "printedName": "camTrackUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib5AudioC11camTrackUrl10Foundation3URLVSgvpZ",
+            "mangledName": "$s5PVLib5AudioC11camTrackUrl10Foundation3URLVSgvpZ",
+            "moduleName": "PVLib",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC11camTrackUrl10Foundation3URLVSgvgZ",
+                "mangledName": "$s5PVLib5AudioC11camTrackUrl10Foundation3URLVSgvgZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC11camTrackUrl10Foundation3URLVSgvsZ",
+                "mangledName": "$s5PVLib5AudioC11camTrackUrl10Foundation3URLVSgvsZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC11camTrackUrl10Foundation3URLVSgvMZ",
+                "mangledName": "$s5PVLib5AudioC11camTrackUrl10Foundation3URLVSgvMZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "camTrackID",
+            "printedName": "camTrackID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib5AudioC10camTrackIDSSSgvpZ",
+            "mangledName": "$s5PVLib5AudioC10camTrackIDSSSgvpZ",
+            "moduleName": "PVLib",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC10camTrackIDSSSgvgZ",
+                "mangledName": "$s5PVLib5AudioC10camTrackIDSSSgvgZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC10camTrackIDSSSgvsZ",
+                "mangledName": "$s5PVLib5AudioC10camTrackIDSSSgvsZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC10camTrackIDSSSgvMZ",
+                "mangledName": "$s5PVLib5AudioC10camTrackIDSSSgvMZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "editTrackUrl",
+            "printedName": "editTrackUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib5AudioC12editTrackUrl10Foundation3URLVSgvpZ",
+            "mangledName": "$s5PVLib5AudioC12editTrackUrl10Foundation3URLVSgvpZ",
+            "moduleName": "PVLib",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC12editTrackUrl10Foundation3URLVSgvgZ",
+                "mangledName": "$s5PVLib5AudioC12editTrackUrl10Foundation3URLVSgvgZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC12editTrackUrl10Foundation3URLVSgvsZ",
+                "mangledName": "$s5PVLib5AudioC12editTrackUrl10Foundation3URLVSgvsZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC12editTrackUrl10Foundation3URLVSgvMZ",
+                "mangledName": "$s5PVLib5AudioC12editTrackUrl10Foundation3URLVSgvMZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "camTrackRange",
+            "printedName": "camTrackRange",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreMedia.CMTimeRange?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CMTimeRange",
+                    "printedName": "CoreMedia.CMTimeRange",
+                    "usr": "c:@SA@CMTimeRange"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib5AudioC13camTrackRangeSo06CMTimeE0aSgvpZ",
+            "mangledName": "$s5PVLib5AudioC13camTrackRangeSo06CMTimeE0aSgvpZ",
+            "moduleName": "PVLib",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreMedia.CMTimeRange?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CMTimeRange",
+                        "printedName": "CoreMedia.CMTimeRange",
+                        "usr": "c:@SA@CMTimeRange"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC13camTrackRangeSo06CMTimeE0aSgvgZ",
+                "mangledName": "$s5PVLib5AudioC13camTrackRangeSo06CMTimeE0aSgvgZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreMedia.CMTimeRange?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CMTimeRange",
+                        "printedName": "CoreMedia.CMTimeRange",
+                        "usr": "c:@SA@CMTimeRange"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC13camTrackRangeSo06CMTimeE0aSgvsZ",
+                "mangledName": "$s5PVLib5AudioC13camTrackRangeSo06CMTimeE0aSgvsZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5AudioC13camTrackRangeSo06CMTimeE0aSgvMZ",
+                "mangledName": "$s5PVLib5AudioC13camTrackRangeSo06CMTimeE0aSgvMZ",
+                "moduleName": "PVLib",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
           {
             "kind": "Function",
             "name": "fromVideo",
@@ -3048,6 +4796,33 @@
             ]
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AudioNode",
+                "printedName": "PVLib.AudioNode",
+                "usr": "c:@M@PVLib@objc(cs)AudioNode"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PVLib@objc(cs)AudioNode(im)init",
+            "mangledName": "$s5PVLib9AudioNodeCACycfc",
+            "moduleName": "PVLib",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Function",
             "name": "setupSound",
             "printedName": "setupSound(audioURL:)",
@@ -3073,33 +4848,6 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AudioNode",
-                "printedName": "PVLib.AudioNode",
-                "usr": "c:@M@PVLib@objc(cs)AudioNode"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@PVLib@objc(cs)AudioNode(im)init",
-            "mangledName": "$s5PVLib9AudioNodeCACycfc",
-            "moduleName": "PVLib",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override"
-            ],
-            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -3114,6 +4862,7 @@
         ],
         "superclassUsr": "c:@M@PVLib@objc(cs)NodeView",
         "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "PVLib.NodeView",
           "UIKit.UIView",
@@ -39774,77 +41523,77 @@
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/SoundEditor.swift",
       "kind": "IntegerLiteral",
-      "offset": 354,
+      "offset": 407,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/SoundEditor.swift",
       "kind": "Array",
-      "offset": 414,
+      "offset": 483,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/SoundEditor.swift",
       "kind": "Array",
-      "offset": 563,
+      "offset": 654,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/SoundEditor.swift",
       "kind": "BooleanLiteral",
-      "offset": 1922,
+      "offset": 2048,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/SoundEditor.swift",
       "kind": "IntegerLiteral",
-      "offset": 2603,
+      "offset": 2729,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/SoundEditor.swift",
       "kind": "IntegerLiteral",
-      "offset": 2744,
+      "offset": 2870,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/SoundEditor.swift",
       "kind": "StringLiteral",
-      "offset": 3128,
+      "offset": 3254,
       "length": 32,
       "value": "\"!!! video track is damaged !!!\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/SoundEditor.swift",
       "kind": "StringLiteral",
-      "offset": 3549,
+      "offset": 3675,
       "length": 26,
       "value": "\"!!! video merge fail !!!\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/SoundEditor.swift",
       "kind": "BooleanLiteral",
-      "offset": 4074,
+      "offset": 4200,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/SoundEditor.swift",
       "kind": "StringLiteral",
-      "offset": 5441,
+      "offset": 5567,
       "length": 38,
       "value": "\"SOUND TRIMMING ERROR! \/n for REASON:\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/SoundEditor.swift",
       "kind": "BooleanLiteral",
-      "offset": 5913,
+      "offset": 6039,
       "length": 4,
       "value": "true"
     },
@@ -39858,65 +41607,58 @@
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/AudioNode.swift",
       "kind": "StringLiteral",
-      "offset": 333,
+      "offset": 389,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/AudioNode.swift",
       "kind": "StringLiteral",
-      "offset": 409,
+      "offset": 465,
       "length": 18,
       "value": "\"Deinit AudioNode\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/AudioNode.swift",
       "kind": "FloatLiteral",
-      "offset": 811,
+      "offset": 867,
       "length": 3,
       "value": "0.7"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/AudioNode.swift",
       "kind": "FloatLiteral",
-      "offset": 823,
+      "offset": 879,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/AudioNode.swift",
       "kind": "FloatLiteral",
-      "offset": 834,
+      "offset": 890,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/AudioNode.swift",
       "kind": "FloatLiteral",
-      "offset": 846,
+      "offset": 902,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/AudioNode.swift",
       "kind": "IntegerLiteral",
-      "offset": 965,
+      "offset": 1021,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/AudioNode.swift",
       "kind": "BooleanLiteral",
-      "offset": 1000,
+      "offset": 1056,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/TimeLine\/AudioNode.swift",
-      "kind": "StringLiteral",
-      "offset": 160,
-      "length": 9,
-      "value": "\"PVLib.AudioNode\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/VideoEditorModel\/VideoEffectsModel.swift",
