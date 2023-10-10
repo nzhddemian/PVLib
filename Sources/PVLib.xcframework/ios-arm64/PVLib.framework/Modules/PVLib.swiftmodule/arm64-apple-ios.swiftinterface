@@ -38,9 +38,6 @@ import simd
   public func update(comp: @escaping () -> ())
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class Segment {
-  @objc deinit
-}
 @objc @_inheritsConvenienceInitializers public class AudioWriter : ObjectiveC.NSObject, AVFAudio.AVAudioRecorderDelegate {
   public func setup_recorder()
   public func startRec()
@@ -107,13 +104,6 @@ public struct SoundPlay {
   public static func renderMusicSound(inUrl: Foundation.URL, toUrl: inout Foundation.URL, callBack: @escaping () -> Swift.Void)
   public static func trimmSound(inUrl: Foundation.URL?, outUrl: Foundation.URL, timeRange: CoreMedia.CMTimeRange?, callBack: @escaping () -> Swift.Void)
   @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class AudioNode : PVLib.NodeView {
-  @_Concurrency.MainActor(unsafe) public var scale: CoreFoundation.CGFloat
-  @_Concurrency.MainActor(unsafe) public var timeLinePos: CoreMedia.CMTime
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
-  @objc deinit
-  @_Concurrency.MainActor(unsafe) public func setupSound(audioURL: Foundation.URL)
 }
 public enum ARMask : Swift.String, Swift.CaseIterable {
   case none, matrix, hypno, hole, eyes, glitch, stickers, tattoo, pixels, mustage
@@ -252,6 +242,40 @@ public struct MetalUniforms {
   public var rotationGif: Swift.Float
   public var cameraFront: Swift.Bool
 }
+public struct FaceDistortionPoints {
+  public var eyesPoints: simd.float4
+  public var cheeksPoints: simd.float4
+  public var lipsPoint: simd.float2
+}
+public struct PVFaceScene {
+  public init()
+  public var faceGeometry: SceneKit.SCNGeometry?
+  public var faceProjectionMatrix: SceneKit.SCNMatrix4
+  public var faceDistortionPoint: PVLib.FaceDistortionPoints
+  public var centerTransform: simd.simd_float4x4
+  public var faceDetected: Swift.Bool
+}
+public protocol PVFaceSceneDelegate : AnyObject {
+  func updateFaceMesh(front: CoreVideo.CVPixelBuffer, sceneView: SceneKit.SCNView) -> PVLib.PVFaceScene
+}
+extension Foundation.NSNotification.Name {
+  public static let pvRemoveTextureWriter: Foundation.NSNotification.Name
+}
+extension Foundation.NSNotification.Name {
+  public static let pvResumeTextureWriter: Foundation.NSNotification.Name
+}
+public class PVVCoordinator {
+  public static var navigation: UIKit.UINavigationController!
+  @objc deinit
+  public static func resumeSession()
+  public static func stopSession()
+  public static var inBackground: Swift.Bool
+  public static func shareImage(_ img: UIKit.UIImage)
+  public static func start(from: QuartzCore.CATransitionSubtype, type: QuartzCore.CATransitionType, duration: CoreFoundation.CGFloat = 0.25, _ view: SwiftUI.AnyView, shouldRotate: Swift.Bool = false)
+  public static func moveToSUIView(from: QuartzCore.CATransitionSubtype, type: QuartzCore.CATransitionType, duration: CoreFoundation.CGFloat = 0.25, _ view: SwiftUI.AnyView, shouldRotate: Swift.Bool = false)
+  public static func moveToUIKitView(from: QuartzCore.CATransitionSubtype, type: QuartzCore.CATransitionType, duration: CoreFoundation.CGFloat = 0.25, _ viewController: UIKit.UIViewController)
+  required public init(navigationController: UIKit.UINavigationController)
+}
 public class MetalVideoRecorder {
   public var writerer: AVFoundation.AVAssetWriter!
   public var isWriting: Swift.Bool
@@ -264,58 +288,63 @@ public class MetalVideoRecorder {
   public func flushTexture(mtlTexture: (any Metal.MTLTexture)?, recTime: CoreMedia.CMTime, failureComp: @escaping () -> ())
   public func finishRec(comp: @escaping () -> ())
 }
-public class WaveformImageDrawer {
-  public init()
-  public func waveformImage(fromAudioAt audioAssetURL: Foundation.URL, with configuration: PVLib.WaveformConfiguration, qos: Dispatch.DispatchQoS.QoSClass = .userInitiated, completionHandler: @escaping (_ waveformImage: UIKit.UIImage?) -> ())
-  public func waveformImage(fromAudioAt audioAssetURL: Foundation.URL, size: CoreFoundation.CGSize, backgroundColor: UIKit.UIColor = UIColor.clear, style: PVLib.WaveformStyle = .gradient([UIColor.black, UIColor.darkGray]), position: PVLib.WaveformPosition = .middle, scale: CoreFoundation.CGFloat = UIScreen.main.scale, paddingFactor: CoreFoundation.CGFloat? = nil, qos: Dispatch.DispatchQoS.QoSClass = .userInitiated, shouldAntialias: Swift.Bool = false, completionHandler: @escaping (_ waveformImage: UIKit.UIImage?) -> ())
-  @objc deinit
-}
-public enum WaveformPosition {
-  case top
-  case middle
-  case bottom
-  case custom(Swift.Double)
-}
-public enum WaveformStyle {
-  public struct StripeConfig {
-    public let color: UIKit.UIColor
-    public let width: CoreFoundation.CGFloat
-    public let spacing: CoreFoundation.CGFloat
-    public let lineCap: CoreGraphics.CGLineCap
-    public init(color: UIKit.UIColor, width: CoreFoundation.CGFloat = 1, spacing: CoreFoundation.CGFloat = 5, lineCap: CoreGraphics.CGLineCap = .square)
-  }
-  case filled(UIKit.UIColor)
-  case gradient([UIKit.UIColor])
-  case striped(PVLib.WaveformStyle.StripeConfig)
-}
-public struct WaveformConfiguration {
-  public init(size: CoreFoundation.CGSize, backgroundColor: UIKit.UIColor = UIColor.clear, style: PVLib.WaveformStyle = .gradient([UIColor.black, UIColor.gray]), position: PVLib.WaveformPosition = .middle, scale: CoreFoundation.CGFloat = UIScreen.main.scale, paddingFactor: CoreFoundation.CGFloat? = nil, shouldAntialias: Swift.Bool = false)
-}
-public protocol MultiPBufferDelegate : AnyObject {
-  func updatePixelBuffer(front: CoreVideo.CVPixelBuffer, back: CoreVideo.CVPixelBuffer, timestampFull: CoreMedia.CMTime, timestampIcon: CoreMedia.CMTime?)
-}
-public enum CamPos {
-  case back, front
-  public static func == (a: PVLib.CamPos, b: PVLib.CamPos) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+extension AVFoundation.AVPlayer {
+  public var isPlaying: Swift.Bool {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers final public class PVMultiCamCaptureManager : ObjectiveC.NSObject, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
-  public static let shared: PVLib.PVMultiCamCaptureManager
-  final public var camPos: PVLib.CamPos
-  weak final public var delegate: (any PVLib.MultiPBufferDelegate)?
-  final public let session: AVFoundation.AVCaptureMultiCamSession
-  @objc override dynamic public init()
-  final public func startSession()
-  @objc deinit
-  final public func switchLight()
-  final public func pauseSession()
-  final public func resumeSession()
-  final public func stopCaptureSession()
-  @objc final public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
-  @objc final public func captureOutput(_ captureOutput: AVFoundation.AVCaptureOutput, didDrop sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+extension Foundation.URL {
+  public func removeIfExists()
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func removeSubviews()
+}
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) public func image() -> UIKit.UIImage
+}
+extension simd.simd_float4x4 {
+  public init(scaleBy s: Swift.Float)
+  public init(rotationAbout axis: simd.float3, by angleRadians: Swift.Float)
+  public init(translationBy t: simd.float3)
+  public init(perspectiveProjectionFov fovRadians: Swift.Float, aspectRatio aspect: Swift.Float, nearZ: Swift.Float, farZ: Swift.Float)
+}
+extension UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) public func leftTransition(_ controller: UIKit.UIViewController)
+}
+extension UIKit.UIColor {
+  public static var playU: UIKit.UIColor
+}
+extension Photos.PHAssetCollection {
+  public func isCameraRollAlbum() -> Swift.Bool
+  public func savee(videoURL: Foundation.URL, completion: @escaping (Foundation.URL?, Swift.String?) -> ())
+  public class func getAlbumm(title: Swift.String, completionHandler: @escaping (Photos.PHAssetCollection?) -> ())
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func createImage() -> UIKit.UIImage
+}
+extension Metal.MTLTexture {
+  public func getColor(x: CoreFoundation.CGFloat, y: CoreFoundation.CGFloat, aspect: CoreFoundation.CGFloat) -> simd.float3?
+  public func getData() -> Foundation.Data?
+}
+extension Metal.MTLTexture {
+  public func toUIImage() -> UIKit.UIImage?
+}
+extension UIKit.UIImage {
+  public func saveTo(url: Foundation.URL, name: Swift.String)
+}
+extension Foundation.URL {
+  public static func getURL(item: _PhotosUI_SwiftUI.PhotosPickerItem, completionHandler: @escaping (_ result: Swift.Result<Foundation.URL, any Swift.Error>) -> Swift.Void)
+  public static func getDocumentsDirectory() -> Foundation.URL
+  public func cleanDir()
+  public func removeIfExist()
+}
+extension Foundation.NSNotification.Name {
+  public static let previewReady: Foundation.NSNotification.Name
+  public static let finalRenderingDone: Foundation.NSNotification.Name
+}
+extension CoreFoundation.CGPoint {
+  public func norm(inRect: CoreFoundation.CGRect) -> simd.float2
+  public func nrm(inRect: CoreFoundation.CGRect) -> simd.float2
 }
 public struct DeviceRotationViewModifier : SwiftUI.ViewModifier {
   @_Concurrency.MainActor(unsafe) public func body(content: PVLib.DeviceRotationViewModifier.Content) -> some SwiftUI.View
@@ -376,6 +405,121 @@ public struct BackgroundClearView : SwiftUI.UIViewRepresentable {
   public typealias Coordinator = Swift.Void
   public typealias UIViewType = UIKit.UIView
 }
+extension CoreMedia.CMTime {
+  public func frame(_ fps: Swift.Int) -> Swift.Int
+}
+extension AVFoundation.AVAsset {
+  public func videoSize() -> CoreFoundation.CGSize
+}
+extension Swift.String {
+  public func dateSTR() -> Swift.String
+}
+extension UIKit.UIColor {
+  public static func randColor(seed: Swift.Int) -> UIKit.UIColor
+  public static func seeded_rand(seed: Swift.Int, min: Swift.Double, max: Swift.Double) -> Swift.Int
+}
+public class WaveformImageDrawer {
+  public init()
+  public func waveformImage(fromAudioAt audioAssetURL: Foundation.URL, with configuration: PVLib.WaveformConfiguration, qos: Dispatch.DispatchQoS.QoSClass = .userInitiated, completionHandler: @escaping (_ waveformImage: UIKit.UIImage?) -> ())
+  public func waveformImage(fromAudioAt audioAssetURL: Foundation.URL, size: CoreFoundation.CGSize, backgroundColor: UIKit.UIColor = UIColor.clear, style: PVLib.WaveformStyle = .gradient([UIColor.black, UIColor.darkGray]), position: PVLib.WaveformPosition = .middle, scale: CoreFoundation.CGFloat = UIScreen.main.scale, paddingFactor: CoreFoundation.CGFloat? = nil, qos: Dispatch.DispatchQoS.QoSClass = .userInitiated, shouldAntialias: Swift.Bool = false, completionHandler: @escaping (_ waveformImage: UIKit.UIImage?) -> ())
+  @objc deinit
+}
+public enum WaveformPosition {
+  case top
+  case middle
+  case bottom
+  case custom(Swift.Double)
+}
+public enum WaveformStyle {
+  public struct StripeConfig {
+    public let color: UIKit.UIColor
+    public let width: CoreFoundation.CGFloat
+    public let spacing: CoreFoundation.CGFloat
+    public let lineCap: CoreGraphics.CGLineCap
+    public init(color: UIKit.UIColor, width: CoreFoundation.CGFloat = 1, spacing: CoreFoundation.CGFloat = 5, lineCap: CoreGraphics.CGLineCap = .square)
+  }
+  case filled(UIKit.UIColor)
+  case gradient([UIKit.UIColor])
+  case striped(PVLib.WaveformStyle.StripeConfig)
+}
+public struct WaveformConfiguration {
+  public init(size: CoreFoundation.CGSize, backgroundColor: UIKit.UIColor = UIColor.clear, style: PVLib.WaveformStyle = .gradient([UIColor.black, UIColor.gray]), position: PVLib.WaveformPosition = .middle, scale: CoreFoundation.CGFloat = UIScreen.main.scale, paddingFactor: CoreFoundation.CGFloat? = nil, shouldAntialias: Swift.Bool = false)
+}
+@_hasMissingDesignatedInitializers public class VExport {
+  public static func export(presetName: Swift.String, inVideoUrl: Foundation.URL!, inAudioUrl: Foundation.URL!, outUrl: Foundation.URL!, completion: @escaping () -> Swift.Void)
+  public static var progress: Swift.Float? {
+    get
+    set(newVal)
+  }
+  public static func exportPB(presetName: Swift.String, inVideoUrl: Foundation.URL!, outUrl: Foundation.URL!, completion: @escaping () -> Swift.Void)
+  public static func saveMovieToCameraRoll(videoURL: Foundation.URL, tru: Swift.Bool = false)
+  public static func videoCompositionInstruction(_ track: AVFoundation.AVCompositionTrack) -> AVFoundation.AVMutableVideoCompositionLayerInstruction
+  public static func trim(inURL: Foundation.URL, outURL: Foundation.URL, timeRange: CoreMedia.CMTimeRange, callBack: @escaping () -> Swift.Void)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class HVController : SwiftUI.UIHostingController<SwiftUI.AnyView> {
+  @_Concurrency.MainActor(unsafe) public var shouldRotate: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public init(shouldRotate: Swift.Bool, rootView: SwiftUI.AnyView)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var shouldAutorotate: Swift.Bool {
+    @objc get
+  }
+  @objc deinit
+}
+public struct SupportedOrientationsPreferenceKey : SwiftUI.PreferenceKey {
+  public typealias Value = UIKit.UIInterfaceOrientationMask
+  public static var defaultValue: UIKit.UIInterfaceOrientationMask {
+    get
+  }
+  public static func reduce(value: inout UIKit.UIInterfaceOrientationMask, nextValue: () -> UIKit.UIInterfaceOrientationMask)
+}
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class OrientationLockedController<Content> : SwiftUI.UIHostingController<PVLib.OrientationLockedController<Content>.Root<Content>> where Content : SwiftUI.View {
+  public class Box {
+    public init()
+    @objc deinit
+  }
+  @_Concurrency.MainActor(unsafe) public var orientations: PVLib.OrientationLockedController<Content>.Box!
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) public init(rootView: Content)
+  public struct Root<Content> : SwiftUI.View where Content : SwiftUI.View {
+    @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+      get
+    }
+    public typealias Body = @_opaqueReturnTypeOf("$s5PVLib27OrientationLockedControllerC4RootV4bodyQrvp", 0) __<Content, Content>
+  }
+  @objc deinit
+}
+extension SwiftUI.View {
+  public func supportedOrientations(_ supportedOrientations: UIKit.UIInterfaceOrientationMask) -> some SwiftUI.View
+  
+}
+public protocol MultiPBufferDelegate : AnyObject {
+  func updatePixelBuffer(front: CoreVideo.CVPixelBuffer, back: CoreVideo.CVPixelBuffer, timestampFull: CoreMedia.CMTime, timestampIcon: CoreMedia.CMTime?)
+}
+public enum CamPos {
+  case back, front
+  public static func == (a: PVLib.CamPos, b: PVLib.CamPos) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers final public class PVMultiCamCaptureManager : ObjectiveC.NSObject, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
+  public static let shared: PVLib.PVMultiCamCaptureManager
+  final public var camPos: PVLib.CamPos
+  weak final public var delegate: (any PVLib.MultiPBufferDelegate)?
+  final public let session: AVFoundation.AVCaptureMultiCamSession
+  @objc override dynamic public init()
+  final public func startSession()
+  @objc deinit
+  final public func switchLight()
+  final public func pauseSession()
+  final public func resumeSession()
+  final public func stopCaptureSession()
+  @objc final public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+  @objc final public func captureOutput(_ captureOutput: AVFoundation.AVCaptureOutput, didDrop sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+}
 @_hasMissingDesignatedInitializers public class MFManager {
   public static var imagesPath: Foundation.URL? {
     get
@@ -398,6 +542,175 @@ public struct BackgroundClearView : SwiftUI.UIViewRepresentable {
   public static var textUrl: Foundation.URL
   public static var previewFile: Foundation.URL
   @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class DragRotateScaleView : UIKit.UIView {
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any PVLib.DragRotateScaleViewDelegate)?
+  @_Concurrency.MainActor(unsafe) public var rotation: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) public func rotated(by deg: CoreFoundation.CGFloat)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class TextDRSView : PVLib.DragRotateScaleView {
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) override public func rotated(by deg: CoreFoundation.CGFloat)
+}
+public protocol DragRotateScaleViewDelegate : AnyObject {
+  func willPanGesture(_ sender: UIKit.UIPanGestureRecognizer, view: PVLib.DragRotateScaleView)
+  func didPanGesture(_ sender: UIKit.UIPanGestureRecognizer, view: PVLib.DragRotateScaleView)
+  func willPinchGesture(_ sender: UIKit.UIPinchGestureRecognizer, view: PVLib.DragRotateScaleView)
+  func didPinchGesture(_ sender: UIKit.UIPinchGestureRecognizer, view: PVLib.DragRotateScaleView)
+  func willRotateGesture(_ sender: UIKit.UIRotationGestureRecognizer, view: PVLib.DragRotateScaleView)
+  func didRotateGesture(_ sender: UIKit.UIRotationGestureRecognizer, view: PVLib.DragRotateScaleView)
+  func doubleTapGesture(_ sender: UIKit.UITapGestureRecognizer, view: PVLib.DragRotateScaleView)
+  func longPressGesture(_ sender: UIKit.UILongPressGestureRecognizer, view: PVLib.DragRotateScaleView)
+}
+extension PVLib.DragRotateScaleViewDelegate {
+  public func willPanGesture(_ sender: UIKit.UIPanGestureRecognizer, view: PVLib.DragRotateScaleView)
+  public func didPanGesture(_ sender: UIKit.UIPanGestureRecognizer, view: PVLib.DragRotateScaleView)
+  public func willPinchGesture(_ sender: UIKit.UIPinchGestureRecognizer, view: PVLib.DragRotateScaleView)
+  public func didPinchGesture(_ sender: UIKit.UIPinchGestureRecognizer, view: PVLib.DragRotateScaleView)
+  public func willRotateGesture(_ sender: UIKit.UIRotationGestureRecognizer, view: PVLib.DragRotateScaleView)
+  public func didRotateGesture(_ sender: UIKit.UIRotationGestureRecognizer, view: PVLib.DragRotateScaleView)
+  public func doubleTapGesture(_ sender: UIKit.UITapGestureRecognizer, view: PVLib.DragRotateScaleView)
+  public func longPressGesture(_ sender: UIKit.UILongPressGestureRecognizer, view: PVLib.DragRotateScaleView)
+}
+public class Device {
+  public static let shared: PVLib.Device
+  final public let device: any Metal.MTLDevice
+  @objc deinit
+  public init()
+  final public func newCommandBuffer() -> any Metal.MTLCommandBuffer
+  final public class func renderPipe(vertexFunctionName: Swift.String = "vertexShader", fragmentFunctionName: Swift.String, pixelFormat: Metal.MTLPixelFormat) throws -> any Metal.MTLRenderPipelineState
+  final public class func texture(_ size: CoreFoundation.CGSize) -> (any Metal.MTLTexture)?
+  final public class func textureA(_ width: Swift.Int, _ height: Swift.Int) -> (any Metal.MTLTexture)?
+  final public class func filerTexture(_ width: Swift.Int, _ height: Swift.Int) -> (any Metal.MTLTexture)?
+  final public class func vertexBuffer() -> (any Metal.MTLBuffer)?
+}
+extension Metal.MTLRenderCommandEncoder {
+  public func setVertexValue<T>(_ value: T, at index: Swift.Int)
+  public func setVertexValue<T>(_ value: [T], at index: Swift.Int)
+  public func setFragmentValue<T>(_ value: T, at index: Swift.Int)
+  public func setFragmentValue<T>(_ value: [T], at index: Swift.Int)
+  public func setVertexTextures(_ textures: [(any Metal.MTLTexture)?], startingAt startIndex: Swift.Int = 0)
+  public func setVertexTextures(_ textures: (any Metal.MTLTexture)?..., startingAt startIndex: Swift.Int = 0)
+  public func setFragmentTextures(_ textures: [(any Metal.MTLTexture)?], startingAt startIndex: Swift.Int = 0)
+}
+public struct CameraProperties {
+  public var touches: CoreFoundation.CGPoint
+  public var totalTime: CoreFoundation.CGFloat!
+  public var frontCam: Swift.Bool
+  public var duration: CoreMedia.CMTime!
+  public var withMusic: Swift.Bool
+  public var supportLidar: Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers public class PVMetalRenderer : ObjectiveC.NSObject {
+  public func mtkView(_ view: MetalKit.MTKView, drawableSizeWillChange size: CoreFoundation.CGSize)
+  public var faceDetector: (any PVLib.PVFaceSceneDelegate)?
+  public var scnView: SceneKit.SCNView!
+  public var mtlUniforms: PVLib.MetalUniforms!
+  public var beautyValues: PVLib.BeautyValues!
+  public var beautyId: Swift.Int
+  public var segment: PVLib.Segment?
+  public var metalLayer: QuartzCore.CAMetalLayer
+  public var pixelBuffer: CoreVideo.CVPixelBuffer?
+  public var pixelIconBuffer: CoreVideo.CVPixelBuffer?
+  public var useMultiCam: Swift.Bool
+  public var outputTexure: (any Metal.MTLTexture)?
+  public var multiCamTexure: (any Metal.MTLTexture)?
+  public var fullCamTexure: (any Metal.MTLTexture)?
+  public var main_tool_id: Swift.Int
+  public var layerVal: Swift.Int
+  public var filter: Swift.String {
+    get
+    set
+  }
+  public var lutsId: Swift.Int {
+    get
+    set
+  }
+  public var mask: PVLib.ARMask {
+    get
+    set
+  }
+  @objc deinit
+  @objc override dynamic public init()
+  public func startDraw()
+  public func invalidate()
+  public func changeCamera()
+  public func stopScene()
+  public func setEditorFrame()
+  public func setFrame(_ frame: CoreFoundation.CGRect)
+  public func updateFrame()
+  public func updatePixelBuffer(pixelsFull: CoreVideo.CVPixelBuffer, pixelsIcon: CoreVideo.CVPixelBuffer? = nil, timestampFull: CoreMedia.CMTime? = nil, timestampIcon: CoreMedia.CMTime? = nil)
+  public func renderer()
+  public func editDraw(sourceBuffer source: CoreVideo.CVPixelBuffer, cTime: CoreMedia.CMTime)
+}
+extension CoreFoundation.CGPoint {
+  public func convert(rect: CoreFoundation.CGRect) -> simd.float2
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class AudioNode : PVLib.NodeView {
+  @_Concurrency.MainActor(unsafe) public var scale: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var timeLinePos: CoreMedia.CMTime
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) public func setupSound(audioURL: Foundation.URL)
+}
+public protocol TrimmerDelegate : AnyObject {
+  func didChangePositionBar(_ playerTime: CoreMedia.CMTime)
+  func positionBarStoppedMoving(_ playerTime: CoreMedia.CMTime)
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class TrimmerView : UIKit.UIView, UIKit.UIScrollViewDelegate {
+  @_Concurrency.MainActor(unsafe) public var moving: Swift.Bool
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) public var id: Swift.Int?
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var mainColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var handleColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var positionBarColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var maskColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public var isSelected: Swift.Bool
+  @_Concurrency.MainActor(unsafe) final public let trimView: UIKit.UIImageView
+  @_Concurrency.MainActor(unsafe) public var assetDuration: CoreMedia.CMTime!
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any PVLib.TrimmerDelegate)?
+  @_Concurrency.MainActor(unsafe) public func setupSubviews()
+  @_Concurrency.MainActor(unsafe) public var asset: AVFoundation.AVAsset? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public func assetDidChange(newAsset: AVFoundation.AVAsset?)
+  @_Concurrency.MainActor(unsafe) public func setupAssetPreview()
+  @_Concurrency.MainActor(unsafe) public func constrainAssetPreview()
+  @_Concurrency.MainActor(unsafe) public func setupTrimmerView()
+  @_Concurrency.MainActor(unsafe) public func effectsView()
+  @_Concurrency.MainActor(unsafe) public func seek(to time: Foundation.TimeInterval)
+  @_Concurrency.MainActor(unsafe) public func seek(to time: CoreMedia.CMTime)
+  @_Concurrency.MainActor(unsafe) public var updateRightHandler: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public func resetHandleViewPosition()
+  @_Concurrency.MainActor(unsafe) public var startTime: CoreMedia.CMTime? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var timeRange: CoreMedia.CMTimeRange
+  @_Concurrency.MainActor(unsafe) public var endTime: CoreMedia.CMTime? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 @objc @_hasMissingDesignatedInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class NodeView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public var moving: Swift.Bool
@@ -447,62 +760,6 @@ public struct BackgroundClearView : SwiftUI.UIViewRepresentable {
   @_Concurrency.MainActor(unsafe) public var endTime: CoreMedia.CMTime? {
     get
   }
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class DragRotateScaleView : UIKit.UIView {
-  @objc deinit
-  @_Concurrency.MainActor(unsafe) weak public var delegate: (any PVLib.DragRotateScaleViewDelegate)?
-  @_Concurrency.MainActor(unsafe) public var rotation: CoreFoundation.CGFloat
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
-  @_Concurrency.MainActor(unsafe) public func rotated(by deg: CoreFoundation.CGFloat)
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class TextDRSView : PVLib.DragRotateScaleView {
-  @objc deinit
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
-  @_Concurrency.MainActor(unsafe) override public func rotated(by deg: CoreFoundation.CGFloat)
-}
-public protocol DragRotateScaleViewDelegate : AnyObject {
-  func willPanGesture(_ sender: UIKit.UIPanGestureRecognizer, view: PVLib.DragRotateScaleView)
-  func didPanGesture(_ sender: UIKit.UIPanGestureRecognizer, view: PVLib.DragRotateScaleView)
-  func willPinchGesture(_ sender: UIKit.UIPinchGestureRecognizer, view: PVLib.DragRotateScaleView)
-  func didPinchGesture(_ sender: UIKit.UIPinchGestureRecognizer, view: PVLib.DragRotateScaleView)
-  func willRotateGesture(_ sender: UIKit.UIRotationGestureRecognizer, view: PVLib.DragRotateScaleView)
-  func didRotateGesture(_ sender: UIKit.UIRotationGestureRecognizer, view: PVLib.DragRotateScaleView)
-  func doubleTapGesture(_ sender: UIKit.UITapGestureRecognizer, view: PVLib.DragRotateScaleView)
-  func longPressGesture(_ sender: UIKit.UILongPressGestureRecognizer, view: PVLib.DragRotateScaleView)
-}
-extension PVLib.DragRotateScaleViewDelegate {
-  public func willPanGesture(_ sender: UIKit.UIPanGestureRecognizer, view: PVLib.DragRotateScaleView)
-  public func didPanGesture(_ sender: UIKit.UIPanGestureRecognizer, view: PVLib.DragRotateScaleView)
-  public func willPinchGesture(_ sender: UIKit.UIPinchGestureRecognizer, view: PVLib.DragRotateScaleView)
-  public func didPinchGesture(_ sender: UIKit.UIPinchGestureRecognizer, view: PVLib.DragRotateScaleView)
-  public func willRotateGesture(_ sender: UIKit.UIRotationGestureRecognizer, view: PVLib.DragRotateScaleView)
-  public func didRotateGesture(_ sender: UIKit.UIRotationGestureRecognizer, view: PVLib.DragRotateScaleView)
-  public func doubleTapGesture(_ sender: UIKit.UITapGestureRecognizer, view: PVLib.DragRotateScaleView)
-  public func longPressGesture(_ sender: UIKit.UILongPressGestureRecognizer, view: PVLib.DragRotateScaleView)
-}
-public struct CameraProperties {
-  public var touches: CoreFoundation.CGPoint
-  public var totalTime: CoreFoundation.CGFloat!
-  public var frontCam: Swift.Bool
-  public var duration: CoreMedia.CMTime!
-  public var withMusic: Swift.Bool
-  public var supportLidar: Swift.Bool
-}
-@_hasMissingDesignatedInitializers public class VExport {
-  public static func export(presetName: Swift.String, inVideoUrl: Foundation.URL!, inAudioUrl: Foundation.URL!, outUrl: Foundation.URL!, completion: @escaping () -> Swift.Void)
-  public static var progress: Swift.Float? {
-    get
-    set(newVal)
-  }
-  public static func exportPB(presetName: Swift.String, inVideoUrl: Foundation.URL!, outUrl: Foundation.URL!, completion: @escaping () -> Swift.Void)
-  public static func saveMovieToCameraRoll(videoURL: Foundation.URL, tru: Swift.Bool = false)
-  public static func videoCompositionInstruction(_ track: AVFoundation.AVCompositionTrack) -> AVFoundation.AVMutableVideoCompositionLayerInstruction
-  public static func trim(inURL: Foundation.URL, outURL: Foundation.URL, timeRange: CoreMedia.CMTimeRange, callBack: @escaping () -> Swift.Void)
-  @objc deinit
 }
 public struct Gifson : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
@@ -564,19 +821,6 @@ public struct GifTextures {
   public static func constructGifData(_ data: Foundation.Data) -> [UIKit.UIImage]
   public static func loadGifIcons()
   @objc deinit
-}
-extension CoreMedia.CMTime {
-  public func frame(_ fps: Swift.Int) -> Swift.Int
-}
-extension AVFoundation.AVAsset {
-  public func videoSize() -> CoreFoundation.CGSize
-}
-extension Swift.String {
-  public func dateSTR() -> Swift.String
-}
-extension UIKit.UIColor {
-  public static func randColor(seed: Swift.Int) -> UIKit.UIColor
-  public static func seeded_rand(seed: Swift.Int, min: Swift.Double, max: Swift.Double) -> Swift.Int
 }
 public enum SoundCategory {
   case ambient
@@ -704,137 +948,8 @@ public class Load {
 public protocol PBufferDelegate : AnyObject {
   func updatePixelBuffer(camera: CoreVideo.CVPixelBuffer, timestamp: CoreMedia.CMTime)
 }
-public class Device {
-  public static let shared: PVLib.Device
-  final public let device: any Metal.MTLDevice
+@_hasMissingDesignatedInitializers public class Segment {
   @objc deinit
-  public init()
-  final public func newCommandBuffer() -> any Metal.MTLCommandBuffer
-  final public class func renderPipe(vertexFunctionName: Swift.String = "vertexShader", fragmentFunctionName: Swift.String, pixelFormat: Metal.MTLPixelFormat) throws -> any Metal.MTLRenderPipelineState
-  final public class func texture(_ size: CoreFoundation.CGSize) -> (any Metal.MTLTexture)?
-  final public class func textureA(_ width: Swift.Int, _ height: Swift.Int) -> (any Metal.MTLTexture)?
-  final public class func filerTexture(_ width: Swift.Int, _ height: Swift.Int) -> (any Metal.MTLTexture)?
-  final public class func vertexBuffer() -> (any Metal.MTLBuffer)?
-}
-extension Metal.MTLRenderCommandEncoder {
-  public func setVertexValue<T>(_ value: T, at index: Swift.Int)
-  public func setVertexValue<T>(_ value: [T], at index: Swift.Int)
-  public func setFragmentValue<T>(_ value: T, at index: Swift.Int)
-  public func setFragmentValue<T>(_ value: [T], at index: Swift.Int)
-  public func setVertexTextures(_ textures: [(any Metal.MTLTexture)?], startingAt startIndex: Swift.Int = 0)
-  public func setVertexTextures(_ textures: (any Metal.MTLTexture)?..., startingAt startIndex: Swift.Int = 0)
-  public func setFragmentTextures(_ textures: [(any Metal.MTLTexture)?], startingAt startIndex: Swift.Int = 0)
-}
-extension AVFoundation.AVPlayer {
-  public var isPlaying: Swift.Bool {
-    get
-  }
-}
-extension Foundation.URL {
-  public func removeIfExists()
-}
-extension UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public func removeSubviews()
-}
-extension UIKit.UILabel {
-  @_Concurrency.MainActor(unsafe) public func image() -> UIKit.UIImage
-}
-extension simd.simd_float4x4 {
-  public init(scaleBy s: Swift.Float)
-  public init(rotationAbout axis: simd.float3, by angleRadians: Swift.Float)
-  public init(translationBy t: simd.float3)
-  public init(perspectiveProjectionFov fovRadians: Swift.Float, aspectRatio aspect: Swift.Float, nearZ: Swift.Float, farZ: Swift.Float)
-}
-extension UIKit.UINavigationController {
-  @_Concurrency.MainActor(unsafe) public func leftTransition(_ controller: UIKit.UIViewController)
-}
-extension UIKit.UIColor {
-  public static var playU: UIKit.UIColor
-}
-extension Photos.PHAssetCollection {
-  public func isCameraRollAlbum() -> Swift.Bool
-  public func savee(videoURL: Foundation.URL, completion: @escaping (Foundation.URL?, Swift.String?) -> ())
-  public class func getAlbumm(title: Swift.String, completionHandler: @escaping (Photos.PHAssetCollection?) -> ())
-}
-extension UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public func createImage() -> UIKit.UIImage
-}
-extension Metal.MTLTexture {
-  public func getColor(x: CoreFoundation.CGFloat, y: CoreFoundation.CGFloat, aspect: CoreFoundation.CGFloat) -> simd.float3?
-  public func getData() -> Foundation.Data?
-}
-extension Metal.MTLTexture {
-  public func toUIImage() -> UIKit.UIImage?
-}
-extension UIKit.UIImage {
-  public func saveTo(url: Foundation.URL, name: Swift.String)
-}
-extension Foundation.URL {
-  public static func getURL(item: _PhotosUI_SwiftUI.PhotosPickerItem, completionHandler: @escaping (_ result: Swift.Result<Foundation.URL, any Swift.Error>) -> Swift.Void)
-  public static func getDocumentsDirectory() -> Foundation.URL
-  public func cleanDir()
-  public func removeIfExist()
-}
-extension Foundation.NSNotification.Name {
-  public static let previewReady: Foundation.NSNotification.Name
-  public static let finalRenderingDone: Foundation.NSNotification.Name
-}
-extension CoreFoundation.CGPoint {
-  public func norm(inRect: CoreFoundation.CGRect) -> simd.float2
-  public func nrm(inRect: CoreFoundation.CGRect) -> simd.float2
-}
-public struct FaceDistortionPoints {
-  public var eyesPoints: simd.float4
-  public var cheeksPoints: simd.float4
-  public var lipsPoint: simd.float2
-}
-public struct PVFaceScene {
-  public init()
-  public var faceGeometry: SceneKit.SCNGeometry?
-  public var faceProjectionMatrix: SceneKit.SCNMatrix4
-  public var faceDistortionPoint: PVLib.FaceDistortionPoints
-  public var centerTransform: simd.simd_float4x4
-  public var faceDetected: Swift.Bool
-}
-public protocol PVFaceSceneDelegate : AnyObject {
-  func updateFaceMesh(front: CoreVideo.CVPixelBuffer, timestamp: Foundation.TimeInterval, sceneView: SceneKit.SCNView) -> PVLib.PVFaceScene
-}
-@_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class HVController : SwiftUI.UIHostingController<SwiftUI.AnyView> {
-  @_Concurrency.MainActor(unsafe) public var shouldRotate: Swift.Bool
-  @_Concurrency.MainActor(unsafe) public init(shouldRotate: Swift.Bool, rootView: SwiftUI.AnyView)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var shouldAutorotate: Swift.Bool {
-    @objc get
-  }
-  @objc deinit
-}
-public struct SupportedOrientationsPreferenceKey : SwiftUI.PreferenceKey {
-  public typealias Value = UIKit.UIInterfaceOrientationMask
-  public static var defaultValue: UIKit.UIInterfaceOrientationMask {
-    get
-  }
-  public static func reduce(value: inout UIKit.UIInterfaceOrientationMask, nextValue: () -> UIKit.UIInterfaceOrientationMask)
-}
-@_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class OrientationLockedController<Content> : SwiftUI.UIHostingController<PVLib.OrientationLockedController<Content>.Root<Content>> where Content : SwiftUI.View {
-  public class Box {
-    public init()
-    @objc deinit
-  }
-  @_Concurrency.MainActor(unsafe) public var orientations: PVLib.OrientationLockedController<Content>.Box!
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
-    @objc get
-  }
-  @_Concurrency.MainActor(unsafe) public init(rootView: Content)
-  public struct Root<Content> : SwiftUI.View where Content : SwiftUI.View {
-    @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
-      get
-    }
-    public typealias Body = @_opaqueReturnTypeOf("$s5PVLib27OrientationLockedControllerC4RootV4bodyQrvp", 0) __<Content, Content>
-  }
-  @objc deinit
-}
-extension SwiftUI.View {
-  public func supportedOrientations(_ supportedOrientations: UIKit.UIInterfaceOrientationMask) -> some SwiftUI.View
-  
 }
 public class WaveformAnalyzer {
   public var duration: Swift.Double!
@@ -873,118 +988,6 @@ extension UIKit.UIImage {
   public class func gifImageWithURL(_ gifUrl: Swift.String) -> UIKit.UIImage?
   public class func gifImageWithName(_ name: Swift.String) -> UIKit.UIImage?
 }
-@objc @_inheritsConvenienceInitializers public class PVMetalRenderer : ObjectiveC.NSObject, SceneKit.SCNSceneRendererDelegate {
-  public func mtkView(_ view: MetalKit.MTKView, drawableSizeWillChange size: CoreFoundation.CGSize)
-  public var faceDetector: (any PVLib.PVFaceSceneDelegate)?
-  public var scnView: SceneKit.SCNView!
-  public var mtlUniforms: PVLib.MetalUniforms!
-  public var beautyValues: PVLib.BeautyValues!
-  public var beautyId: Swift.Int
-  public var segment: PVLib.Segment?
-  public var metalLayer: QuartzCore.CAMetalLayer
-  public var pixelBuffer: CoreVideo.CVPixelBuffer!
-  public var useMultiCam: Swift.Bool
-  public var outputTexure: (any Metal.MTLTexture)?
-  public var multiCamTexure: (any Metal.MTLTexture)?
-  public var fullCamTexure: (any Metal.MTLTexture)?
-  public var main_tool_id: Swift.Int
-  public var layerVal: Swift.Int
-  public var filter: Swift.String {
-    get
-    set
-  }
-  public var lutsId: Swift.Int {
-    get
-    set
-  }
-  public var mask: PVLib.ARMask {
-    get
-    set
-  }
-  @objc deinit
-  @objc override dynamic public init()
-  public func changeCamera()
-  public func stopScene()
-  public func setEditorFrame()
-  public func setFrame(_ frame: CoreFoundation.CGRect)
-  public func updateFrame()
-  public func updatePixelBuffer(pixelsFull: CoreVideo.CVPixelBuffer, pixelsIcon: CoreVideo.CVPixelBuffer? = nil, timestampFull: CoreMedia.CMTime? = nil, timestampIcon: CoreMedia.CMTime? = nil)
-  @objc public func renderer(_ renderer: any SceneKit.SCNSceneRenderer, updateAtTime time: Foundation.TimeInterval)
-  public func editDraw(sourceBuffer source: CoreVideo.CVPixelBuffer, cTime: CoreMedia.CMTime)
-}
-extension CoreFoundation.CGPoint {
-  public func convert(rect: CoreFoundation.CGRect) -> simd.float2
-}
-extension Foundation.NSNotification.Name {
-  public static let pvRemoveTextureWriter: Foundation.NSNotification.Name
-}
-extension Foundation.NSNotification.Name {
-  public static let pvResumeTextureWriter: Foundation.NSNotification.Name
-}
-public class PVVCoordinator {
-  public static var navigation: UIKit.UINavigationController!
-  @objc deinit
-  public static func resumeSession()
-  public static func stopSession()
-  public static var inBackground: Swift.Bool
-  public static func shareImage(_ img: UIKit.UIImage)
-  public static func start(from: QuartzCore.CATransitionSubtype, type: QuartzCore.CATransitionType, duration: CoreFoundation.CGFloat = 0.25, _ view: SwiftUI.AnyView, shouldRotate: Swift.Bool = false)
-  public static func moveToSUIView(from: QuartzCore.CATransitionSubtype, type: QuartzCore.CATransitionType, duration: CoreFoundation.CGFloat = 0.25, _ view: SwiftUI.AnyView, shouldRotate: Swift.Bool = false)
-  public static func moveToUIKitView(from: QuartzCore.CATransitionSubtype, type: QuartzCore.CATransitionType, duration: CoreFoundation.CGFloat = 0.25, _ viewController: UIKit.UIViewController)
-  required public init(navigationController: UIKit.UINavigationController)
-}
-public protocol TrimmerDelegate : AnyObject {
-  func didChangePositionBar(_ playerTime: CoreMedia.CMTime)
-  func positionBarStoppedMoving(_ playerTime: CoreMedia.CMTime)
-}
-@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class TrimmerView : UIKit.UIView, UIKit.UIScrollViewDelegate {
-  @_Concurrency.MainActor(unsafe) public var moving: Swift.Bool
-  @objc deinit
-  @_Concurrency.MainActor(unsafe) public var id: Swift.Int?
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var mainColor: UIKit.UIColor {
-    @objc get
-    @objc set
-  }
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var handleColor: UIKit.UIColor {
-    @objc get
-    @objc set
-  }
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var positionBarColor: UIKit.UIColor {
-    @objc get
-    @objc set
-  }
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var maskColor: UIKit.UIColor {
-    @objc get
-    @objc set
-  }
-  @_Concurrency.MainActor(unsafe) public var isSelected: Swift.Bool
-  @_Concurrency.MainActor(unsafe) final public let trimView: UIKit.UIImageView
-  @_Concurrency.MainActor(unsafe) public var assetDuration: CoreMedia.CMTime!
-  @_Concurrency.MainActor(unsafe) weak public var delegate: (any PVLib.TrimmerDelegate)?
-  @_Concurrency.MainActor(unsafe) public func setupSubviews()
-  @_Concurrency.MainActor(unsafe) public var asset: AVFoundation.AVAsset? {
-    get
-    set
-  }
-  @_Concurrency.MainActor(unsafe) public func assetDidChange(newAsset: AVFoundation.AVAsset?)
-  @_Concurrency.MainActor(unsafe) public func setupAssetPreview()
-  @_Concurrency.MainActor(unsafe) public func constrainAssetPreview()
-  @_Concurrency.MainActor(unsafe) public func setupTrimmerView()
-  @_Concurrency.MainActor(unsafe) public func effectsView()
-  @_Concurrency.MainActor(unsafe) public func seek(to time: Foundation.TimeInterval)
-  @_Concurrency.MainActor(unsafe) public func seek(to time: CoreMedia.CMTime)
-  @_Concurrency.MainActor(unsafe) public var updateRightHandler: Swift.Bool
-  @_Concurrency.MainActor(unsafe) public func resetHandleViewPosition()
-  @_Concurrency.MainActor(unsafe) public var startTime: CoreMedia.CMTime? {
-    get
-  }
-  @_Concurrency.MainActor(unsafe) public var timeRange: CoreMedia.CMTimeRange
-  @_Concurrency.MainActor(unsafe) public var endTime: CoreMedia.CMTime? {
-    get
-  }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-}
 extension PVLib.ARMask : Swift.Equatable {}
 extension PVLib.ARMask : Swift.Hashable {}
 extension PVLib.ARMask : Swift.RawRepresentable {}
@@ -1012,10 +1015,10 @@ extension PVLib.LayerTypes : Swift.RawRepresentable {}
 extension PVLib.MainVideoEditingTools : Swift.Equatable {}
 extension PVLib.MainVideoEditingTools : Swift.Hashable {}
 extension PVLib.MainVideoEditingTools : Swift.RawRepresentable {}
-extension PVLib.CamPos : Swift.Equatable {}
-extension PVLib.CamPos : Swift.Hashable {}
 extension PVLib.FrameAlignment : Swift.Equatable {}
 extension PVLib.FrameAlignment : Swift.Hashable {}
+extension PVLib.CamPos : Swift.Equatable {}
+extension PVLib.CamPos : Swift.Hashable {}
 extension PVLib.Types : Swift.Equatable {}
 extension PVLib.Types : Swift.Hashable {}
 extension PVLib.SoundCategory : Swift.Equatable {}
