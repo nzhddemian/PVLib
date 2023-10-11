@@ -2570,6 +2570,584 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PVLib"
+      },
+      {
+        "kind": "Import",
+        "name": "MetalKit",
+        "printedName": "MetalKit",
+        "declKind": "Import",
+        "moduleName": "PVLib"
+      },
+      {
+        "kind": "Import",
+        "name": "simd",
+        "printedName": "simd",
+        "declKind": "Import",
+        "moduleName": "PVLib"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Node",
+        "printedName": "Node",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "mesh",
+            "printedName": "mesh",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MetalKit.MTKMesh?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MTKMesh",
+                    "printedName": "MetalKit.MTKMesh",
+                    "usr": "c:objc(cs)MTKMesh"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib4NodeC4meshSo7MTKMeshCSgvp",
+            "mangledName": "$s5PVLib4NodeC4meshSo7MTKMeshCSgvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MetalKit.MTKMesh?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MTKMesh",
+                        "printedName": "MetalKit.MTKMesh",
+                        "usr": "c:objc(cs)MTKMesh"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib4NodeC4meshSo7MTKMeshCSgvg",
+                "mangledName": "$s5PVLib4NodeC4meshSo7MTKMeshCSgvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MetalKit.MTKMesh?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MTKMesh",
+                        "printedName": "MetalKit.MTKMesh",
+                        "usr": "c:objc(cs)MTKMesh"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib4NodeC4meshSo7MTKMeshCSgvs",
+                "mangledName": "$s5PVLib4NodeC4meshSo7MTKMeshCSgvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib4NodeC4meshSo7MTKMeshCSgvM",
+                "mangledName": "$s5PVLib4NodeC4meshSo7MTKMeshCSgvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "texture",
+            "printedName": "texture",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Metal.MTLTexture?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MTLTexture",
+                    "printedName": "Metal.MTLTexture",
+                    "usr": "c:objc(pl)MTLTexture"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib4NodeC7textureSo10MTLTexture_pSgvp",
+            "mangledName": "$s5PVLib4NodeC7textureSo10MTLTexture_pSgvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Metal.MTLTexture?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MTLTexture",
+                        "printedName": "Metal.MTLTexture",
+                        "usr": "c:objc(pl)MTLTexture"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib4NodeC7textureSo10MTLTexture_pSgvg",
+                "mangledName": "$s5PVLib4NodeC7textureSo10MTLTexture_pSgvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Metal.MTLTexture?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MTLTexture",
+                        "printedName": "Metal.MTLTexture",
+                        "usr": "c:objc(pl)MTLTexture"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib4NodeC7textureSo10MTLTexture_pSgvs",
+                "mangledName": "$s5PVLib4NodeC7textureSo10MTLTexture_pSgvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib4NodeC7textureSo10MTLTexture_pSgvM",
+                "mangledName": "$s5PVLib4NodeC7textureSo10MTLTexture_pSgvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "transform",
+            "printedName": "transform",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "simd_float4x4",
+                "printedName": "simd.simd_float4x4",
+                "usr": "c:@SA@simd_float4x4"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib4NodeC9transformSo13simd_float4x4avp",
+            "mangledName": "$s5PVLib4NodeC9transformSo13simd_float4x4avp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "simd_float4x4",
+                    "printedName": "simd.simd_float4x4",
+                    "usr": "c:@SA@simd_float4x4"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib4NodeC9transformSo13simd_float4x4avg",
+                "mangledName": "$s5PVLib4NodeC9transformSo13simd_float4x4avg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "simd_float4x4",
+                    "printedName": "simd.simd_float4x4",
+                    "usr": "c:@SA@simd_float4x4"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib4NodeC9transformSo13simd_float4x4avs",
+                "mangledName": "$s5PVLib4NodeC9transformSo13simd_float4x4avs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib4NodeC9transformSo13simd_float4x4avM",
+                "mangledName": "$s5PVLib4NodeC9transformSo13simd_float4x4avM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "worldTransform",
+            "printedName": "worldTransform",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "simd_float4x4",
+                "printedName": "simd.simd_float4x4",
+                "usr": "c:@SA@simd_float4x4"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib4NodeC14worldTransformSo13simd_float4x4avp",
+            "mangledName": "$s5PVLib4NodeC14worldTransformSo13simd_float4x4avp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "simd_float4x4",
+                    "printedName": "simd.simd_float4x4",
+                    "usr": "c:@SA@simd_float4x4"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib4NodeC14worldTransformSo13simd_float4x4avg",
+                "mangledName": "$s5PVLib4NodeC14worldTransformSo13simd_float4x4avg",
+                "moduleName": "PVLib",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "parentNode",
+            "printedName": "parentNode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "PVLib.Node?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib4NodeC06parentB0ACSgvp",
+            "mangledName": "$s5PVLib4NodeC06parentB0ACSgvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PVLib.Node?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Node",
+                        "printedName": "PVLib.Node",
+                        "usr": "s:5PVLib4NodeC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib4NodeC06parentB0ACSgvg",
+                "mangledName": "$s5PVLib4NodeC06parentB0ACSgvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PVLib.Node?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Node",
+                        "printedName": "PVLib.Node",
+                        "usr": "s:5PVLib4NodeC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib4NodeC06parentB0ACSgvs",
+                "mangledName": "$s5PVLib4NodeC06parentB0ACSgvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib4NodeC06parentB0ACSgvM",
+                "mangledName": "$s5PVLib4NodeC06parentB0ACSgvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Node",
+                "printedName": "PVLib.Node",
+                "usr": "s:5PVLib4NodeC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5PVLib4NodeCACycfc",
+            "mangledName": "$s5PVLib4NodeCACycfc",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(mesh:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Node",
+                "printedName": "PVLib.Node",
+                "usr": "s:5PVLib4NodeC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MTKMesh",
+                "printedName": "MetalKit.MTKMesh",
+                "usr": "c:objc(cs)MTKMesh"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5PVLib4NodeC4meshACSo7MTKMeshC_tcfc",
+            "mangledName": "$s5PVLib4NodeC4meshACSo7MTKMeshC_tcfc",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "addChildNode",
+            "printedName": "addChildNode(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Node",
+                "printedName": "PVLib.Node",
+                "usr": "s:5PVLib4NodeC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5PVLib4NodeC08addChildB0yyACF",
+            "mangledName": "$s5PVLib4NodeC08addChildB0yyACF",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeFromParent",
+            "printedName": "removeFromParent()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5PVLib4NodeC16removeFromParentyyF",
+            "mangledName": "$s5PVLib4NodeC16removeFromParentyyF",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5PVLib4NodeC",
+        "mangledName": "$s5PVLib4NodeC",
+        "moduleName": "PVLib",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "CoreMedia",
         "printedName": "CoreMedia",
         "declKind": "Import",
@@ -14940,6 +15518,974 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PVLib"
+      },
+      {
+        "kind": "Import",
+        "name": "Metal",
+        "printedName": "Metal",
+        "declKind": "Import",
+        "moduleName": "PVLib"
+      },
+      {
+        "kind": "Import",
+        "name": "simd",
+        "printedName": "simd",
+        "declKind": "Import",
+        "moduleName": "PVLib"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LightType",
+        "printedName": "LightType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "ambient",
+            "printedName": "ambient",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PVLib.LightType.Type) -> PVLib.LightType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LightType",
+                    "printedName": "PVLib.LightType",
+                    "usr": "s:5PVLib9LightTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PVLib.LightType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LightType",
+                        "printedName": "PVLib.LightType",
+                        "usr": "s:5PVLib9LightTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5PVLib9LightTypeO7ambientyA2CmF",
+            "mangledName": "$s5PVLib9LightTypeO7ambientyA2CmF",
+            "moduleName": "PVLib"
+          },
+          {
+            "kind": "Var",
+            "name": "directional",
+            "printedName": "directional",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PVLib.LightType.Type) -> PVLib.LightType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LightType",
+                    "printedName": "PVLib.LightType",
+                    "usr": "s:5PVLib9LightTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PVLib.LightType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LightType",
+                        "printedName": "PVLib.LightType",
+                        "usr": "s:5PVLib9LightTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5PVLib9LightTypeO11directionalyA2CmF",
+            "mangledName": "$s5PVLib9LightTypeO11directionalyA2CmF",
+            "moduleName": "PVLib"
+          },
+          {
+            "kind": "Var",
+            "name": "omni",
+            "printedName": "omni",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PVLib.LightType.Type) -> PVLib.LightType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LightType",
+                    "printedName": "PVLib.LightType",
+                    "usr": "s:5PVLib9LightTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PVLib.LightType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LightType",
+                        "printedName": "PVLib.LightType",
+                        "usr": "s:5PVLib9LightTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5PVLib9LightTypeO4omniyA2CmF",
+            "mangledName": "$s5PVLib9LightTypeO4omniyA2CmF",
+            "moduleName": "PVLib"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PVLib.LightType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LightType",
+                    "printedName": "PVLib.LightType",
+                    "usr": "s:5PVLib9LightTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt32",
+                "printedName": "Swift.UInt32",
+                "usr": "s:s6UInt32V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5PVLib9LightTypeO8rawValueACSgs6UInt32V_tcfc",
+            "mangledName": "$s5PVLib9LightTypeO8rawValueACSgs6UInt32V_tcfc",
+            "moduleName": "PVLib",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt32",
+                "printedName": "Swift.UInt32",
+                "usr": "s:s6UInt32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib9LightTypeO8rawValues6UInt32Vvp",
+            "mangledName": "$s5PVLib9LightTypeO8rawValues6UInt32Vvp",
+            "moduleName": "PVLib",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib9LightTypeO8rawValues6UInt32Vvg",
+                "mangledName": "$s5PVLib9LightTypeO8rawValues6UInt32Vvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:5PVLib9LightTypeO",
+        "mangledName": "$s5PVLib9LightTypeO",
+        "moduleName": "PVLib",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "UInt32",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Light",
+        "printedName": "Light",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LightType",
+                "printedName": "PVLib.LightType",
+                "usr": "s:5PVLib9LightTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib5LightC4typeAA0B4TypeOvp",
+            "mangledName": "$s5PVLib5LightC4typeAA0B4TypeOvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LightType",
+                    "printedName": "PVLib.LightType",
+                    "usr": "s:5PVLib9LightTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5LightC4typeAA0B4TypeOvg",
+                "mangledName": "$s5PVLib5LightC4typeAA0B4TypeOvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LightType",
+                    "printedName": "PVLib.LightType",
+                    "usr": "s:5PVLib9LightTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5LightC4typeAA0B4TypeOvs",
+                "mangledName": "$s5PVLib5LightC4typeAA0B4TypeOvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5LightC4typeAA0B4TypeOvM",
+                "mangledName": "$s5PVLib5LightC4typeAA0B4TypeOvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "color",
+            "printedName": "color",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SIMD3",
+                "printedName": "Swift.SIMD3<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:s5SIMD3V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib5LightC5colors5SIMD3VySfGvp",
+            "mangledName": "$s5PVLib5LightC5colors5SIMD3VySfGvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD3",
+                    "printedName": "Swift.SIMD3<Swift.Float>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:s5SIMD3V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5LightC5colors5SIMD3VySfGvg",
+                "mangledName": "$s5PVLib5LightC5colors5SIMD3VySfGvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD3",
+                    "printedName": "Swift.SIMD3<Swift.Float>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:s5SIMD3V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5LightC5colors5SIMD3VySfGvs",
+                "mangledName": "$s5PVLib5LightC5colors5SIMD3VySfGvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5LightC5colors5SIMD3VySfGvM",
+                "mangledName": "$s5PVLib5LightC5colors5SIMD3VySfGvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "intensity",
+            "printedName": "intensity",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib5LightC9intensitySfvp",
+            "mangledName": "$s5PVLib5LightC9intensitySfvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5LightC9intensitySfvg",
+                "mangledName": "$s5PVLib5LightC9intensitySfvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5LightC9intensitySfvs",
+                "mangledName": "$s5PVLib5LightC9intensitySfvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5LightC9intensitySfvM",
+                "mangledName": "$s5PVLib5LightC9intensitySfvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Light",
+                "printedName": "PVLib.Light",
+                "usr": "s:5PVLib5LightC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5PVLib5LightCACycfc",
+            "mangledName": "$s5PVLib5LightCACycfc",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "worldTransform",
+            "printedName": "worldTransform",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "simd_float4x4",
+                "printedName": "simd.simd_float4x4",
+                "usr": "c:@SA@simd_float4x4"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib5LightC14worldTransformSo13simd_float4x4avp",
+            "mangledName": "$s5PVLib5LightC14worldTransformSo13simd_float4x4avp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "simd_float4x4",
+                    "printedName": "simd.simd_float4x4",
+                    "usr": "c:@SA@simd_float4x4"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5LightC14worldTransformSo13simd_float4x4avg",
+                "mangledName": "$s5PVLib5LightC14worldTransformSo13simd_float4x4avg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "simd_float4x4",
+                    "printedName": "simd.simd_float4x4",
+                    "usr": "c:@SA@simd_float4x4"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5LightC14worldTransformSo13simd_float4x4avs",
+                "mangledName": "$s5PVLib5LightC14worldTransformSo13simd_float4x4avs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5LightC14worldTransformSo13simd_float4x4avM",
+                "mangledName": "$s5PVLib5LightC14worldTransformSo13simd_float4x4avM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "position",
+            "printedName": "position",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SIMD3",
+                "printedName": "Swift.SIMD3<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:s5SIMD3V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib5LightC8positions5SIMD3VySfGvp",
+            "mangledName": "$s5PVLib5LightC8positions5SIMD3VySfGvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD3",
+                    "printedName": "Swift.SIMD3<Swift.Float>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:s5SIMD3V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5LightC8positions5SIMD3VySfGvg",
+                "mangledName": "$s5PVLib5LightC8positions5SIMD3VySfGvg",
+                "moduleName": "PVLib",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "direction",
+            "printedName": "direction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SIMD3",
+                "printedName": "Swift.SIMD3<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:s5SIMD3V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib5LightC9directions5SIMD3VySfGvp",
+            "mangledName": "$s5PVLib5LightC9directions5SIMD3VySfGvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD3",
+                    "printedName": "Swift.SIMD3<Swift.Float>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:s5SIMD3V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5LightC9directions5SIMD3VySfGvg",
+                "mangledName": "$s5PVLib5LightC9directions5SIMD3VySfGvg",
+                "moduleName": "PVLib",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "castsShadows",
+            "printedName": "castsShadows",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib5LightC12castsShadowsSbvp",
+            "mangledName": "$s5PVLib5LightC12castsShadowsSbvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5LightC12castsShadowsSbvg",
+                "mangledName": "$s5PVLib5LightC12castsShadowsSbvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5LightC12castsShadowsSbvs",
+                "mangledName": "$s5PVLib5LightC12castsShadowsSbvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5LightC12castsShadowsSbvM",
+                "mangledName": "$s5PVLib5LightC12castsShadowsSbvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shadowTexture",
+            "printedName": "shadowTexture",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Metal.MTLTexture?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MTLTexture",
+                    "printedName": "Metal.MTLTexture",
+                    "usr": "c:objc(pl)MTLTexture"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib5LightC13shadowTextureSo10MTLTexture_pSgvp",
+            "mangledName": "$s5PVLib5LightC13shadowTextureSo10MTLTexture_pSgvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Metal.MTLTexture?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MTLTexture",
+                        "printedName": "Metal.MTLTexture",
+                        "usr": "c:objc(pl)MTLTexture"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5LightC13shadowTextureSo10MTLTexture_pSgvg",
+                "mangledName": "$s5PVLib5LightC13shadowTextureSo10MTLTexture_pSgvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Metal.MTLTexture?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MTLTexture",
+                        "printedName": "Metal.MTLTexture",
+                        "usr": "c:objc(pl)MTLTexture"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5LightC13shadowTextureSo10MTLTexture_pSgvs",
+                "mangledName": "$s5PVLib5LightC13shadowTextureSo10MTLTexture_pSgvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib5LightC13shadowTextureSo10MTLTexture_pSgvM",
+                "mangledName": "$s5PVLib5LightC13shadowTextureSo10MTLTexture_pSgvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5PVLib5LightC",
+        "mangledName": "$s5PVLib5LightC",
+        "moduleName": "PVLib",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "AVFoundation",
         "printedName": "AVFoundation",
         "declKind": "Import",
@@ -19975,6 +21521,62 @@
             "mangledName": "$s5PVLib6DeviceC12vertexBufferSo9MTLBuffer_pSgyFZ",
             "moduleName": "PVLib",
             "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ciTextures",
+            "printedName": "ciTextures(_:size:commandBuff:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Metal.MTLTexture?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MTLTexture",
+                    "printedName": "Metal.MTLTexture",
+                    "usr": "c:objc(pl)MTLTexture"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CoreImage.CIImage]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CIImage",
+                    "printedName": "CoreImage.CIImage",
+                    "usr": "c:objc(cs)CIImage"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MTLCommandBuffer",
+                "printedName": "Metal.MTLCommandBuffer",
+                "usr": "c:objc(pl)MTLCommandBuffer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5PVLib6DeviceC10ciTextures_4size11commandBuffSo10MTLTexture_pSgSaySo7CIImageCG_So6CGSizeVSo16MTLCommandBuffer_ptF",
+            "mangledName": "$s5PVLib6DeviceC10ciTextures_4size11commandBuffSo10MTLTexture_pSgSaySo7CIImageCG_So6CGSizeVSo16MTLCommandBuffer_ptF",
+            "moduleName": "PVLib",
             "declAttributes": [
               "Final",
               "AccessControl"
@@ -26763,6 +28365,1484 @@
             "mangledName": "$ss8SendableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "simd",
+        "printedName": "simd",
+        "declKind": "Import",
+        "moduleName": "PVLib"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BottleState",
+        "printedName": "BottleState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "position",
+            "printedName": "position",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SIMD3",
+                "printedName": "Swift.SIMD3<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:s5SIMD3V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib11BottleStateC8positions5SIMD3VySfGvp",
+            "mangledName": "$s5PVLib11BottleStateC8positions5SIMD3VySfGvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD3",
+                    "printedName": "Swift.SIMD3<Swift.Float>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:s5SIMD3V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib11BottleStateC8positions5SIMD3VySfGvg",
+                "mangledName": "$s5PVLib11BottleStateC8positions5SIMD3VySfGvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD3",
+                    "printedName": "Swift.SIMD3<Swift.Float>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:s5SIMD3V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib11BottleStateC8positions5SIMD3VySfGvs",
+                "mangledName": "$s5PVLib11BottleStateC8positions5SIMD3VySfGvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib11BottleStateC8positions5SIMD3VySfGvM",
+                "mangledName": "$s5PVLib11BottleStateC8positions5SIMD3VySfGvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "scale",
+            "printedName": "scale",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib11BottleStateC5scaleSfvp",
+            "mangledName": "$s5PVLib11BottleStateC5scaleSfvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib11BottleStateC5scaleSfvg",
+                "mangledName": "$s5PVLib11BottleStateC5scaleSfvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib11BottleStateC5scaleSfvs",
+                "mangledName": "$s5PVLib11BottleStateC5scaleSfvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib11BottleStateC5scaleSfvM",
+                "mangledName": "$s5PVLib11BottleStateC5scaleSfvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rotationAxis",
+            "printedName": "rotationAxis",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SIMD3",
+                "printedName": "Swift.SIMD3<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:s5SIMD3V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib11BottleStateC12rotationAxiss5SIMD3VySfGvp",
+            "mangledName": "$s5PVLib11BottleStateC12rotationAxiss5SIMD3VySfGvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD3",
+                    "printedName": "Swift.SIMD3<Swift.Float>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:s5SIMD3V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib11BottleStateC12rotationAxiss5SIMD3VySfGvg",
+                "mangledName": "$s5PVLib11BottleStateC12rotationAxiss5SIMD3VySfGvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD3",
+                    "printedName": "Swift.SIMD3<Swift.Float>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:s5SIMD3V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib11BottleStateC12rotationAxiss5SIMD3VySfGvs",
+                "mangledName": "$s5PVLib11BottleStateC12rotationAxiss5SIMD3VySfGvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib11BottleStateC12rotationAxiss5SIMD3VySfGvM",
+                "mangledName": "$s5PVLib11BottleStateC12rotationAxiss5SIMD3VySfGvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rotationAngle",
+            "printedName": "rotationAngle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib11BottleStateC13rotationAngleSfvp",
+            "mangledName": "$s5PVLib11BottleStateC13rotationAngleSfvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib11BottleStateC13rotationAngleSfvg",
+                "mangledName": "$s5PVLib11BottleStateC13rotationAngleSfvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib11BottleStateC13rotationAngleSfvs",
+                "mangledName": "$s5PVLib11BottleStateC13rotationAngleSfvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib11BottleStateC13rotationAngleSfvM",
+                "mangledName": "$s5PVLib11BottleStateC13rotationAngleSfvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "angularVelocity",
+            "printedName": "angularVelocity",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib11BottleStateC15angularVelocitySfvp",
+            "mangledName": "$s5PVLib11BottleStateC15angularVelocitySfvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib11BottleStateC15angularVelocitySfvg",
+                "mangledName": "$s5PVLib11BottleStateC15angularVelocitySfvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib11BottleStateC15angularVelocitySfvs",
+                "mangledName": "$s5PVLib11BottleStateC15angularVelocitySfvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib11BottleStateC15angularVelocitySfvM",
+                "mangledName": "$s5PVLib11BottleStateC15angularVelocitySfvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5PVLib11BottleStateC",
+        "mangledName": "$s5PVLib11BottleStateC",
+        "moduleName": "PVLib",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InstanceConstants",
+        "printedName": "InstanceConstants",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "modelMatrix",
+            "printedName": "modelMatrix",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "simd_float4x4",
+                "printedName": "simd.simd_float4x4",
+                "usr": "c:@SA@simd_float4x4"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib17InstanceConstantsV11modelMatrixSo13simd_float4x4avp",
+            "mangledName": "$s5PVLib17InstanceConstantsV11modelMatrixSo13simd_float4x4avp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "simd_float4x4",
+                    "printedName": "simd.simd_float4x4",
+                    "usr": "c:@SA@simd_float4x4"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib17InstanceConstantsV11modelMatrixSo13simd_float4x4avg",
+                "mangledName": "$s5PVLib17InstanceConstantsV11modelMatrixSo13simd_float4x4avg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "simd_float4x4",
+                    "printedName": "simd.simd_float4x4",
+                    "usr": "c:@SA@simd_float4x4"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib17InstanceConstantsV11modelMatrixSo13simd_float4x4avs",
+                "mangledName": "$s5PVLib17InstanceConstantsV11modelMatrixSo13simd_float4x4avs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib17InstanceConstantsV11modelMatrixSo13simd_float4x4avM",
+                "mangledName": "$s5PVLib17InstanceConstantsV11modelMatrixSo13simd_float4x4avM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:5PVLib17InstanceConstantsV",
+        "mangledName": "$s5PVLib17InstanceConstantsV",
+        "moduleName": "PVLib",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FrameConstants",
+        "printedName": "FrameConstants",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "projectionMatrix",
+            "printedName": "projectionMatrix",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "simd_float4x4",
+                "printedName": "simd.simd_float4x4",
+                "usr": "c:@SA@simd_float4x4"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib14FrameConstantsV16projectionMatrixSo13simd_float4x4avp",
+            "mangledName": "$s5PVLib14FrameConstantsV16projectionMatrixSo13simd_float4x4avp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "simd_float4x4",
+                    "printedName": "simd.simd_float4x4",
+                    "usr": "c:@SA@simd_float4x4"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14FrameConstantsV16projectionMatrixSo13simd_float4x4avg",
+                "mangledName": "$s5PVLib14FrameConstantsV16projectionMatrixSo13simd_float4x4avg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "simd_float4x4",
+                    "printedName": "simd.simd_float4x4",
+                    "usr": "c:@SA@simd_float4x4"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14FrameConstantsV16projectionMatrixSo13simd_float4x4avs",
+                "mangledName": "$s5PVLib14FrameConstantsV16projectionMatrixSo13simd_float4x4avs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14FrameConstantsV16projectionMatrixSo13simd_float4x4avM",
+                "mangledName": "$s5PVLib14FrameConstantsV16projectionMatrixSo13simd_float4x4avM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "viewMatrix",
+            "printedName": "viewMatrix",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "simd_float4x4",
+                "printedName": "simd.simd_float4x4",
+                "usr": "c:@SA@simd_float4x4"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib14FrameConstantsV10viewMatrixSo13simd_float4x4avp",
+            "mangledName": "$s5PVLib14FrameConstantsV10viewMatrixSo13simd_float4x4avp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "simd_float4x4",
+                    "printedName": "simd.simd_float4x4",
+                    "usr": "c:@SA@simd_float4x4"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14FrameConstantsV10viewMatrixSo13simd_float4x4avg",
+                "mangledName": "$s5PVLib14FrameConstantsV10viewMatrixSo13simd_float4x4avg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "simd_float4x4",
+                    "printedName": "simd.simd_float4x4",
+                    "usr": "c:@SA@simd_float4x4"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14FrameConstantsV10viewMatrixSo13simd_float4x4avs",
+                "mangledName": "$s5PVLib14FrameConstantsV10viewMatrixSo13simd_float4x4avs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14FrameConstantsV10viewMatrixSo13simd_float4x4avM",
+                "mangledName": "$s5PVLib14FrameConstantsV10viewMatrixSo13simd_float4x4avM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lightCount",
+            "printedName": "lightCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt32",
+                "printedName": "Swift.UInt32",
+                "usr": "s:s6UInt32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib14FrameConstantsV10lightCounts6UInt32Vvp",
+            "mangledName": "$s5PVLib14FrameConstantsV10lightCounts6UInt32Vvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14FrameConstantsV10lightCounts6UInt32Vvg",
+                "mangledName": "$s5PVLib14FrameConstantsV10lightCounts6UInt32Vvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14FrameConstantsV10lightCounts6UInt32Vvs",
+                "mangledName": "$s5PVLib14FrameConstantsV10lightCounts6UInt32Vvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14FrameConstantsV10lightCounts6UInt32VvM",
+                "mangledName": "$s5PVLib14FrameConstantsV10lightCounts6UInt32VvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:5PVLib14FrameConstantsV",
+        "mangledName": "$s5PVLib14FrameConstantsV",
+        "moduleName": "PVLib",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LightConstants",
+        "printedName": "LightConstants",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "viewProjectionMatrix",
+            "printedName": "viewProjectionMatrix",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "simd_float4x4",
+                "printedName": "simd.simd_float4x4",
+                "usr": "c:@SA@simd_float4x4"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib14LightConstantsV20viewProjectionMatrixSo13simd_float4x4avp",
+            "mangledName": "$s5PVLib14LightConstantsV20viewProjectionMatrixSo13simd_float4x4avp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "simd_float4x4",
+                    "printedName": "simd.simd_float4x4",
+                    "usr": "c:@SA@simd_float4x4"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14LightConstantsV20viewProjectionMatrixSo13simd_float4x4avg",
+                "mangledName": "$s5PVLib14LightConstantsV20viewProjectionMatrixSo13simd_float4x4avg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "simd_float4x4",
+                    "printedName": "simd.simd_float4x4",
+                    "usr": "c:@SA@simd_float4x4"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14LightConstantsV20viewProjectionMatrixSo13simd_float4x4avs",
+                "mangledName": "$s5PVLib14LightConstantsV20viewProjectionMatrixSo13simd_float4x4avs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14LightConstantsV20viewProjectionMatrixSo13simd_float4x4avM",
+                "mangledName": "$s5PVLib14LightConstantsV20viewProjectionMatrixSo13simd_float4x4avM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "intensity",
+            "printedName": "intensity",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SIMD3",
+                "printedName": "Swift.SIMD3<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:s5SIMD3V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib14LightConstantsV9intensitys5SIMD3VySfGvp",
+            "mangledName": "$s5PVLib14LightConstantsV9intensitys5SIMD3VySfGvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD3",
+                    "printedName": "Swift.SIMD3<Swift.Float>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:s5SIMD3V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14LightConstantsV9intensitys5SIMD3VySfGvg",
+                "mangledName": "$s5PVLib14LightConstantsV9intensitys5SIMD3VySfGvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD3",
+                    "printedName": "Swift.SIMD3<Swift.Float>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:s5SIMD3V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14LightConstantsV9intensitys5SIMD3VySfGvs",
+                "mangledName": "$s5PVLib14LightConstantsV9intensitys5SIMD3VySfGvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14LightConstantsV9intensitys5SIMD3VySfGvM",
+                "mangledName": "$s5PVLib14LightConstantsV9intensitys5SIMD3VySfGvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "position",
+            "printedName": "position",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SIMD3",
+                "printedName": "Swift.SIMD3<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:s5SIMD3V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib14LightConstantsV8positions5SIMD3VySfGvp",
+            "mangledName": "$s5PVLib14LightConstantsV8positions5SIMD3VySfGvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD3",
+                    "printedName": "Swift.SIMD3<Swift.Float>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:s5SIMD3V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14LightConstantsV8positions5SIMD3VySfGvg",
+                "mangledName": "$s5PVLib14LightConstantsV8positions5SIMD3VySfGvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD3",
+                    "printedName": "Swift.SIMD3<Swift.Float>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:s5SIMD3V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14LightConstantsV8positions5SIMD3VySfGvs",
+                "mangledName": "$s5PVLib14LightConstantsV8positions5SIMD3VySfGvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14LightConstantsV8positions5SIMD3VySfGvM",
+                "mangledName": "$s5PVLib14LightConstantsV8positions5SIMD3VySfGvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "direction",
+            "printedName": "direction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SIMD3",
+                "printedName": "Swift.SIMD3<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:s5SIMD3V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib14LightConstantsV9directions5SIMD3VySfGvp",
+            "mangledName": "$s5PVLib14LightConstantsV9directions5SIMD3VySfGvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD3",
+                    "printedName": "Swift.SIMD3<Swift.Float>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:s5SIMD3V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14LightConstantsV9directions5SIMD3VySfGvg",
+                "mangledName": "$s5PVLib14LightConstantsV9directions5SIMD3VySfGvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD3",
+                    "printedName": "Swift.SIMD3<Swift.Float>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:s5SIMD3V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14LightConstantsV9directions5SIMD3VySfGvs",
+                "mangledName": "$s5PVLib14LightConstantsV9directions5SIMD3VySfGvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14LightConstantsV9directions5SIMD3VySfGvM",
+                "mangledName": "$s5PVLib14LightConstantsV9directions5SIMD3VySfGvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt32",
+                "printedName": "Swift.UInt32",
+                "usr": "s:s6UInt32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5PVLib14LightConstantsV4types6UInt32Vvp",
+            "mangledName": "$s5PVLib14LightConstantsV4types6UInt32Vvp",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14LightConstantsV4types6UInt32Vvg",
+                "mangledName": "$s5PVLib14LightConstantsV4types6UInt32Vvg",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14LightConstantsV4types6UInt32Vvs",
+                "mangledName": "$s5PVLib14LightConstantsV4types6UInt32Vvs",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5PVLib14LightConstantsV4types6UInt32VvM",
+                "mangledName": "$s5PVLib14LightConstantsV4types6UInt32VvM",
+                "moduleName": "PVLib",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:5PVLib14LightConstantsV",
+        "mangledName": "$s5PVLib14LightConstantsV",
+        "moduleName": "PVLib",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "align",
+        "printedName": "align(_:upTo:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "usr": "s:Si"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "usr": "s:Si"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "usr": "s:Si"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:5PVLib5align_4upToS2i_SitF",
+        "mangledName": "$s5PVLib5align_4upToS2i_SitF",
+        "moduleName": "PVLib",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "gcd",
+        "printedName": "gcd(_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "usr": "s:Si"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "usr": "s:Si"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "usr": "s:Si"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:5PVLib3gcdyS2i_SitF",
+        "mangledName": "$s5PVLib3gcdyS2i_SitF",
+        "moduleName": "PVLib",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "lcm",
+        "printedName": "lcm(_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "usr": "s:Si"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "usr": "s:Si"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "usr": "s:Si"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:5PVLib3lcmyS2i_SitF",
+        "mangledName": "$s5PVLib3lcmyS2i_SitF",
+        "moduleName": "PVLib",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
       },
       {
         "kind": "Import",
@@ -34716,6 +37796,20 @@
       },
       {
         "kind": "Import",
+        "name": "MetalKit",
+        "printedName": "MetalKit",
+        "declKind": "Import",
+        "moduleName": "PVLib"
+      },
+      {
+        "kind": "Import",
+        "name": "ModelIO",
+        "printedName": "ModelIO",
+        "declKind": "Import",
+        "moduleName": "PVLib"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -35925,6 +39019,388 @@
             "declKind": "Constructor",
             "usr": "s:So13simd_float4x4a5PVLibE24perspectiveProjectionFov11aspectRatio5nearZ4farZABSf_S3ftcfc",
             "mangledName": "$sSo13simd_float4x4a5PVLibE24perspectiveProjectionFov11aspectRatio5nearZ4farZABSf_S3ftcfc",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(scale2D:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "simd_float4x4",
+                "printedName": "simd.simd_float4x4",
+                "usr": "c:@SA@simd_float4x4"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SIMD2",
+                "printedName": "Swift.SIMD2<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:s5SIMD2V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:So13simd_float4x4a5PVLibE7scale2DABs5SIMD2VySfG_tcfc",
+            "mangledName": "$sSo13simd_float4x4a5PVLibE7scale2DABs5SIMD2VySfG_tcfc",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rotateZ:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "simd_float4x4",
+                "printedName": "simd.simd_float4x4",
+                "usr": "c:@SA@simd_float4x4"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:So13simd_float4x4a5PVLibE7rotateZABSf_tcfc",
+            "mangledName": "$sSo13simd_float4x4a5PVLibE7rotateZABSf_tcfc",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(translate2D:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "simd_float4x4",
+                "printedName": "simd.simd_float4x4",
+                "usr": "c:@SA@simd_float4x4"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SIMD2",
+                "printedName": "Swift.SIMD2<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:s5SIMD2V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:So13simd_float4x4a5PVLibE11translate2DABs5SIMD2VySfG_tcfc",
+            "mangledName": "$sSo13simd_float4x4a5PVLibE11translate2DABs5SIMD2VySfG_tcfc",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(scale:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "simd_float4x4",
+                "printedName": "simd.simd_float4x4",
+                "usr": "c:@SA@simd_float4x4"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SIMD3",
+                "printedName": "Swift.SIMD3<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:s5SIMD3V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:So13simd_float4x4a5PVLibE5scaleABs5SIMD3VySfG_tcfc",
+            "mangledName": "$sSo13simd_float4x4a5PVLibE5scaleABs5SIMD3VySfG_tcfc",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rotateAbout:byAngle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "simd_float4x4",
+                "printedName": "simd.simd_float4x4",
+                "usr": "c:@SA@simd_float4x4"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SIMD3",
+                "printedName": "Swift.SIMD3<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:s5SIMD3V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:So13simd_float4x4a5PVLibE11rotateAbout7byAngleABs5SIMD3VySfG_Sftcfc",
+            "mangledName": "$sSo13simd_float4x4a5PVLibE11rotateAbout7byAngleABs5SIMD3VySfG_Sftcfc",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(translate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "simd_float4x4",
+                "printedName": "simd.simd_float4x4",
+                "usr": "c:@SA@simd_float4x4"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SIMD3",
+                "printedName": "Swift.SIMD3<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:s5SIMD3V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:So13simd_float4x4a5PVLibE9translateABs5SIMD3VySfG_tcfc",
+            "mangledName": "$sSo13simd_float4x4a5PVLibE9translateABs5SIMD3VySfG_tcfc",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(lookAt:from:up:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "simd_float4x4",
+                "printedName": "simd.simd_float4x4",
+                "usr": "c:@SA@simd_float4x4"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SIMD3",
+                "printedName": "Swift.SIMD3<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:s5SIMD3V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SIMD3",
+                "printedName": "Swift.SIMD3<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:s5SIMD3V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SIMD3",
+                "printedName": "Swift.SIMD3<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:s5SIMD3V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:So13simd_float4x4a5PVLibE6lookAt4from2upABs5SIMD3VySfG_A2Itcfc",
+            "mangledName": "$sSo13simd_float4x4a5PVLibE6lookAt4from2upABs5SIMD3VySfG_A2Itcfc",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(orthographicProjectionWithLeft:top:right:bottom:near:far:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "simd_float4x4",
+                "printedName": "simd.simd_float4x4",
+                "usr": "c:@SA@simd_float4x4"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:So13simd_float4x4a5PVLibE30orthographicProjectionWithLeft3top5right6bottom4near3farABSf_S5ftcfc",
+            "mangledName": "$sSo13simd_float4x4a5PVLibE30orthographicProjectionWithLeft3top5right6bottom4near3farABSf_S5ftcfc",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(perspectiveProjectionFoVY:aspectRatio:near:far:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "simd_float4x4",
+                "printedName": "simd.simd_float4x4",
+                "usr": "c:@SA@simd_float4x4"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:So13simd_float4x4a5PVLibE25perspectiveProjectionFoVY11aspectRatio4near3farABSf_S3ftcfc",
+            "mangledName": "$sSo13simd_float4x4a5PVLibE25perspectiveProjectionFoVY11aspectRatio4near3farABSf_S3ftcfc",
             "moduleName": "PVLib",
             "declAttributes": [
               "AccessControl"
@@ -38601,6 +42077,61 @@
                 "sugared_genericSig": "<Scalar where Scalar == Swift.Float>",
                 "static": true,
                 "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "xyz",
+            "printedName": "xyz",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SIMD3",
+                "printedName": "Swift.SIMD3<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:s5SIMD3V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:s5SIMD4V5PVLibE3xyzs5SIMD3VyxGvp",
+            "mangledName": "$ss5SIMD4V5PVLibE3xyzs5SIMD3VyxGvp",
+            "moduleName": "PVLib",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD3",
+                    "printedName": "Swift.SIMD3<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s5SIMD3V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:s5SIMD4V5PVLibE3xyzs5SIMD3VyxGvg",
+                "mangledName": "$ss5SIMD4V5PVLibE3xyzs5SIMD3VyxGvg",
+                "moduleName": "PVLib",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.SIMDScalar>",
+                "sugared_genericSig": "<Scalar where Scalar : Swift.SIMDScalar>",
                 "isFromExtension": true,
                 "accessorKind": "get"
               }
@@ -43581,6 +47112,125 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Light.swift",
+      "kind": "IntegerLiteral",
+      "offset": 104,
+      "length": 11,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Light.swift",
+      "kind": "IntegerLiteral",
+      "offset": 125,
+      "length": 4,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Light.swift",
+      "kind": "IntegerLiteral",
+      "offset": 104,
+      "length": 11,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Light.swift",
+      "kind": "IntegerLiteral",
+      "offset": 125,
+      "length": 4,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Light.swift",
+      "kind": "IntegerLiteral",
+      "offset": 104,
+      "length": 11,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Light.swift",
+      "kind": "IntegerLiteral",
+      "offset": 125,
+      "length": 4,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Light.swift",
+      "kind": "IntegerLiteral",
+      "offset": 236,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Light.swift",
+      "kind": "IntegerLiteral",
+      "offset": 239,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Light.swift",
+      "kind": "IntegerLiteral",
+      "offset": 242,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Light.swift",
+      "kind": "FloatLiteral",
+      "offset": 280,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Light.swift",
+      "kind": "BooleanLiteral",
+      "offset": 599,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Light.swift",
+      "kind": "FloatLiteral",
+      "offset": 753,
+      "length": 4,
+      "value": "-1.5"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Light.swift",
+      "kind": "FloatLiteral",
+      "offset": 793,
+      "length": 3,
+      "value": "1.5"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Light.swift",
+      "kind": "FloatLiteral",
+      "offset": 834,
+      "length": 3,
+      "value": "1.5"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Light.swift",
+      "kind": "FloatLiteral",
+      "offset": 876,
+      "length": 4,
+      "value": "-1.5"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Light.swift",
+      "kind": "IntegerLiteral",
+      "offset": 917,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Light.swift",
+      "kind": "IntegerLiteral",
+      "offset": 954,
+      "length": 2,
+      "value": "10"
+    },
+    {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/Export\/Export.swift",
       "kind": "StringLiteral",
       "offset": 768,
@@ -44927,37 +48577,30 @@
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 12729,
+      "offset": 12735,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 12776,
+      "offset": 12782,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 12814,
+      "offset": 12820,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 13074,
+      "offset": 13080,
       "length": 1,
       "value": "8"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13250,
-      "length": 1,
-      "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
@@ -44969,35 +48612,28 @@
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 14000,
+      "offset": 13262,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 14068,
+      "offset": 14006,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 14138,
+      "offset": 14074,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 14172,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14175,
+      "offset": 14144,
       "length": 1,
       "value": "0"
     },
@@ -45010,64 +48646,78 @@
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
-      "kind": "FloatLiteral",
+      "kind": "IntegerLiteral",
       "offset": 14181,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14184,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
+      "kind": "FloatLiteral",
+      "offset": 14187,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 14242,
+      "offset": 14248,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 14448,
+      "offset": 14454,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 16176,
+      "offset": 16182,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 16566,
+      "offset": 16572,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 16597,
+      "offset": 16603,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 17485,
+      "offset": 17491,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 17677,
+      "offset": 17683,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 17870,
+      "offset": 17876,
       "length": 1,
       "value": "0"
     },
@@ -48612,6 +52262,888 @@
       "offset": 592,
       "length": 8,
       "value": "\"PVLib.NodeView\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 87,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 90,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "FloatLiteral",
+      "offset": 124,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 172,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 175,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 178,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "FloatLiteral",
+      "offset": 220,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "FloatLiteral",
+      "offset": 265,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 825,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 914,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 976,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1342,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1345,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1348,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1385,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1393,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1396,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1433,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1438,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1441,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1444,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1481,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1486,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1489,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1492,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1646,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1649,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1691,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1694,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1730,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1733,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1736,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1739,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1775,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1778,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1781,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1784,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1876,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1881,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1884,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1887,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1924,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1929,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1932,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1935,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1972,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1977,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1980,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1983,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2028,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2031,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2122,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2127,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2130,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2167,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2177,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2180,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2217,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2222,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2230,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2267,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2272,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2277,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2280,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2547,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2572,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2597,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2613,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2651,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2676,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2701,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2717,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2755,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2780,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2805,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2821,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2872,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2897,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2922,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2925,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3024,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3029,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3034,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3037,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3074,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3079,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3084,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3087,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3124,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3129,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3134,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3137,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3187,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3439,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3477,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3519,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3560,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3730,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3766,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3802,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3990,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3994,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3997,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4033,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4041,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4044,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4080,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4084,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4091,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4138,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4307,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "FloatLiteral",
+      "offset": 4329,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4457,
+      "length": 2,
+      "value": "-2"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4517,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4521,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4525,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4560,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4568,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4572,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4607,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4611,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4618,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4654,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4658,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4666,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ResourseConsructor\/PVConstructor.swift",

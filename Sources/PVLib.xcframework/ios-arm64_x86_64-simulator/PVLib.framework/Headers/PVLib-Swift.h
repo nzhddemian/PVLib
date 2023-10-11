@@ -368,6 +368,8 @@ SWIFT_CLASS("_TtC5PVLib19DragRotateScaleView")
 
 
 
+
+
 SWIFT_CLASS("_TtC5PVLib15PVMetalRenderer")
 @interface PVMetalRenderer : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -792,6 +794,8 @@ SWIFT_CLASS("_TtC5PVLib19DragRotateScaleView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 @end
+
+
 
 
 

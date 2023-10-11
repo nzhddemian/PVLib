@@ -10,7 +10,9 @@ import CoreML
 import CoreMedia
 import Foundation
 import ImageIO
+import Metal
 import MetalKit
+import ModelIO
 @_exported import PVLib
 import Photos
 import SceneKit
@@ -75,6 +77,20 @@ public class VAssetReader : PVLib.VAssetRaderDelegate {
   public func pauseAsset()
   public func setTimeRange(_ timeRange: CoreMedia.CMTimeRange)
   public func readBuffer() -> CoreVideo.CVPixelBuffer?
+  @objc deinit
+}
+public class Node {
+  public var mesh: MetalKit.MTKMesh?
+  public var texture: (any Metal.MTLTexture)?
+  public var transform: simd.simd_float4x4
+  public var worldTransform: simd.simd_float4x4 {
+    get
+  }
+  weak public var parentNode: PVLib.Node?
+  public init()
+  public init(mesh: MetalKit.MTKMesh)
+  public func addChildNode(_ node: PVLib.Node)
+  public func removeFromParent()
   @objc deinit
 }
 public struct AudioTrack {
@@ -445,6 +461,32 @@ public enum WaveformStyle {
 public struct WaveformConfiguration {
   public init(size: CoreFoundation.CGSize, backgroundColor: UIKit.UIColor = UIColor.clear, style: PVLib.WaveformStyle = .gradient([UIColor.black, UIColor.gray]), position: PVLib.WaveformPosition = .middle, scale: CoreFoundation.CGFloat = UIScreen.main.scale, paddingFactor: CoreFoundation.CGFloat? = nil, shouldAntialias: Swift.Bool = false)
 }
+public enum LightType : Swift.UInt32 {
+  case ambient
+  case directional
+  case omni
+  public init?(rawValue: Swift.UInt32)
+  public typealias RawValue = Swift.UInt32
+  public var rawValue: Swift.UInt32 {
+    get
+  }
+}
+public class Light {
+  public var type: PVLib.LightType
+  public var color: Swift.SIMD3<Swift.Float>
+  public var intensity: Swift.Float
+  public init()
+  public var worldTransform: simd.simd_float4x4
+  public var position: Swift.SIMD3<Swift.Float> {
+    get
+  }
+  public var direction: Swift.SIMD3<Swift.Float> {
+    get
+  }
+  public var castsShadows: Swift.Bool
+  public var shadowTexture: (any Metal.MTLTexture)?
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class VExport {
   public static func export(presetName: Swift.String, inVideoUrl: Foundation.URL!, inAudioUrl: Foundation.URL!, outUrl: Foundation.URL!, completion: @escaping () -> Swift.Void)
   public static var progress: Swift.Float? {
@@ -590,6 +632,7 @@ public class Device {
   final public class func textureA(_ width: Swift.Int, _ height: Swift.Int) -> (any Metal.MTLTexture)?
   final public class func filerTexture(_ width: Swift.Int, _ height: Swift.Int) -> (any Metal.MTLTexture)?
   final public class func vertexBuffer() -> (any Metal.MTLBuffer)?
+  final public func ciTextures(_ imgs: [CoreImage.CIImage], size: CoreFoundation.CGSize, commandBuff: any Metal.MTLCommandBuffer) -> (any Metal.MTLTexture)?
 }
 extension Metal.MTLRenderCommandEncoder {
   public func setVertexValue<T>(_ value: T, at index: Swift.Int)
@@ -760,6 +803,48 @@ public protocol TrimmerDelegate : AnyObject {
   @_Concurrency.MainActor(unsafe) public var endTime: CoreMedia.CMTime? {
     get
   }
+}
+@_hasMissingDesignatedInitializers public class BottleState {
+  public var position: Swift.SIMD3<Swift.Float>
+  public var scale: Swift.Float
+  public var rotationAxis: Swift.SIMD3<Swift.Float>
+  public var rotationAngle: Swift.Float
+  public var angularVelocity: Swift.Float
+  @objc deinit
+}
+public struct InstanceConstants {
+  public var modelMatrix: simd.float4x4
+}
+public struct FrameConstants {
+  public var projectionMatrix: simd.float4x4
+  public var viewMatrix: simd.float4x4
+  public var lightCount: Swift.UInt32
+}
+public struct LightConstants {
+  public var viewProjectionMatrix: simd.simd_float4x4
+  public var intensity: simd.simd_float3
+  public var position: simd.simd_float3
+  public var direction: simd.simd_float3
+  public var type: Swift.UInt32
+}
+public func align(_ value: Swift.Int, upTo alignment: Swift.Int) -> Swift.Int
+public func gcd(_ m: Swift.Int, _ n: Swift.Int) -> Swift.Int
+public func lcm(_ m: Swift.Int, _ n: Swift.Int) -> Swift.Int
+extension Swift.SIMD4 {
+  public var xyz: Swift.SIMD3<Scalar> {
+    get
+  }
+}
+extension simd.simd_float4x4 {
+  public init(scale2D s: Swift.SIMD2<Swift.Float>)
+  public init(rotateZ zRadians: Swift.Float)
+  public init(translate2D t: Swift.SIMD2<Swift.Float>)
+  public init(scale s: Swift.SIMD3<Swift.Float>)
+  public init(rotateAbout axis: Swift.SIMD3<Swift.Float>, byAngle radians: Swift.Float)
+  public init(translate t: Swift.SIMD3<Swift.Float>)
+  public init(lookAt at: Swift.SIMD3<Swift.Float>, from: Swift.SIMD3<Swift.Float>, up: Swift.SIMD3<Swift.Float>)
+  public init(orthographicProjectionWithLeft left: Swift.Float, top: Swift.Float, right: Swift.Float, bottom: Swift.Float, near: Swift.Float, far: Swift.Float)
+  public init(perspectiveProjectionFoVY fovYRadians: Swift.Float, aspectRatio: Swift.Float, near: Swift.Float, far: Swift.Float)
 }
 public struct Gifson : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
@@ -1017,6 +1102,9 @@ extension PVLib.MainVideoEditingTools : Swift.Hashable {}
 extension PVLib.MainVideoEditingTools : Swift.RawRepresentable {}
 extension PVLib.FrameAlignment : Swift.Equatable {}
 extension PVLib.FrameAlignment : Swift.Hashable {}
+extension PVLib.LightType : Swift.Equatable {}
+extension PVLib.LightType : Swift.Hashable {}
+extension PVLib.LightType : Swift.RawRepresentable {}
 extension PVLib.CamPos : Swift.Equatable {}
 extension PVLib.CamPos : Swift.Hashable {}
 extension PVLib.Types : Swift.Equatable {}
