@@ -28419,6 +28419,27 @@
         "printedName": "BottleState",
         "children": [
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BottleState",
+                "printedName": "PVLib.BottleState",
+                "usr": "s:5PVLib11BottleStateC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5PVLib11BottleStateCACycfc",
+            "mangledName": "$s5PVLib11BottleStateCACycfc",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Var",
             "name": "position",
             "printedName": "position",
@@ -28903,14 +28924,40 @@
         "moduleName": "PVLib",
         "declAttributes": [
           "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true
+        ]
       },
       {
         "kind": "TypeDecl",
         "name": "InstanceConstants",
         "printedName": "InstanceConstants",
         "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(modelMatrix:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InstanceConstants",
+                "printedName": "PVLib.InstanceConstants",
+                "usr": "s:5PVLib17InstanceConstantsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "simd_float4x4",
+                "printedName": "simd.simd_float4x4",
+                "usr": "c:@SA@simd_float4x4"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5PVLib17InstanceConstantsV11modelMatrixACSo13simd_float4x4a_tcfc",
+            "mangledName": "$s5PVLib17InstanceConstantsV11modelMatrixACSo13simd_float4x4a_tcfc",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
           {
             "kind": "Var",
             "name": "modelMatrix",
@@ -29010,6 +29057,45 @@
         "name": "FrameConstants",
         "printedName": "FrameConstants",
         "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(projectionMatrix:viewMatrix:lightCount:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FrameConstants",
+                "printedName": "PVLib.FrameConstants",
+                "usr": "s:5PVLib14FrameConstantsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "simd_float4x4",
+                "printedName": "simd.simd_float4x4",
+                "usr": "c:@SA@simd_float4x4"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "simd_float4x4",
+                "printedName": "simd.simd_float4x4",
+                "usr": "c:@SA@simd_float4x4"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt32",
+                "printedName": "Swift.UInt32",
+                "usr": "s:s6UInt32V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5PVLib14FrameConstantsV16projectionMatrix04viewE010lightCountACSo13simd_float4x4a_AHs6UInt32Vtcfc",
+            "mangledName": "$s5PVLib14FrameConstantsV16projectionMatrix04viewE010lightCountACSo13simd_float4x4a_AHs6UInt32Vtcfc",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
           {
             "kind": "Var",
             "name": "projectionMatrix",
@@ -29279,6 +29365,81 @@
         "name": "LightConstants",
         "printedName": "LightConstants",
         "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(viewProjectionMatrix:intensity:position:direction:type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LightConstants",
+                "printedName": "PVLib.LightConstants",
+                "usr": "s:5PVLib14LightConstantsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "simd_float4x4",
+                "printedName": "simd.simd_float4x4",
+                "usr": "c:@SA@simd_float4x4"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SIMD3",
+                "printedName": "Swift.SIMD3<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:s5SIMD3V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SIMD3",
+                "printedName": "Swift.SIMD3<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:s5SIMD3V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SIMD3",
+                "printedName": "Swift.SIMD3<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:s5SIMD3V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt32",
+                "printedName": "Swift.UInt32",
+                "usr": "s:s6UInt32V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5PVLib14LightConstantsV20viewProjectionMatrix9intensity8position9direction4typeACSo13simd_float4x4a_s5SIMD3VySfGA2Ms6UInt32Vtcfc",
+            "mangledName": "$s5PVLib14LightConstantsV20viewProjectionMatrix9intensity8position9direction4typeACSo13simd_float4x4a_s5SIMD3VySfGA2Ms6UInt32Vtcfc",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
           {
             "kind": "Var",
             "name": "viewProjectionMatrix",
@@ -52631,560 +52792,434 @@
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 84,
+      "offset": 104,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 87,
+      "offset": 107,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 90,
+      "offset": 110,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "FloatLiteral",
-      "offset": 124,
+      "offset": 144,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 172,
+      "offset": 192,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 175,
+      "offset": 195,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 178,
+      "offset": 198,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "FloatLiteral",
-      "offset": 220,
+      "offset": 240,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "FloatLiteral",
-      "offset": 265,
+      "offset": 285,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 825,
+      "offset": 1478,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 914,
+      "offset": 1567,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 976,
+      "offset": 1629,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1342,
+      "offset": 1995,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1345,
+      "offset": 1998,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1348,
+      "offset": 2001,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1385,
+      "offset": 2038,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1393,
+      "offset": 2046,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1396,
+      "offset": 2049,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1433,
+      "offset": 2086,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1438,
+      "offset": 2091,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1441,
+      "offset": 2094,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1444,
+      "offset": 2097,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1481,
+      "offset": 2134,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1486,
+      "offset": 2139,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1489,
+      "offset": 2142,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1492,
+      "offset": 2145,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1646,
+      "offset": 2299,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1649,
+      "offset": 2302,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1691,
+      "offset": 2344,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1694,
+      "offset": 2347,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1730,
+      "offset": 2383,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1733,
+      "offset": 2386,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1736,
+      "offset": 2389,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1739,
+      "offset": 2392,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1775,
+      "offset": 2428,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1778,
+      "offset": 2431,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1781,
+      "offset": 2434,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1784,
+      "offset": 2437,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1876,
+      "offset": 2529,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1881,
+      "offset": 2534,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1884,
+      "offset": 2537,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1887,
+      "offset": 2540,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1924,
+      "offset": 2577,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1929,
+      "offset": 2582,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1932,
+      "offset": 2585,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1935,
+      "offset": 2588,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1972,
+      "offset": 2625,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1977,
+      "offset": 2630,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1980,
+      "offset": 2633,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 1983,
+      "offset": 2636,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 2028,
+      "offset": 2681,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 2031,
+      "offset": 2684,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 2122,
+      "offset": 2775,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2127,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2130,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2167,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2177,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2180,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2217,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2222,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2230,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2267,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2272,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2277,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2280,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2547,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2572,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2597,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2613,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2651,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2676,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2701,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2717,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2755,
-      "length": 1,
-      "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
       "offset": 2780,
       "length": 1,
-      "value": "1"
+      "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 2805,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2821,
+      "offset": 2783,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 2872,
+      "offset": 2820,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 2897,
+      "offset": 2830,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 2922,
+      "offset": 2833,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2870,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2875,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2883,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2920,
       "length": 1,
       "value": "0"
     },
@@ -53193,320 +53228,446 @@
       "kind": "IntegerLiteral",
       "offset": 2925,
       "length": 1,
-      "value": "1"
+      "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 3024,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3029,
+      "offset": 2930,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 3034,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3037,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3074,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3079,
+      "offset": 2933,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 3084,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3087,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3124,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3129,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3134,
+      "offset": 3200,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 3137,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3187,
+      "offset": 3225,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 3439,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3477,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3519,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3560,
+      "offset": 3250,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 3730,
+      "offset": 3266,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3304,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3329,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3354,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3370,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3408,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3433,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3458,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3474,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3525,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3550,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3575,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3578,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3677,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3682,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3687,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3690,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3727,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3732,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3737,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3740,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3777,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3782,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3787,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3790,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3840,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4092,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4130,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4172,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4213,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4383,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 3766,
+      "offset": 4419,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 3802,
+      "offset": 4455,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 3990,
+      "offset": 4643,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 3994,
+      "offset": 4647,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 3997,
+      "offset": 4650,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4033,
+      "offset": 4686,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4041,
+      "offset": 4694,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4044,
+      "offset": 4697,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4080,
+      "offset": 4733,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4084,
+      "offset": 4737,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4091,
+      "offset": 4744,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4138,
+      "offset": 4791,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4307,
+      "offset": 4960,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "FloatLiteral",
-      "offset": 4329,
+      "offset": 4982,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4457,
+      "offset": 5110,
       "length": 2,
       "value": "-2"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4517,
+      "offset": 5170,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4521,
+      "offset": 5174,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4525,
+      "offset": 5178,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4560,
+      "offset": 5213,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4568,
+      "offset": 5221,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4572,
+      "offset": 5225,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4607,
+      "offset": 5260,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4611,
+      "offset": 5264,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4618,
+      "offset": 5271,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4654,
+      "offset": 5307,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4658,
+      "offset": 5311,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Utils\/Math.swift",
       "kind": "IntegerLiteral",
-      "offset": 4666,
+      "offset": 5319,
       "length": 1,
       "value": "0"
     },

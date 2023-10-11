@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		WQSImG2j3ny5chRi589MUehoe3g=
+		rY/CRZdCLqPM/fkEuCUqKftayVw=
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		vLzDP1QLmJUXn/d/12Yppcwr/Q4=
+		/zbYr6c3Um9wS9l1UvTh/k16CjA=
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		vLzDP1QLmJUXn/d/12Yppcwr/Q4=
+		/zbYr6c3Um9wS9l1UvTh/k16CjA=
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1d+U+lYOyg5OfT6lW9SIuumV09Y=
+		TuM46FoDfMx54J63BGyjqw+HVG0=
 		</data>
 		<key>Modules/PVLib.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		WQSImG2j3ny5chRi589MUehoe3g=
+		rY/CRZdCLqPM/fkEuCUqKftayVw=
 		</data>
 		<key>Modules/PVLib.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Nsm2fhtcGSlwmsSgtWLPpCgmDuM=
+		FZI5UIN31d+nyx7ulQa77hfFMnI=
 		</data>
 		<key>Modules/PVLib.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/PVLib.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Nsm2fhtcGSlwmsSgtWLPpCgmDuM=
+		FZI5UIN31d+nyx7ulQa77hfFMnI=
 		</data>
 		<key>Modules/PVLib.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		sqkwz4N5cKarn2ew2T5v5yFtgmc=
+		y9N2S1DQDRCOiU5P/0TNkJtJYeo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WxkiXvRsIJbx+zy0fJZ6eZevFOIenveX1XPacsS50V8=
+			zpcuAJrR3Ic2eroOBVOCWGkLvj5YFEVt7rO3ca2MfZk=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TYaQr4m6gswMVio7oucuYS8cajc8u7N5aLZV0kdtJ2A=
+			Do3I/SqLHPjOa/1tKFaEzbBDvaTrTyeF9ygZ9jdqokQ=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TYaQr4m6gswMVio7oucuYS8cajc8u7N5aLZV0kdtJ2A=
+			Do3I/SqLHPjOa/1tKFaEzbBDvaTrTyeF9ygZ9jdqokQ=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F5HOAgpXgOQtIm6n11djpdiA5B349qASzA5CGJNPdA0=
+			p8SDOhDQB3aaKnFIaYKyie9Gcncj/CRS8kaJJqtrWDY=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WxkiXvRsIJbx+zy0fJZ6eZevFOIenveX1XPacsS50V8=
+			zpcuAJrR3Ic2eroOBVOCWGkLvj5YFEVt7rO3ca2MfZk=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			swvF7qjjUBBjje6AQtjHLckNBd+D8ljIZOw/18CtHik=
+			VtcziUYp19xlLOawzvmqe1xbdBeYQJs9NdHy+W/gMuA=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			swvF7qjjUBBjje6AQtjHLckNBd+D8ljIZOw/18CtHik=
+			VtcziUYp19xlLOawzvmqe1xbdBeYQJs9NdHy+W/gMuA=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dqao5eNmRgo9McBFkhASWckxA8xy4oDH+eEiVZmdXYI=
+			7AixfgJHW/+pVU6rfRtuY0iQ2yKwdwYCgFr1ig2zZm8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		WQSImG2j3ny5chRi589MUehoe3g=
+		rY/CRZdCLqPM/fkEuCUqKftayVw=
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		XhsjtEZzJ0xhhXxeJ+WrMBRNwyg=
+		Eo5yoCI0oLPY/nVxgLYYikPiW7E=
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		XhsjtEZzJ0xhhXxeJ+WrMBRNwyg=
+		Eo5yoCI0oLPY/nVxgLYYikPiW7E=
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Mby8y8o4k6z4TtnamEWkZ5Gkzrs=
+		EKui0Hz9Sgw95+BA5V5yF8q32zY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,14 +61,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WxkiXvRsIJbx+zy0fJZ6eZevFOIenveX1XPacsS50V8=
+			zpcuAJrR3Ic2eroOBVOCWGkLvj5YFEVt7rO3ca2MfZk=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rke1wd64d1uGJMi205Yun7G52JjoozYwSPZQm87o6fA=
+			dLAcq5wU4zPu1uZ60W5McrZq0s9rG0si4z7gC6HAbg0=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -82,14 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rke1wd64d1uGJMi205Yun7G52JjoozYwSPZQm87o6fA=
+			dLAcq5wU4zPu1uZ60W5McrZq0s9rG0si4z7gC6HAbg0=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XB9M5YOd9+WrNNFJiSI+HePJP8qMLClNECi/OJ7hUps=
+			jJLMsOwNUspCcesgXA6QtKuYYMMNYLmRqiBYW4o5FQQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

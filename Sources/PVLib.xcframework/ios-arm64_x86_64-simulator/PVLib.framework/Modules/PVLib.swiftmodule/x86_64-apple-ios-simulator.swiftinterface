@@ -807,7 +807,8 @@ public protocol TrimmerDelegate : AnyObject {
     get
   }
 }
-@_hasMissingDesignatedInitializers public class BottleState {
+public class BottleState {
+  public init()
   public var position: Swift.SIMD3<Swift.Float>
   public var scale: Swift.Float
   public var rotationAxis: Swift.SIMD3<Swift.Float>
@@ -816,14 +817,17 @@ public protocol TrimmerDelegate : AnyObject {
   @objc deinit
 }
 public struct InstanceConstants {
+  public init(modelMatrix: simd.float4x4)
   public var modelMatrix: simd.float4x4
 }
 public struct FrameConstants {
+  public init(projectionMatrix: simd.float4x4, viewMatrix: simd.float4x4, lightCount: Swift.UInt32)
   public var projectionMatrix: simd.float4x4
   public var viewMatrix: simd.float4x4
   public var lightCount: Swift.UInt32
 }
 public struct LightConstants {
+  public init(viewProjectionMatrix: simd.simd_float4x4, intensity: simd.simd_float3, position: simd.simd_float3, direction: simd.simd_float3, type: Swift.UInt32)
   public var viewProjectionMatrix: simd.simd_float4x4
   public var intensity: simd.simd_float3
   public var position: simd.simd_float3
