@@ -485,6 +485,9 @@ public class Light {
   }
   public var castsShadows: Swift.Bool
   public var shadowTexture: (any Metal.MTLTexture)?
+  public var projectionMatrix: simd.simd_float4x4 {
+    get
+  }
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class VExport {
@@ -1064,6 +1067,19 @@ public class WaveformAnalyzer {
   public static var minFrameDuration: Swift.Double
   public static func resetAll()
   @objc deinit
+}
+extension ModelIO.MDLVertexDescriptor {
+  public var vertexAttributes: [ModelIO.MDLVertexAttribute] {
+    get
+  }
+  public var bufferLayouts: [ModelIO.MDLVertexBufferLayout] {
+    get
+  }
+}
+extension ModelIO.MDLMesh {
+  public var submeshArray: [ModelIO.MDLSubmesh] {
+    get
+  }
 }
 extension UIKit.UIImage {
   public class func constructGifData(_ data: Foundation.Data) -> [UIKit.UIImage]
