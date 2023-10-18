@@ -38,17 +38,34 @@ import simd
   public func update(comp: @escaping () -> ())
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers public class AudioWriter : ObjectiveC.NSObject, AVFAudio.AVAudioRecorderDelegate {
-  public func setup_recorder()
-  public func startRec()
-  public func pause()
-  public func resume()
-  public func stopRec()
+public protocol MultiPBufferDelegate : AnyObject {
+  func updatePixelBuffer(front: CoreVideo.CVPixelBuffer, back: CoreVideo.CVPixelBuffer, timestampFull: CoreMedia.CMTime, timestampIcon: CoreMedia.CMTime?)
+}
+public enum CamPos {
+  case back, front
+  public static func == (a: PVLib.CamPos, b: PVLib.CamPos) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers final public class PVMultiCamCaptureManager : ObjectiveC.NSObject, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
+  public static let shared: PVLib.PVMultiCamCaptureManager
+  final public var camPos: PVLib.CamPos
+  weak final public var delegate: (any PVLib.MultiPBufferDelegate)?
+  final public let session: AVFoundation.AVCaptureMultiCamSession
   @objc override dynamic public init()
+  final public func startSession()
   @objc deinit
+  final public func switchLight()
+  final public func pauseSession()
+  final public func resumeSession()
+  final public func stopCaptureSession()
+  @objc final public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+  @objc final public func captureOutput(_ captureOutput: AVFoundation.AVCaptureOutput, didDrop sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
 }
 public protocol VAssetRaderDelegate {
-  func seekTo(time: CoreMedia.CMTime)
+  func seekTo(time: CoreMedia.CMTime, isStartRange: Swift.Bool)
   func readBuffer() -> CoreVideo.CVPixelBuffer?
   func playAsset()
   func pauseAsset()
@@ -56,12 +73,13 @@ public protocol VAssetRaderDelegate {
 }
 public class VAssetReader : PVLib.VAssetRaderDelegate {
   public var sound: PVLib.Sound!
+  public var trimTime: CoreMedia.CMTime
   weak public var delegate: (any PVLib.PBufferDelegate)?
   public var isTrimming: Swift.Bool
+  public var isTrimmingLeft: Swift.Bool
   public var asset: AVFoundation.AVAsset!
   public var player: AVFoundation.AVPlayer?
   public var playerItem: AVFoundation.AVPlayerItem!
-  public var timeRange: CoreMedia.CMTimeRange
   public var pixelBuffer: CoreVideo.CVPixelBuffer?
   public var stopOp: Swift.Bool {
     get
@@ -70,6 +88,7 @@ public class VAssetReader : PVLib.VAssetRaderDelegate {
   public init(_ url: Foundation.URL)
   public func turnOnSound(_ isOn: Swift.Bool)
   public func seekTuStart()
+  public func seekTo(time: CoreMedia.CMTime, isStartRange: Swift.Bool)
   public func seekTo(time: CoreMedia.CMTime)
   public func playAsset()
   public func pauseAsset()
@@ -256,7 +275,7 @@ public struct PVFaceScene {
   public var faceDetected: Swift.Bool
 }
 public protocol PVFaceSceneDelegate : AnyObject {
-  func updateFaceMesh(front: CoreVideo.CVPixelBuffer, sceneView: SceneKit.SCNView) -> PVLib.PVFaceScene
+  func updateFaceMesh(front: CoreVideo.CVPixelBuffer?, sceneView: SceneKit.SCNView) -> PVLib.PVFaceScene
 }
 extension Foundation.NSNotification.Name {
   public static let pvRemoveTextureWriter: Foundation.NSNotification.Name
@@ -276,17 +295,32 @@ public class PVVCoordinator {
   public static func moveToUIKitView(from: QuartzCore.CATransitionSubtype, type: QuartzCore.CATransitionType, duration: CoreFoundation.CGFloat = 0.25, _ viewController: UIKit.UIViewController)
   required public init(navigationController: UIKit.UINavigationController)
 }
-public class MetalVideoRecorder {
-  public var writerer: AVFoundation.AVAssetWriter!
-  public var isWriting: Swift.Bool
-  public var started: Swift.Bool
-  public init(size: CoreFoundation.CGSize)
+public class WaveformImageDrawer {
+  public init()
+  public func waveformImage(fromAudioAt audioAssetURL: Foundation.URL, with configuration: PVLib.WaveformConfiguration, qos: Dispatch.DispatchQoS.QoSClass = .userInitiated, completionHandler: @escaping (_ waveformImage: UIKit.UIImage?) -> ())
+  public func waveformImage(fromAudioAt audioAssetURL: Foundation.URL, size: CoreFoundation.CGSize, backgroundColor: UIKit.UIColor = UIColor.clear, style: PVLib.WaveformStyle = .gradient([UIColor.black, UIColor.darkGray]), position: PVLib.WaveformPosition = .middle, scale: CoreFoundation.CGFloat = UIScreen.main.scale, paddingFactor: CoreFoundation.CGFloat? = nil, qos: Dispatch.DispatchQoS.QoSClass = .userInitiated, shouldAntialias: Swift.Bool = false, completionHandler: @escaping (_ waveformImage: UIKit.UIImage?) -> ())
   @objc deinit
-  public func setupVideoWriter()
-  public func start(_ time: CoreMedia.CMTime)
-  public func end(_ time: CoreMedia.CMTime)
-  public func flushTexture(mtlTexture: (any Metal.MTLTexture)?, recTime: CoreMedia.CMTime, failureComp: @escaping () -> ())
-  public func finishRec(comp: @escaping () -> ())
+}
+public enum WaveformPosition {
+  case top
+  case middle
+  case bottom
+  case custom(Swift.Double)
+}
+public enum WaveformStyle {
+  public struct StripeConfig {
+    public let color: UIKit.UIColor
+    public let width: CoreFoundation.CGFloat
+    public let spacing: CoreFoundation.CGFloat
+    public let lineCap: CoreGraphics.CGLineCap
+    public init(color: UIKit.UIColor, width: CoreFoundation.CGFloat = 1, spacing: CoreFoundation.CGFloat = 5, lineCap: CoreGraphics.CGLineCap = .square)
+  }
+  case filled(UIKit.UIColor)
+  case gradient([UIKit.UIColor])
+  case striped(PVLib.WaveformStyle.StripeConfig)
+}
+public struct WaveformConfiguration {
+  public init(size: CoreFoundation.CGSize, backgroundColor: UIKit.UIColor = UIColor.clear, style: PVLib.WaveformStyle = .gradient([UIColor.black, UIColor.gray]), position: PVLib.WaveformPosition = .middle, scale: CoreFoundation.CGFloat = UIScreen.main.scale, paddingFactor: CoreFoundation.CGFloat? = nil, shouldAntialias: Swift.Bool = false)
 }
 extension AVFoundation.AVPlayer {
   public var isPlaying: Swift.Bool {
@@ -418,32 +452,28 @@ extension UIKit.UIColor {
   public static func randColor(seed: Swift.Int) -> UIKit.UIColor
   public static func seeded_rand(seed: Swift.Int, min: Swift.Double, max: Swift.Double) -> Swift.Int
 }
-public class WaveformImageDrawer {
-  public init()
-  public func waveformImage(fromAudioAt audioAssetURL: Foundation.URL, with configuration: PVLib.WaveformConfiguration, qos: Dispatch.DispatchQoS.QoSClass = .userInitiated, completionHandler: @escaping (_ waveformImage: UIKit.UIImage?) -> ())
-  public func waveformImage(fromAudioAt audioAssetURL: Foundation.URL, size: CoreFoundation.CGSize, backgroundColor: UIKit.UIColor = UIColor.clear, style: PVLib.WaveformStyle = .gradient([UIColor.black, UIColor.darkGray]), position: PVLib.WaveformPosition = .middle, scale: CoreFoundation.CGFloat = UIScreen.main.scale, paddingFactor: CoreFoundation.CGFloat? = nil, qos: Dispatch.DispatchQoS.QoSClass = .userInitiated, shouldAntialias: Swift.Bool = false, completionHandler: @escaping (_ waveformImage: UIKit.UIImage?) -> ())
-  @objc deinit
-}
-public enum WaveformPosition {
-  case top
-  case middle
-  case bottom
-  case custom(Swift.Double)
-}
-public enum WaveformStyle {
-  public struct StripeConfig {
-    public let color: UIKit.UIColor
-    public let width: CoreFoundation.CGFloat
-    public let spacing: CoreFoundation.CGFloat
-    public let lineCap: CoreGraphics.CGLineCap
-    public init(color: UIKit.UIColor, width: CoreFoundation.CGFloat = 1, spacing: CoreFoundation.CGFloat = 5, lineCap: CoreGraphics.CGLineCap = .square)
+@_hasMissingDesignatedInitializers public class MFManager {
+  public static var imagesPath: Foundation.URL? {
+    get
   }
-  case filled(UIKit.UIColor)
-  case gradient([UIKit.UIColor])
-  case striped(PVLib.WaveformStyle.StripeConfig)
-}
-public struct WaveformConfiguration {
-  public init(size: CoreFoundation.CGSize, backgroundColor: UIKit.UIColor = UIColor.clear, style: PVLib.WaveformStyle = .gradient([UIColor.black, UIColor.gray]), position: PVLib.WaveformPosition = .middle, scale: CoreFoundation.CGFloat = UIScreen.main.scale, paddingFactor: CoreFoundation.CGFloat? = nil, shouldAntialias: Swift.Bool = false)
+  public static var gifFiltersPath: Foundation.URL? {
+    get
+  }
+  public static var resPath: Foundation.URL {
+    get
+  }
+  public static var inAudio: Foundation.URL
+  public static var musicFile: Foundation.URL
+  public static var audioFile: Foundation.URL
+  public static var sourceUrlVal: Foundation.URL
+  public static var sourceUrl: Foundation.URL {
+    get
+    set
+  }
+  public static var exportedUrl: Foundation.URL
+  public static var textUrl: Foundation.URL
+  public static var previewFile: Foundation.URL
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class VExport {
   public static func export(presetName: Swift.String, inVideoUrl: Foundation.URL!, inAudioUrl: Foundation.URL!, outUrl: Foundation.URL!, completion: @escaping () -> Swift.Void)
@@ -494,54 +524,13 @@ extension SwiftUI.View {
   public func supportedOrientations(_ supportedOrientations: UIKit.UIInterfaceOrientationMask) -> some SwiftUI.View
   
 }
-public protocol MultiPBufferDelegate : AnyObject {
-  func updatePixelBuffer(front: CoreVideo.CVPixelBuffer, back: CoreVideo.CVPixelBuffer, timestampFull: CoreMedia.CMTime, timestampIcon: CoreMedia.CMTime?)
-}
-public enum CamPos {
-  case back, front
-  public static func == (a: PVLib.CamPos, b: PVLib.CamPos) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-@objc @_inheritsConvenienceInitializers final public class PVMultiCamCaptureManager : ObjectiveC.NSObject, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
-  public static let shared: PVLib.PVMultiCamCaptureManager
-  final public var camPos: PVLib.CamPos
-  weak final public var delegate: (any PVLib.MultiPBufferDelegate)?
-  final public let session: AVFoundation.AVCaptureMultiCamSession
-  @objc override dynamic public init()
-  final public func startSession()
-  @objc deinit
-  final public func switchLight()
-  final public func pauseSession()
-  final public func resumeSession()
-  final public func stopCaptureSession()
-  @objc final public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
-  @objc final public func captureOutput(_ captureOutput: AVFoundation.AVCaptureOutput, didDrop sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
-}
-@_hasMissingDesignatedInitializers public class MFManager {
-  public static var imagesPath: Foundation.URL? {
-    get
-  }
-  public static var gifFiltersPath: Foundation.URL? {
-    get
-  }
-  public static var resPath: Foundation.URL {
-    get
-  }
-  public static var inAudio: Foundation.URL
-  public static var musicFile: Foundation.URL
-  public static var audioFile: Foundation.URL
-  public static var sourceUrlVal: Foundation.URL
-  public static var sourceUrl: Foundation.URL {
-    get
-    set
-  }
-  public static var exportedUrl: Foundation.URL
-  public static var textUrl: Foundation.URL
-  public static var previewFile: Foundation.URL
-  @objc deinit
+public struct CameraProperties {
+  public var touches: CoreFoundation.CGPoint
+  public var totalTime: CoreFoundation.CGFloat!
+  public var frontCam: Swift.Bool
+  public var duration: CoreMedia.CMTime!
+  public var withMusic: Swift.Bool
+  public var supportLidar: Swift.Bool
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class DragRotateScaleView : UIKit.UIView {
   @objc deinit
@@ -600,13 +589,78 @@ extension Metal.MTLRenderCommandEncoder {
   public func setVertexTextures(_ textures: (any Metal.MTLTexture)?..., startingAt startIndex: Swift.Int = 0)
   public func setFragmentTextures(_ textures: [(any Metal.MTLTexture)?], startingAt startIndex: Swift.Int = 0)
 }
-public struct CameraProperties {
-  public var touches: CoreFoundation.CGPoint
-  public var totalTime: CoreFoundation.CGFloat!
-  public var frontCam: Swift.Bool
-  public var duration: CoreMedia.CMTime!
-  public var withMusic: Swift.Bool
-  public var supportLidar: Swift.Bool
+public class MetalVideoRecorder {
+  public var writerer: AVFoundation.AVAssetWriter!
+  public var isWriting: Swift.Bool
+  public var started: Swift.Bool
+  public init(size: CoreFoundation.CGSize)
+  @objc deinit
+  public func setupVideoWriter()
+  public func start(_ time: CoreMedia.CMTime)
+  public func end(_ time: CoreMedia.CMTime)
+  public func flushTexture(mtlTexture: (any Metal.MTLTexture)?, recTime: CoreMedia.CMTime, failureComp: @escaping () -> ())
+  public func finishRec(comp: @escaping () -> ())
+}
+public struct Gifson : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Vfxson : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PVToolset : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PVGifItem {
+}
+public struct ExportFilters {
+}
+public struct ExportText {
+}
+public struct GifItem {
+  public var timeRange: CoreMedia.CMTimeRange?
+  public var transformCA: CoreFoundation.CGAffineTransform!
+  public var transformCAExport: CoreFoundation.CGAffineTransform!
+  public var transformDRSView: CoreFoundation.CGAffineTransform!
+  public var frameDuration: Swift.Double!
+  public var imageSize: CoreFoundation.CGSize!
+  public var gif: [UIKit.UIImage]?
+  public var type: PVLib.Types!
+  public var id: Swift.Int
+  public init(timeRange: CoreMedia.CMTimeRange? = nil, transformCA: CoreFoundation.CGAffineTransform!, transformCAExport: CoreFoundation.CGAffineTransform! = CGAffineTransform(), transformDRSView: CoreFoundation.CGAffineTransform! = CGAffineTransform(), frameDuration: Swift.Double!, imageSize: CoreFoundation.CGSize!, gif: [UIKit.UIImage]? = nil, type: PVLib.Types!, id: Swift.Int)
+}
+public enum Types {
+  case gif, text
+  public static func == (a: PVLib.Types, b: PVLib.Types) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class EditModel {
+  public init()
+  public static var longPressFilters: [PVLib.ExportFilters]
+  public static var gifItems: [PVLib.GifItem]
+  public static var gifTextures: PVLib.GifTextures
+  public static var trimmerRange: CoreMedia.CMTimeRange
+  public static var trimm: Swift.Bool
+  public static func reset()
+  @objc deinit
+}
+public struct GifTextures {
+  public var texture: [any Metal.MTLTexture]
+  public var size: [CoreFoundation.CGSize]
+}
+@_hasMissingDesignatedInitializers public class PVConstructor {
+  public static var toolset: PVLib.PVToolset
+  public static func initEditor() -> Swift.String?
+  public func loadIcons(images: inout [UIKit.UIImage], for icons: Swift.String)
+  public static func loadGifs()
+  public static func constructGifData(_ data: Foundation.Data) -> [UIKit.UIImage]
+  public static func loadGifIcons()
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class PVMetalRenderer : ObjectiveC.NSObject {
   public func mtkView(_ view: MetalKit.MTKView, drawableSizeWillChange size: CoreFoundation.CGSize)
@@ -761,67 +815,6 @@ public protocol TrimmerDelegate : AnyObject {
     get
   }
 }
-public struct Gifson : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct Vfxson : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct PVToolset : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct PVGifItem {
-}
-public struct ExportFilters {
-}
-public struct ExportText {
-}
-public struct GifItem {
-  public var timeRange: CoreMedia.CMTimeRange?
-  public var transformCA: CoreFoundation.CGAffineTransform!
-  public var transformCAExport: CoreFoundation.CGAffineTransform!
-  public var transformDRSView: CoreFoundation.CGAffineTransform!
-  public var frameDuration: Swift.Double!
-  public var imageSize: CoreFoundation.CGSize!
-  public var gif: [UIKit.UIImage]?
-  public var type: PVLib.Types!
-  public var id: Swift.Int
-  public init(timeRange: CoreMedia.CMTimeRange? = nil, transformCA: CoreFoundation.CGAffineTransform!, transformCAExport: CoreFoundation.CGAffineTransform! = CGAffineTransform(), transformDRSView: CoreFoundation.CGAffineTransform! = CGAffineTransform(), frameDuration: Swift.Double!, imageSize: CoreFoundation.CGSize!, gif: [UIKit.UIImage]? = nil, type: PVLib.Types!, id: Swift.Int)
-}
-public enum Types {
-  case gif, text
-  public static func == (a: PVLib.Types, b: PVLib.Types) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public class EditModel {
-  public init()
-  public static var longPressFilters: [PVLib.ExportFilters]
-  public static var gifItems: [PVLib.GifItem]
-  public static var gifTextures: PVLib.GifTextures
-  public static var trimmerRange: CoreMedia.CMTimeRange
-  public static var trimm: Swift.Bool
-  public static func reset()
-  @objc deinit
-}
-public struct GifTextures {
-  public var texture: [any Metal.MTLTexture]
-  public var size: [CoreFoundation.CGSize]
-}
-@_hasMissingDesignatedInitializers public class PVConstructor {
-  public static var toolset: PVLib.PVToolset
-  public static func initEditor() -> Swift.String?
-  public func loadIcons(images: inout [UIKit.UIImage], for icons: Swift.String)
-  public static func loadGifs()
-  public static func constructGifData(_ data: Foundation.Data) -> [UIKit.UIImage]
-  public static func loadGifIcons()
-  @objc deinit
-}
 public enum SoundCategory {
   case ambient
   case soloAmbient
@@ -945,6 +938,15 @@ public class Load {
   public static func fontTexture(loader: MetalKit.MTKTextureLoader) -> (any Metal.MTLTexture)?
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers public class AudioWriter : ObjectiveC.NSObject, AVFAudio.AVAudioRecorderDelegate {
+  public func setup_recorder()
+  public func startRec()
+  public func pause()
+  public func resume()
+  public func stopRec()
+  @objc override dynamic public init()
+  @objc deinit
+}
 public protocol PBufferDelegate : AnyObject {
   func updatePixelBuffer(camera: CoreVideo.CVPixelBuffer, timestamp: CoreMedia.CMTime)
 }
@@ -972,7 +974,6 @@ public class WaveformAnalyzer {
   public static var filter: PVLib.EditFXs
   public static var fx: Swift.String
   public static var mask: PVLib.ARMask
-  public static var duration: CoreMedia.CMTime!
   public static var done: Swift.Bool
   public static var recorded: Swift.Bool
   public static var maxFrameDuration: Swift.Double
@@ -988,6 +989,8 @@ extension UIKit.UIImage {
   public class func gifImageWithURL(_ gifUrl: Swift.String) -> UIKit.UIImage?
   public class func gifImageWithName(_ name: Swift.String) -> UIKit.UIImage?
 }
+extension PVLib.CamPos : Swift.Equatable {}
+extension PVLib.CamPos : Swift.Hashable {}
 extension PVLib.ARMask : Swift.Equatable {}
 extension PVLib.ARMask : Swift.Hashable {}
 extension PVLib.ARMask : Swift.RawRepresentable {}
@@ -1017,8 +1020,6 @@ extension PVLib.MainVideoEditingTools : Swift.Hashable {}
 extension PVLib.MainVideoEditingTools : Swift.RawRepresentable {}
 extension PVLib.FrameAlignment : Swift.Equatable {}
 extension PVLib.FrameAlignment : Swift.Hashable {}
-extension PVLib.CamPos : Swift.Equatable {}
-extension PVLib.CamPos : Swift.Hashable {}
 extension PVLib.Types : Swift.Equatable {}
 extension PVLib.Types : Swift.Hashable {}
 extension PVLib.SoundCategory : Swift.Equatable {}
