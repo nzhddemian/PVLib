@@ -34,6 +34,8 @@ import simd
   public var trackStart: Swift.Double
   final public let asset: AVFoundation.AVAsset?
   public init(url: Foundation.URL)
+  public func playInBackgr()
+  @objc public func loop()
   @objc public func audioPlayerDidFinishPlaying(_ player: AVFAudio.AVAudioPlayer, successfully flag: Swift.Bool)
   public func update(comp: @escaping () -> ())
   @objc deinit

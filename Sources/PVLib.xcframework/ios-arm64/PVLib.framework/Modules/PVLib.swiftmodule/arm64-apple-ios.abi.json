@@ -912,6 +912,47 @@
           },
           {
             "kind": "Function",
+            "name": "playInBackgr",
+            "printedName": "playInBackgr()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5PVLib7APlayerC12playInBackgryyF",
+            "mangledName": "$s5PVLib7APlayerC12playInBackgryyF",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loop",
+            "printedName": "loop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PVLib@objc(cs)APlayer(im)loop",
+            "mangledName": "$s5PVLib7APlayerC4loopyyF",
+            "moduleName": "PVLib",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "audioPlayerDidFinishPlaying",
             "printedName": "audioPlayerDidFinishPlaying(_:successfully:)",
             "children": [
@@ -40485,63 +40526,63 @@
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1500,
+      "offset": 1507,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1843,
+      "offset": 1857,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "StringLiteral",
-      "offset": 1993,
+      "offset": 2007,
       "length": 29,
       "value": "\"finished playing \""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "StringLiteral",
-      "offset": 2021,
+      "offset": 2035,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2160,
+      "offset": 2174,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2162,
+      "offset": 2176,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 2177,
+      "offset": 2191,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 2775,
+      "offset": 2789,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "StringLiteral",
-      "offset": 3178,
+      "offset": 3192,
       "length": 21,
       "value": "\"DEINIT Audio Player\""
     },
