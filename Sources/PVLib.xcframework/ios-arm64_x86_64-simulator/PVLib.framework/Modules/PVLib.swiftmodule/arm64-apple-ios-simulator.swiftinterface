@@ -72,6 +72,7 @@ public protocol VAssetRaderDelegate {
   func setTimeRange(_ timeRange: CoreMedia.CMTimeRange)
 }
 public class VAssetReader : PVLib.VAssetRaderDelegate {
+  public var aplayer: PVLib.APlayer?
   public var sound: PVLib.Sound!
   public var trimTime: CoreMedia.CMTime
   weak public var delegate: (any PVLib.PBufferDelegate)?
@@ -976,6 +977,7 @@ public class WaveformAnalyzer {
   public static var mask: PVLib.ARMask
   public static var done: Swift.Bool
   public static var recorded: Swift.Bool
+  public static var withMusic: Swift.Bool
   public static var maxFrameDuration: Swift.Double
   public static var minFrameDuration: Swift.Double
   public static func resetAll()
