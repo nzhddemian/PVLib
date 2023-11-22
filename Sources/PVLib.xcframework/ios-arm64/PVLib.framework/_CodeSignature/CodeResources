@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		V9MkysOhpsU+u/V7Jy72Ys9ix24=
+		0YIK6K5xH1/P32EMpAuMjaUNv2U=
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		TjA71EmGVLQSLtCv5uRms0LxbZs=
+		vl2o5eK2Xi+YU0OegVarZ2FMoq4=
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		wGzUAFcA/geUBd5y6bNhV+vkvOo=
+		VTlJINvK6rzOe+P0dVLYP8UFL8s=
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		FexudcWBMZAd+wmcmvbKhJHMfGY=
+		7vfcvYyIHAyNHwpaib+7jfN+Cak=
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		wGzUAFcA/geUBd5y6bNhV+vkvOo=
+		VTlJINvK6rzOe+P0dVLYP8UFL8s=
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		WsRVQIKcKSOv9tpPLhC6HVi3fEs=
+		5RSsSTK5ek8//KzoBpFOORlFZCI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,35 +61,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KmlKoz+7WPo/b8uVjUrv9keT8Bx5sS3hX1g/+Dao39g=
+			JQcJSbEiwRmEZ7kBEt3oZktj2fE5dz92pV9uf2ZiFMk=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TLNlJzMaRbxQqjK6pYEkGl8ZWDfNntppiuRGSIXZCes=
+			cLRH3ZG6B6R+N0qgHbcoTtMcWQPKBFns0blnmeXdFaw=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RxYixH0HIbhqoOQqCwS7eWv0X1wh95LP/YiQpnH0lH0=
+			3ksNNDLrvpMj9yY2R16HoFu7qnCrr7D3kW5kaeLi1vk=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TLNlJzMaRbxQqjK6pYEkGl8ZWDfNntppiuRGSIXZCes=
+			cLRH3ZG6B6R+N0qgHbcoTtMcWQPKBFns0blnmeXdFaw=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			idq7QnR5erj7kc7isl++lYnQKCQ21shQh6KZzf4GxtI=
+			EL8dpwDVg3jpAVl3w7ZtszhKth8LRrWrwrCa2v3i+jk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

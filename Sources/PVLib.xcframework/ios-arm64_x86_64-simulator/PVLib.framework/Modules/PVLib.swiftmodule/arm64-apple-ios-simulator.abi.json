@@ -13069,20 +13069,13 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "PVLib",
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "PVLib"
       },
       {
         "kind": "TypeDecl",
@@ -35499,66 +35492,6 @@
           },
           {
             "kind": "Function",
-            "name": "getURL",
-            "printedName": "getURL(item:completionHandler:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PhotosPickerItem",
-                "printedName": "_PhotosUI_SwiftUI.PhotosPickerItem",
-                "usr": "s:015_PhotosUI_SwiftB00A10PickerItemV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<Foundation.URL, Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<Foundation.URL, Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "URL",
-                        "printedName": "Foundation.URL",
-                        "usr": "s:10Foundation3URLV"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10Foundation3URLV5PVLibE03getB04item17completionHandlery015_PhotosUI_SwiftI00H10PickerItemV_ys6ResultOyACs5Error_pGctFZ",
-            "mangledName": "$s10Foundation3URLV5PVLibE03getB04item17completionHandlery015_PhotosUI_SwiftI00H10PickerItemV_ys6ResultOyACs5Error_pGctFZ",
-            "moduleName": "PVLib",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "getDocumentsDirectory",
             "printedName": "getDocumentsDirectory()",
             "children": [
@@ -35575,7 +35508,8 @@
             "moduleName": "PVLib",
             "static": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -40519,70 +40453,70 @@
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 1313,
+      "offset": 1311,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1507,
+      "offset": 1505,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1857,
+      "offset": 1855,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "StringLiteral",
-      "offset": 2007,
+      "offset": 2005,
       "length": 29,
       "value": "\"finished playing \""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "StringLiteral",
-      "offset": 2035,
+      "offset": 2033,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2174,
+      "offset": 2172,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2176,
+      "offset": 2174,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 2191,
+      "offset": 2189,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 2789,
+      "offset": 2787,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/APlayer.swift",
       "kind": "StringLiteral",
-      "offset": 3192,
+      "offset": 3190,
       "length": 21,
       "value": "\"DEINIT Audio Player\""
     },
@@ -42206,191 +42140,177 @@
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "StringLiteral",
-      "offset": 303,
+      "offset": 305,
       "length": 26,
       "value": "\"com.vivi.remove_recorder\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "StringLiteral",
-      "offset": 418,
+      "offset": 420,
       "length": 26,
       "value": "\"com.vivi.resume_recorder\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 686,
+      "offset": 688,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 915,
+      "offset": 917,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1184,
+      "offset": 1186,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1765,
+      "offset": 1767,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "FloatLiteral",
-      "offset": 1897,
+      "offset": 1899,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1939,
+      "offset": 1941,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 2109,
+      "offset": 2111,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "StringLiteral",
-      "offset": 2504,
+      "offset": 2506,
       "length": 68,
       "value": "\"navigation CATransaction begin:\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "StringLiteral",
-      "offset": 2571,
+      "offset": 2573,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 2659,
+      "offset": 2661,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "FloatLiteral",
-      "offset": 3291,
+      "offset": 3293,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 3333,
+      "offset": 3335,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 3503,
+      "offset": 3505,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "StringLiteral",
-      "offset": 3898,
+      "offset": 3900,
       "length": 68,
       "value": "\"navigation CATransaction begin:\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "StringLiteral",
-      "offset": 3965,
+      "offset": 3967,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 4053,
+      "offset": 4055,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "IntegerLiteral",
-      "offset": 4177,
+      "offset": 4181,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "IntegerLiteral",
-      "offset": 4239,
+      "offset": 4243,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "StringLiteral",
-      "offset": 4264,
+      "offset": 4282,
       "length": 71,
       "value": "\"navigation Completion Block :\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "StringLiteral",
-      "offset": 4334,
+      "offset": 4352,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "FloatLiteral",
-      "offset": 4679,
+      "offset": 4684,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 4826,
+      "offset": 4831,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 5213,
+      "offset": 5218,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5348,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVCoordinator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5410,
-      "length": 1,
-      "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/EditorTools\/SoundPrcssng\/SoundWaveForm\/WaveformImageDrawer.swift",
@@ -43269,85 +43189,57 @@
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/Helpers\/PVExtentions.swift",
-      "kind": "StringLiteral",
-      "offset": 10477,
-      "length": 70,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/Helpers\/PVExtentions.swift",
-      "kind": "StringLiteral",
-      "offset": 10498,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/Helpers\/PVExtentions.swift",
-      "kind": "StringLiteral",
-      "offset": 10543,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/Helpers\/PVExtentions.swift",
-      "kind": "StringLiteral",
-      "offset": 10546,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/Helpers\/PVExtentions.swift",
       "kind": "IntegerLiteral",
-      "offset": 11434,
+      "offset": 11480,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/Helpers\/PVExtentions.swift",
       "kind": "StringLiteral",
-      "offset": 11789,
+      "offset": 11835,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/Helpers\/PVExtentions.swift",
       "kind": "StringLiteral",
-      "offset": 12220,
+      "offset": 12266,
       "length": 46,
       "value": "\"An error occured deleting the file: \""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/Helpers\/PVExtentions.swift",
       "kind": "StringLiteral",
-      "offset": 12265,
+      "offset": 12311,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/Helpers\/PVExtentions.swift",
       "kind": "StringLiteral",
-      "offset": 12407,
+      "offset": 12453,
       "length": 34,
       "value": "\"com.video.editor.previewexported\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/Helpers\/PVExtentions.swift",
       "kind": "StringLiteral",
-      "offset": 12492,
+      "offset": 12538,
       "length": 37,
       "value": "\"com.video.editor.finalrenderingdone\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/Helpers\/PVExtentions.swift",
       "kind": "FloatLiteral",
-      "offset": 12671,
+      "offset": 12717,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/Helpers\/PVExtentions.swift",
       "kind": "FloatLiteral",
-      "offset": 12724,
+      "offset": 12770,
       "length": 3,
       "value": "0.5"
     },
@@ -43368,637 +43260,588 @@
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 1639,
+      "offset": 1631,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 1651,
+      "offset": 1643,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 1662,
+      "offset": 1654,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1674,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 1753,
+      "offset": 1709,
       "length": 4,
       "value": "0.05"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 1766,
+      "offset": 1722,
       "length": 5,
       "value": "0.055"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 1779,
+      "offset": 1735,
       "length": 5,
       "value": "0.057"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1793,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 1866,
+      "offset": 1794,
       "length": 4,
       "value": "0.01"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 1879,
+      "offset": 1807,
       "length": 6,
       "value": "0.0195"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 1893,
+      "offset": 1821,
       "length": 5,
       "value": "0.013"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 1907,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1982,
+      "offset": 1891,
       "length": 3,
       "value": "238"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 1988,
+      "offset": 1897,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 2000,
+      "offset": 1909,
       "length": 3,
       "value": "129"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 2006,
+      "offset": 1915,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 2017,
+      "offset": 1926,
       "length": 3,
       "value": "186"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1932,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2005,
+      "length": 3,
+      "value": "170"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2011,
+      "length": 3,
+      "value": "255"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
       "offset": 2023,
       "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2035,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2132,
-      "length": 3,
-      "value": "170"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2138,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2150,
-      "length": 3,
       "value": "132"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2029,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2040,
+      "length": 3,
+      "value": "239"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2046,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2121,
+      "length": 3,
+      "value": "137"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2127,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2139,
+      "length": 3,
+      "value": "192"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2145,
+      "length": 3,
+      "value": "255"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
       "offset": 2156,
       "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2167,
-      "length": 3,
-      "value": "239"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2173,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2185,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2276,
-      "length": 3,
-      "value": "137"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2282,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2294,
-      "length": 3,
-      "value": "192"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2300,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2311,
-      "length": 3,
       "value": "189"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 2317,
+      "offset": 2162,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 2329,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2417,
+      "offset": 2234,
       "length": 3,
       "value": "105"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 2423,
+      "offset": 2240,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 2435,
+      "offset": 2252,
       "length": 3,
       "value": "174"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 2441,
+      "offset": 2258,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 2452,
+      "offset": 2269,
       "length": 3,
       "value": "211"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 2458,
+      "offset": 2275,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2470,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "StringLiteral",
-      "offset": 2537,
+      "offset": 2343,
       "length": 12,
       "value": "\"namedColor\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 2627,
+      "offset": 2433,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 2639,
+      "offset": 2445,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 2650,
+      "offset": 2456,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 2662,
+      "offset": 2468,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 2713,
+      "offset": 2519,
       "length": 4,
       "value": "0.05"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 2726,
+      "offset": 2532,
       "length": 5,
       "value": "0.055"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 2739,
+      "offset": 2545,
       "length": 5,
       "value": "0.057"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 2753,
+      "offset": 2559,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 2804,
+      "offset": 2610,
       "length": 4,
       "value": "0.01"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 2817,
+      "offset": 2623,
       "length": 6,
       "value": "0.0195"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 2831,
+      "offset": 2637,
       "length": 5,
       "value": "0.013"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 2845,
+      "offset": 2651,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 2898,
+      "offset": 2704,
       "length": 3,
       "value": "238"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 2904,
+      "offset": 2710,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 2916,
+      "offset": 2722,
       "length": 3,
       "value": "129"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 2922,
+      "offset": 2728,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 2933,
+      "offset": 2739,
       "length": 3,
       "value": "186"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 2939,
+      "offset": 2745,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 2951,
+      "offset": 2757,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3017,
+      "offset": 2823,
       "length": 3,
       "value": "170"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3023,
+      "offset": 2829,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3035,
+      "offset": 2841,
       "length": 3,
       "value": "132"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3041,
+      "offset": 2847,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3052,
+      "offset": 2858,
       "length": 3,
       "value": "239"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3058,
+      "offset": 2864,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3070,
+      "offset": 2876,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3137,
+      "offset": 2943,
       "length": 3,
       "value": "137"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3143,
+      "offset": 2949,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3155,
+      "offset": 2961,
       "length": 3,
       "value": "192"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3161,
+      "offset": 2967,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3172,
+      "offset": 2978,
       "length": 3,
       "value": "189"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3178,
+      "offset": 2984,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3190,
+      "offset": 2996,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3256,
+      "offset": 3062,
       "length": 3,
       "value": "105"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3262,
+      "offset": 3068,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3274,
+      "offset": 3080,
       "length": 3,
       "value": "174"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3280,
+      "offset": 3086,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3291,
+      "offset": 3097,
       "length": 3,
       "value": "211"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3297,
+      "offset": 3103,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3309,
+      "offset": 3115,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "StringLiteral",
-      "offset": 3374,
+      "offset": 3180,
       "length": 12,
       "value": "\"namedColor\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 3457,
+      "offset": 3263,
       "length": 5,
       "value": "0.067"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 3464,
+      "offset": 3270,
       "length": 5,
       "value": "0.729"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 3471,
+      "offset": 3277,
       "length": 4,
       "value": "0.65"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3477,
+      "offset": 3283,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 3523,
+      "offset": 3329,
       "length": 5,
       "value": "0.071"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 3530,
+      "offset": 3336,
       "length": 5,
       "value": "0.195"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "FloatLiteral",
-      "offset": 3537,
+      "offset": 3343,
       "length": 5,
       "value": "0.213"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "IntegerLiteral",
-      "offset": 3544,
+      "offset": 3350,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/ToolsUI\/PVModifier.swift",
       "kind": "StringLiteral",
-      "offset": 3593,
+      "offset": 3399,
       "length": 12,
       "value": "\"namedColor\""
     },
@@ -44725,463 +44568,491 @@
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1474,
+      "length": 4,
+      "value": "2023"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1504,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1529,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 1223,
+      "offset": 1647,
+      "length": 19,
+      "value": "\"!!!!!!!?DEVICE!!!\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
+      "kind": "StringLiteral",
+      "offset": 1953,
       "length": 11,
       "value": "\"DEVICE!!!\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 1957,
+      "offset": 2641,
       "length": 14,
       "value": "\"vertexShader\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 2696,
+      "offset": 3380,
       "length": 14,
       "value": "\"!!texture!!!\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 3288,
+      "offset": 3972,
       "length": 14,
       "value": "\"!!texture!!!\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 3863,
+      "offset": 4547,
       "length": 14,
       "value": "\"!!texture!!!\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 4109,
+      "offset": 4793,
       "length": 4,
       "value": "-1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 4118,
+      "offset": 4802,
       "length": 4,
       "value": "-1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 4145,
+      "offset": 4829,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 4153,
+      "offset": 4837,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 4203,
+      "offset": 4887,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 4211,
+      "offset": 4895,
       "length": 4,
       "value": "-1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 4238,
+      "offset": 4922,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 4246,
+      "offset": 4930,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 4296,
+      "offset": 4980,
       "length": 4,
       "value": "-1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 4305,
+      "offset": 4989,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 4331,
+      "offset": 5015,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 4339,
+      "offset": 5023,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 4389,
+      "offset": 5073,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 4397,
+      "offset": 5081,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 4423,
+      "offset": 5107,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 4431,
+      "offset": 5115,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "Array",
-      "offset": 4583,
+      "offset": 5267,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "Array",
-      "offset": 4727,
+      "offset": 5411,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 4749,
+      "offset": 5433,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 4971,
+      "offset": 5655,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "Array",
-      "offset": 5131,
+      "offset": 5815,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "Array",
-      "offset": 5180,
+      "offset": 5864,
       "length": 34,
       "value": "[0, 1, 2, 2, 3, 0]"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 5287,
+      "offset": 5971,
       "length": 14,
       "value": "\"vertexShader\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 5885,
+      "offset": 6569,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 5924,
+      "offset": 6608,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 5936,
+      "offset": 6620,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 5957,
+      "offset": 6641,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 5974,
+      "offset": 6658,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 5995,
+      "offset": 6679,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 6034,
+      "offset": 6718,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 6093,
+      "offset": 6777,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 6110,
+      "offset": 6794,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 6235,
+      "offset": 6919,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "Array",
-      "offset": 6896,
+      "offset": 7580,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 6918,
+      "offset": 7602,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "Array",
-      "offset": 7093,
+      "offset": 7777,
       "length": 39,
       "value": "[9, 0, 1, 1, 9, 8, 8, 2, 3, 3, 8, 7, 3, 4, 4, 7, 6, 4, 5]"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "Array",
-      "offset": 7383,
+      "offset": 8067,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 8420,
+      "offset": 9104,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 9739,
+      "offset": 10423,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 11043,
+      "offset": 11727,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 12729,
+      "offset": 13413,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 12776,
+      "offset": 13460,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 12814,
+      "offset": 13498,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 13074,
+      "offset": 13758,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 13250,
+      "offset": 13934,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 13256,
+      "offset": 13940,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 14000,
+      "offset": 14684,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 14068,
+      "offset": 14752,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 14138,
+      "offset": 14822,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 14172,
+      "offset": 14856,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 14175,
+      "offset": 14859,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 14178,
+      "offset": 14862,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 14181,
+      "offset": 14865,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 14242,
+      "offset": 14926,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 14448,
+      "offset": 15132,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 16176,
+      "offset": 16860,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 16566,
+      "offset": 17250,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "FloatLiteral",
-      "offset": 16597,
+      "offset": 17281,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 17485,
+      "offset": 18169,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 17677,
+      "offset": 18361,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 17870,
+      "offset": 18554,
       "length": 1,
       "value": "0"
     },
@@ -46279,1177 +46150,1156 @@
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7533,
-      "length": 3,
-      "value": "115"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 7631,
+      "offset": 7635,
       "length": 40,
       "value": "\"metalLayer.frame:L \""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 7670,
+      "offset": 7674,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 7714,
+      "offset": 7718,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 8729,
+      "offset": 8733,
       "length": 4,
       "value": "6000"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 9174,
+      "offset": 9178,
       "length": 4,
       "value": "6000"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 9277,
+      "offset": 9281,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 9311,
+      "offset": 9315,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 9329,
+      "offset": 9333,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 10103,
+      "offset": 10107,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 10158,
+      "offset": 10162,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 10183,
+      "offset": 10187,
       "length": 17,
       "value": "\"coutR: \""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 10199,
+      "offset": 10203,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 10221,
+      "offset": 10225,
       "length": 17,
       "value": "\"coutB: \""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 10237,
+      "offset": 10241,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 10703,
+      "offset": 10707,
       "length": 4,
       "value": "0.03"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 10946,
+      "offset": 10950,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 10972,
+      "offset": 10976,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 12088,
+      "offset": 12092,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 12118,
+      "offset": 12122,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 13426,
+      "offset": 13430,
       "length": 12,
       "value": "\"CamTexture\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 14776,
+      "offset": 14780,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 14800,
+      "offset": 14804,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 15599,
+      "offset": 15603,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 15673,
+      "offset": 15677,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 15707,
+      "offset": 15711,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 15712,
+      "offset": 15716,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 15717,
+      "offset": 15721,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 15722,
+      "offset": 15726,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 16007,
+      "offset": 16011,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 16017,
+      "offset": 16021,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 16089,
+      "offset": 16093,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 16099,
+      "offset": 16103,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 16207,
+      "offset": 16211,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 16282,
+      "offset": 16286,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 16358,
+      "offset": 16362,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 16433,
+      "offset": 16437,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 16511,
+      "offset": 16515,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 16589,
+      "offset": 16593,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 16719,
+      "offset": 16723,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 16897,
+      "offset": 16901,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 17026,
+      "offset": 17030,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 17042,
+      "offset": 17046,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 17207,
+      "offset": 17211,
       "length": 5,
       "value": "\"vhs\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 17386,
+      "offset": 17390,
       "length": 6,
       "value": "\"burn\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 17632,
+      "offset": 17636,
       "length": 14,
       "value": "\"color_trails\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 17884,
+      "offset": 17888,
       "length": 13,
       "value": "\"misted_draw\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 18342,
+      "offset": 18346,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 18426,
+      "offset": 18430,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 18460,
+      "offset": 18464,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 18465,
+      "offset": 18469,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 18470,
+      "offset": 18474,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 18475,
+      "offset": 18479,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 18746,
+      "offset": 18750,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 18756,
+      "offset": 18760,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 18828,
+      "offset": 18832,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 18838,
+      "offset": 18842,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 18916,
+      "offset": 18920,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 18926,
+      "offset": 18930,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 19007,
+      "offset": 19011,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 19083,
+      "offset": 19087,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 19156,
+      "offset": 19160,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 19231,
+      "offset": 19235,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 19374,
+      "offset": 19378,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 19462,
+      "offset": 19466,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 19478,
+      "offset": 19482,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 20926,
+      "offset": 20930,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 21597,
+      "offset": 21601,
       "length": 15,
       "value": "\"CamTdfsexture\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
-      "kind": "StringLiteral",
-      "offset": 21871,
-      "length": 23,
-      "value": "\"editDraw Time \""
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
-      "kind": "StringLiteral",
-      "offset": 21893,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 22040,
+      "offset": 22046,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 22705,
+      "offset": 22711,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 22777,
+      "offset": 22783,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 22811,
+      "offset": 22817,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 22816,
+      "offset": 22822,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 22821,
+      "offset": 22827,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 22826,
+      "offset": 22832,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 23103,
+      "offset": 23109,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 23113,
+      "offset": 23119,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 23186,
+      "offset": 23192,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 23260,
+      "offset": 23266,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 23361,
+      "offset": 23367,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 23459,
+      "offset": 23465,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 23535,
+      "offset": 23541,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 23611,
+      "offset": 23617,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 23681,
+      "offset": 23687,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 23691,
+      "offset": 23697,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 23796,
+      "offset": 23802,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 23882,
+      "offset": 23888,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 23898,
+      "offset": 23904,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 24065,
+      "offset": 24071,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 24334,
+      "offset": 24340,
       "length": 13,
       "value": "\"misted_draw\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 24361,
+      "offset": 24367,
       "length": 14,
       "value": "\"distort_draw\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 24403,
+      "offset": 24409,
       "length": 6,
       "value": "\"none\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 24507,
+      "offset": 24513,
       "length": 5,
       "value": "\"vhs\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 24664,
+      "offset": 24670,
       "length": 6,
       "value": "\"burn\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 24869,
+      "offset": 24875,
       "length": 14,
       "value": "\"color_trails\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 25489,
+      "offset": 25495,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 25571,
+      "offset": 25577,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 25605,
+      "offset": 25611,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 25610,
+      "offset": 25616,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 25615,
+      "offset": 25621,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 25620,
+      "offset": 25626,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 25889,
+      "offset": 25895,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 25899,
+      "offset": 25905,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 25999,
+      "offset": 26005,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 26071,
+      "offset": 26077,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 26161,
+      "offset": 26167,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 26171,
+      "offset": 26177,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 26248,
+      "offset": 26254,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 26258,
+      "offset": 26264,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 26364,
+      "offset": 26370,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 26380,
+      "offset": 26386,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 27674,
+      "offset": 27680,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 27996,
+      "offset": 28002,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 28039,
+      "offset": 28045,
       "length": 50,
       "value": "\"AssetModel.exportPoint \""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 28088,
+      "offset": 28094,
       "length": 10,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 28200,
+      "offset": 28206,
       "length": 4,
       "value": "\"vB\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 28513,
+      "offset": 28519,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 28985,
+      "offset": 28991,
       "length": 50,
       "value": "\"AssetModel.exportPoint \""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 29034,
+      "offset": 29040,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 29136,
+      "offset": 29142,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 29807,
+      "offset": 29813,
       "length": 15,
       "value": "\"CamTdfsexture\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 30084,
+      "offset": 30090,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 30684,
+      "offset": 30690,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 30756,
+      "offset": 30762,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 30790,
+      "offset": 30796,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 30795,
+      "offset": 30801,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 30800,
+      "offset": 30806,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 30805,
+      "offset": 30811,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 31082,
+      "offset": 31088,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 31092,
+      "offset": 31098,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 31165,
+      "offset": 31171,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 31239,
+      "offset": 31245,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 31340,
+      "offset": 31346,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 31438,
+      "offset": 31444,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 31514,
+      "offset": 31520,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 31590,
+      "offset": 31596,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 31660,
+      "offset": 31666,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 31670,
+      "offset": 31676,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 31775,
+      "offset": 31781,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 31861,
+      "offset": 31867,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 31877,
+      "offset": 31883,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 32044,
+      "offset": 32050,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 32313,
+      "offset": 32319,
       "length": 13,
       "value": "\"misted_draw\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 32340,
+      "offset": 32346,
       "length": 14,
       "value": "\"distort_draw\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 32382,
+      "offset": 32388,
       "length": 6,
       "value": "\"none\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 32486,
+      "offset": 32492,
       "length": 5,
       "value": "\"vhs\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 32643,
+      "offset": 32649,
       "length": 6,
       "value": "\"burn\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 32848,
+      "offset": 32854,
       "length": 14,
       "value": "\"color_trails\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 33468,
+      "offset": 33474,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 33545,
+      "offset": 33551,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 33579,
+      "offset": 33585,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 33584,
+      "offset": 33590,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 33589,
+      "offset": 33595,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 33594,
+      "offset": 33600,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 33863,
+      "offset": 33869,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 33873,
+      "offset": 33879,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 33973,
+      "offset": 33979,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 34045,
+      "offset": 34051,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 34135,
+      "offset": 34141,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 34145,
+      "offset": 34151,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 34222,
+      "offset": 34228,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 34232,
+      "offset": 34238,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 34338,
+      "offset": 34344,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 34354,
+      "offset": 34360,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 35137,
+      "offset": 35143,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/playu_project\/ARDemoiOS-main\/ScnWraper\/Editor\/MTL\/PVMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 35560,
+      "offset": 35566,
       "length": 1,
       "value": "1"
     },
