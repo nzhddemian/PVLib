@@ -283,6 +283,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreMedia;
 @import Foundation;
 @import ObjectiveC;
+@import SceneKit;
 @import UIKit;
 #endif
 
@@ -368,9 +369,24 @@ SWIFT_CLASS("_TtC5PVLib19DragRotateScaleView")
 
 
 
+@protocol SCNSceneRenderer;
 
-SWIFT_CLASS("_TtC5PVLib15PVMetalRenderer")
-@interface PVMetalRenderer : NSObject
+SWIFT_CLASS("_TtC5PVLib13PVCamRenderer")
+@interface PVCamRenderer : NSObject <SCNSceneRendererDelegate>
+- (void)renderer:(id <SCNSceneRenderer> _Nonnull)renderer updateAtTime:(NSTimeInterval)time;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC5PVLib14PVEditRenderer")
+@interface PVEditRenderer : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5PVLib16PVExportRenderer")
+@interface PVExportRenderer : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -383,7 +399,6 @@ SWIFT_CLASS("_TtC5PVLib24PVMultiCamCaptureManager")
 - (void)captureOutput:(AVCaptureOutput * _Nonnull)output didOutputSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer fromConnection:(AVCaptureConnection * _Nonnull)connection;
 - (void)captureOutput:(AVCaptureOutput * _Nonnull)captureOutput didDropSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer fromConnection:(AVCaptureConnection * _Nonnull)connection;
 @end
-
 
 
 SWIFT_CLASS("_TtC5PVLib11TextDRSView")
@@ -712,6 +727,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreMedia;
 @import Foundation;
 @import ObjectiveC;
+@import SceneKit;
 @import UIKit;
 #endif
 
@@ -797,9 +813,24 @@ SWIFT_CLASS("_TtC5PVLib19DragRotateScaleView")
 
 
 
+@protocol SCNSceneRenderer;
 
-SWIFT_CLASS("_TtC5PVLib15PVMetalRenderer")
-@interface PVMetalRenderer : NSObject
+SWIFT_CLASS("_TtC5PVLib13PVCamRenderer")
+@interface PVCamRenderer : NSObject <SCNSceneRendererDelegate>
+- (void)renderer:(id <SCNSceneRenderer> _Nonnull)renderer updateAtTime:(NSTimeInterval)time;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC5PVLib14PVEditRenderer")
+@interface PVEditRenderer : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5PVLib16PVExportRenderer")
+@interface PVExportRenderer : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -812,7 +843,6 @@ SWIFT_CLASS("_TtC5PVLib24PVMultiCamCaptureManager")
 - (void)captureOutput:(AVCaptureOutput * _Nonnull)output didOutputSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer fromConnection:(AVCaptureConnection * _Nonnull)connection;
 - (void)captureOutput:(AVCaptureOutput * _Nonnull)captureOutput didDropSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer fromConnection:(AVCaptureConnection * _Nonnull)connection;
 @end
-
 
 
 SWIFT_CLASS("_TtC5PVLib11TextDRSView")

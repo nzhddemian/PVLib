@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PVLib-Swift.h</key>
 		<data>
-		sig/9HYbH1Pm4+w10DnA+nUJmS8=
+		zhCZiIkuhhpzkZQiKLR50TWdtY0=
 		</data>
 		<key>Headers/PVLib.h</key>
 		<data>
@@ -18,23 +18,23 @@
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		vl2o5eK2Xi+YU0OegVarZ2FMoq4=
+		qIuqAkO/Gxl9+nGyTX9Big9ln5g=
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		VTlJINvK6rzOe+P0dVLYP8UFL8s=
+		uEHBBvCymZ+i4aBFlNSmr7fxdT4=
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		7vfcvYyIHAyNHwpaib+7jfN+Cak=
+		Iu6ALURVPDZoW/d/l1Pl4zPfilI=
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		VTlJINvK6rzOe+P0dVLYP8UFL8s=
+		uEHBBvCymZ+i4aBFlNSmr7fxdT4=
 		</data>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		5RSsSTK5ek8//KzoBpFOORlFZCI=
+		Ss24JOERQeeBm6gg4JDa84l5PbY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mxD4VLrlUJt21guTwS1Ee9xj7JQ8Y8ItQfRss9CiTSE=
+			H2O888K/SeMF9X80pM0UdZUtR3oWyd38defyy0Cb75w=
 			</data>
 		</dict>
 		<key>Headers/PVLib.h</key>
@@ -61,35 +61,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JQcJSbEiwRmEZ7kBEt3oZktj2fE5dz92pV9uf2ZiFMk=
+			b/dXqt0oxooz7kpy9alTlNKnQziSkX2qFvOmuJjgksA=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cLRH3ZG6B6R+N0qgHbcoTtMcWQPKBFns0blnmeXdFaw=
+			2EqWeem1VmIo0TLyrBt6HHvItpzlJ+d+FSky393rt1k=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3ksNNDLrvpMj9yY2R16HoFu7qnCrr7D3kW5kaeLi1vk=
+			PU7tdJ2v4/30QbH9TEfdwYryqkjs40KDoCN1dTEP9fc=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cLRH3ZG6B6R+N0qgHbcoTtMcWQPKBFns0blnmeXdFaw=
+			2EqWeem1VmIo0TLyrBt6HHvItpzlJ+d+FSky393rt1k=
 			</data>
 		</dict>
 		<key>Modules/PVLib.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EL8dpwDVg3jpAVl3w7ZtszhKth8LRrWrwrCa2v3i+jk=
+			MZDlFmr/6kvWsbtKSWqkYoYCOfn3PphqMR+UESlbFes=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
